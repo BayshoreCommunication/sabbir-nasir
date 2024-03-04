@@ -121,7 +121,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="bg-white py-4 text-sm">
+      <div className="bg-white py-3 text-sm text-center">
         <div className="flex flex-col lg:flex-row gap-2 justify-between text-black main-container">
           <p>Copyright © 2024 Sabbir Nasir. All rights reserved.</p>
           <p>

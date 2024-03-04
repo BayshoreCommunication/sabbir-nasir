@@ -6,4 +6,32 @@
   .main-container {
     @apply w-[94%] sm:w-[90%] md:w-[90%] lg:w-[80%] xl:w-[80%] 2xl:w-[74%] mx-auto;
   }
+  .test-container {
+    @apply px-[16%] sm:px-[5%] md:px-[5%] lg:px-[10%] xl:px-[10%] 2xl:px-[13%];
+  }
+  .spacer {
+    @apply py-8 lg:py-16;
+  }
 }
+
+.hola-test > div > div > button {
+  border: 1px solid rgb(235, 235, 235);
+}
+
+/* .hola-test > div:first-child {
+  background-color: white;
+  border-bottom: 2px solid red;
+} */
+
+.hola-test > div > div {
+  gap: 0;
+  padding: 0;
+}
+
+.hola-test > div > div > div {
+  padding: 0;
+}
+
+/* .subpixel-antialiased {
+  padding: 0;
+} */
