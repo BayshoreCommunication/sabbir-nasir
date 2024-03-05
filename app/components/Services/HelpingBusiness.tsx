@@ -26,7 +26,7 @@ const HelpingBusiness = () => {
   return (
     <div
       ref={countUpRef}
-      className="main-container bg-[url('/images/homepage/services/helping-small-business.png')] bg-cover py-4 lg:py-16 px-2 lg:px-32"
+      className="w-[100%] sm:w-[90%] md:w-[90%] lg:w-[80%] xl:w-[80%] 2xl:w-[74%] mx-auto bg-[url('/images/homepage/services/helping-small-business.png')] bg-cover py-4 lg:py-16 px-2 lg:px-32"
     >
       <h2 className="text-center text-2xl font-semibold">
         Helping Small Businesses
