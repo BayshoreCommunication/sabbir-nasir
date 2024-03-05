@@ -34,6 +34,7 @@ const config: Config = {
             //   DEFAULT: "#006FEE",
             // },
             primary: "#132841",
+            secondary: "#ffffff",
           },
         },
       },

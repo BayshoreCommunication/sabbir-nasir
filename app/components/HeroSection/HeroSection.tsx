@@ -4,8 +4,8 @@ import SecondaryButton from "../Button/SecondaryButton";
 
 const HeroSection = () => {
   return (
-    <div className="bg-[url('/images/homepage/hero-background.png')] bg-cover">
-      <div className="main-container py-16 lg:py-48">
+    <div className="bg-[url('/images/homepage/hero-background.png')] bg-cover text-center lg:text-start">
+      <div className="main-container py-12 lg:py-48">
         <div>
           <h2 className="text-4xl lg:text-6xl font-bold text-primary-color">
             Money Doesn’t
@@ -18,7 +18,7 @@ const HeroSection = () => {
             to five.
           </p>
         </div>
-        <div className="flex gap-2 lg:gap-4">
+        <div className="flex justify-center lg:justify-start gap-2 lg:gap-4">
           <PrimaryButton>READ MORE</PrimaryButton>
           <SecondaryButton>CONTACT US</SecondaryButton>
         </div>

@@ -53,52 +53,54 @@ const ServiceCarosel = () => {
     ],
   };
   return (
-    <div className="slider-container gap-4 w-[100%] sm:w-[90%] md:w-[90%] lg:w-[80%] xl:w-[80%] 2xl:w-[74%] mx-auto mb-10 lg:mb-0 lg:mt-3">
-      <Slider {...settings}>
-        <div>
-          <div className="bg-gray-200 flex flex-col items-center p-8 gap-y-2 mx-1 lg:mx-3">
-            <Image src={advisorImg} alt="advisor image" />
-            <h2 className="text-xl font-semibold">Advisor</h2>
-            <p className="text-center">
-              Lorem ipsum dolor sit amet, Let it it floats back to you, Let it
-              it floats back to you.
-            </p>
+    <div className="w-full  h-full">
+      <div className="slider-container gap-4 w-[100%] sm:w-[90%] md:w-[90%] lg:w-[80%] xl:w-[80%] 2xl:w-[74%] mx-auto mb-10 lg:mb-0 lg:mt-3">
+        <Slider {...settings}>
+          <div>
+            <div className="bg-secondary-color shadow-md flex flex-col items-center p-8 gap-y-2 mx-1 lg:mx-3">
+              <Image src={advisorImg} alt="advisor image" />
+              <h2 className="text-xl font-semibold">Advisor</h2>
+              <p className="text-center">
+                Lorem ipsum dolor sit amet, Let it it floats back to you, Let it
+                it floats back to you.
+              </p>
+            </div>
           </div>
-        </div>
 
-        <div>
-          <div className="bg-gray-200 flex flex-col items-center p-8 gap-y-2 mx-1 lg:mx-3">
-            <Image src={consultingImg} alt="advisor image" />
-            <h2 className="text-xl font-semibold">Consulting</h2>
-            <p className="text-center">
-              Lorem ipsum dolor sit amet, Let it it floats back to you, Let it
-              it floats back to you.
-            </p>
+          <div>
+            <div className="bg-secondary-color shadow-md flex flex-col items-center p-8 gap-y-2 mx-1 lg:mx-3">
+              <Image src={consultingImg} alt="advisor image" />
+              <h2 className="text-xl font-semibold">Consulting</h2>
+              <p className="text-center">
+                Lorem ipsum dolor sit amet, Let it it floats back to you, Let it
+                it floats back to you.
+              </p>
+            </div>
           </div>
-        </div>
 
-        <div>
-          <div className="bg-gray-200 flex flex-col items-center p-8 gap-y-2 mx-1 lg:mx-3">
-            <Image src={outsourceImg} alt="advisor image" />
-            <h2 className="text-xl font-semibold">Outsource CEO</h2>
-            <p className="text-center">
-              Lorem ipsum dolor sit amet, Let it it floats back to you, Let it
-              it floats back to you.
-            </p>
+          <div>
+            <div className="bg-secondary-color shadow-md flex flex-col items-center p-8 gap-y-2 mx-1 lg:mx-3">
+              <Image src={outsourceImg} alt="advisor image" />
+              <h2 className="text-xl font-semibold">Outsource CEO</h2>
+              <p className="text-center">
+                Lorem ipsum dolor sit amet, Let it it floats back to you, Let it
+                it floats back to you.
+              </p>
+            </div>
           </div>
-        </div>
 
-        <div>
-          <div className="bg-gray-200 flex flex-col items-center p-8 gap-y-2 mx-1 lg:mx-3">
-            <Image src={consultingImg} alt="advisor image" />
-            <h2 className="text-xl font-semibold">Consult CEO</h2>
-            <p className="text-center">
-              Lorem ipsum dolor sit amet, Let it it floats back to you, Let it
-              it floats back to you.
-            </p>
+          <div>
+            <div className="bg-secondary-color shadow-md flex flex-col items-center p-8 gap-y-2 mx-1 lg:mx-3">
+              <Image src={consultingImg} alt="advisor image" />
+              <h2 className="text-xl font-semibold">Consult CEO</h2>
+              <p className="text-center">
+                Lorem ipsum dolor sit amet, Let it it floats back to you, Let it
+                it floats back to you.
+              </p>
+            </div>
           </div>
-        </div>
-      </Slider>
+        </Slider>
+      </div>
     </div>
   );
 };

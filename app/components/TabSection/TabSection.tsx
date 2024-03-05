@@ -59,10 +59,10 @@ export default function TabSection() {
           }
           className="main-container m-0 py-4 lg:py-7 h-full"
         >
-          <Card className="rounded-none bg-transparent border-none shadow-none my-4">
+          <Card className="rounded-none bg-transparent border-none shadow-none lg:my-4">
             <CardBody className="border-none">
-              <div className="flex flex-col lg:flex-row items-center gap-8">
-                <div className="flex-1 flex flex-col gap-4 text-[#121212]">
+              <div className="flex flex-col lg:flex-row items-center gap-8 text-center lg:text-start">
+                <div className="flex-1 flex flex-col gap-3 lg:gap-4 text-[#121212]">
                   <h3 className="text-2xl font-bold">Who We Are</h3>
                   <p>
                     We have over 15 years of experience Lorem ipsum dolor sit
@@ -123,10 +123,10 @@ export default function TabSection() {
           }
           className="main-container m-0 py-4 lg:py-7 h-full"
         >
-          <Card className="rounded-none bg-transparent border-none shadow-none">
+          <Card className="rounded-none bg-transparent border-none shadow-none lg:my-4">
             <CardBody>
-              <div className="flex flex-col lg:flex-row items-center gap-8">
-                <div className="flex-1 flex flex-col gap-4 text-[#121212]">
+              <div className="flex flex-col lg:flex-row items-center gap-8 text-center lg:text-start">
+                <div className="flex-1 flex flex-col gap-3 lg:gap-4 text-[#121212]">
                   <h3 className="text-2xl font-bold">Who We Are</h3>
                   <p>
                     In Assistance We have over 15 years of experience Lorem
@@ -189,10 +189,10 @@ export default function TabSection() {
           }
           className="main-container m-0 py-4 lg:py-7 h-full"
         >
-          <Card className="rounded-none bg-transparent border-none shadow-none">
+          <Card className="rounded-none bg-transparent border-none shadow-none lg:my-4">
             <CardBody>
-              <div className="flex flex-col lg:flex-row items-center gap-8">
-                <div className="flex-1 flex flex-col gap-4 text-[#121212]">
+              <div className="flex flex-col lg:flex-row items-center gap-8 text-center lg:text-start">
+                <div className="flex-1 flex flex-col gap-3 lg:gap-4 text-[#121212]">
                   <h3 className="text-2xl font-bold">Who We Are</h3>
                   <p>
                     In experience We have over 15 years of experience Lorem
@@ -253,10 +253,10 @@ export default function TabSection() {
           }
           className="main-container m-0 py-4 lg:py-7 h-full"
         >
-          <Card className="rounded-none bg-transparent border-none shadow-none">
+          <Card className="rounded-none bg-transparent border-none shadow-none lg:my-4">
             <CardBody>
-              <div className="flex flex-col lg:flex-row items-center gap-8">
-                <div className="flex-1 flex flex-col gap-4 text-[#121212]">
+              <div className="flex flex-col lg:flex-row items-center gap-8 text-center lg:text-start">
+                <div className="flex-1 flex flex-col gap-3 lg:gap-4 text-[#121212]">
                   <h3 className="text-2xl font-bold">Who We Are</h3>
                   <p>
                     In Client Investment We have over 15 years of experience
