@@ -8,7 +8,7 @@ import PrimaryButton from "../components/Button/PrimaryButton";
 const ContactUs = () => {
   return (
     <>
-      <Topbar mainPage="About Us" />
+      <Topbar mainPage="Contact Us" />
       <section className="main-container spacer">
         <div className="grid grid-cols-1 lg:grid-cols-2 items-center justify-center gap-6 lg:gap-12">
           <div className="flex flex-col gap-3">
