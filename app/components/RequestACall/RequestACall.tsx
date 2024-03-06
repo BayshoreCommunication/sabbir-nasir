@@ -47,8 +47,11 @@ const RequestACall = () => {
             placeholder="Your Name"
             className="w-full px-4 py-2.5 rounded-full outline outline-2 outline-gray-300 focus:outline-gray-400 text-gray-600 text-sm"
           />
-          <div className="">
+          <div className="lg:hidden">
             <PrimaryButton width="w-full">SUBMIT</PrimaryButton>
+          </div>
+          <div className="hidden lg:block">
+            <PrimaryButton>SUBMIT</PrimaryButton>
           </div>
         </form>
       </div>

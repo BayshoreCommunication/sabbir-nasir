@@ -1,5 +1,5 @@
 import React from "react";
-import { BsFillGridFill } from "react-icons/bs";
+import ContactUsButton from "./Button/ContactUsButton";
 
 const AnyQuery = () => {
   return (
@@ -8,11 +8,7 @@ const AnyQuery = () => {
         <p className="text-base font-semibold text-center">
           If you have any querry for related investment... We are available
         </p>
-        <button className="bg-primary-color rounded-full px-4 h-10 text-white text-sm flex items-center justify-center gap-2">
-          <BsFillGridFill />
-          <div className="border-r-2 h-full border-gray-500"></div>
-          CONTACT US
-        </button>
+        <ContactUsButton />
       </div>
     </div>
   );

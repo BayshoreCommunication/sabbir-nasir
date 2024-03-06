@@ -10,7 +10,7 @@
     @apply px-[16%] sm:px-[5%] md:px-[5%] lg:px-[10%] xl:px-[10%] 2xl:px-[13%];
   }
   .spacer {
-    @apply py-8 lg:py-16;
+    @apply py-6 lg:py-12;
   }
 }
 

@@ -1,7 +1,5 @@
 "use client";
 import React, { useState } from "react";
-// import { Link } from "@nextui-org/link";
-// import { Button } from "@nextui-org/button";
 import {
   Navbar,
   NavbarBrand,
@@ -10,41 +8,50 @@ import {
   NavbarMenuToggle,
   NavbarMenu,
   NavbarMenuItem,
-  Link,
 } from "@nextui-org/react";
 import logo from "../../public/images/logo/sabbir-nasir-svg-logo.svg";
-// import {
-//   Navbar,
-//   NavbarBrand,
-//   NavbarContent,
-//   NavbarItem,
-//   NavbarMenuToggle,
-//   NavbarMenu,
-//   NavbarMenuItem,
-// } from "@nextui-org/navbar";
 import Image from "next/image";
 import { MdOutlineSearch } from "react-icons/md";
+import Link from "next/link";
 
 export default function NavContent() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const navItems = [
-    "HOME",
-    "ABOUT US",
-    "SERVICES",
-    "WHO WE SERVE",
-    "NEWS",
-    "CONTACT US",
+    {
+      title: "HOME",
+      link: "/",
+    },
+    {
+      title: "ABOUT US",
+      link: "/about-us",
+    },
+    {
+      title: "SERVICES",
+      link: "/services",
+    },
+    {
+      title: "WHO WE SERVE",
+      link: "/who-we-serve",
+    },
+    {
+      title: "NEWS",
+      link: "/news",
+    },
+    {
+      title: "CONTACT US",
+      link: "/contact-us",
+    },
   ];
 
-  const menuItems = [
-    "HOME",
-    "ABOUT US",
-    "SERVICES",
-    "WHO WE SERVE",
-    "NEWS",
-    "CONTACT US",
-  ];
+  // const menuItems = [
+  //   "HOME",
+  //   "ABOUT US",
+  //   "SERVICES",
+  //   "WHO WE SERVE",
+  //   "NEWS",
+  //   "CONTACT US",
+  // ];
 
   return (
     <main className="main-container">
@@ -56,16 +63,18 @@ export default function NavContent() {
       </div>
       <Navbar
         maxWidth="full"
-        className="sticky top-10"
+        className="py-1 lg:py-2"
         onMenuOpenChange={setIsMenuOpen}
       >
         <NavbarContent>
           <NavbarBrand className="justify-start">
-            <Image
-              src={logo}
-              alt="sabbir-nasir-logo"
-              className="h-[3.0rem] w-auto"
-            />
+            <Link href={"/"}>
+              <Image
+                src={logo}
+                alt="sabbir-nasir-logo"
+                className="h-[3.0rem] w-auto"
+              />
+            </Link>
           </NavbarBrand>
 
           <MdOutlineSearch size={24} color="#132841" className="lg:hidden" />
@@ -78,13 +87,9 @@ export default function NavContent() {
 
         <NavbarContent className="hidden lg:flex gap-5" justify="end">
           {navItems.map((item) => (
-            <NavbarItem key={item}>
-              <Link<any>
-                className="hover:text-[#4d84cc]"
-                color="foreground"
-                href="#"
-              >
-                {item}
+            <NavbarItem key={item.title}>
+              <Link className="hover:text-[#4d84cc]" href={item.link}>
+                {item.title}
               </Link>
             </NavbarItem>
           ))}
@@ -96,22 +101,10 @@ export default function NavContent() {
         </NavbarContent>
 
         <NavbarMenu className="h-[3rem]">
-          {menuItems.map((item, index) => (
-            <NavbarMenuItem key={`${item}-${index}`}>
-              <Link<any>
-                // color={
-                //   index === 2
-                //     ? "primary"
-                //     : index === menuItems.length - 1
-                //     ? "danger"
-                //     : "foreground"
-                // }
-                color={"foreground"}
-                className="w-full text-base"
-                href="#"
-                size="lg"
-              >
-                {item}
+          {navItems.map((item, index) => (
+            <NavbarMenuItem key={item.title}>
+              <Link className="w-full text-base" href={item.link}>
+                {item.title}
               </Link>
             </NavbarMenuItem>
           ))}
