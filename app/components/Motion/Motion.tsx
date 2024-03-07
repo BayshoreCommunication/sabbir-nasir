@@ -11,3 +11,4 @@ export const MotionH3 = motion.h3;
 export const MotionUl = motion.ul;
 export const MotionLi = motion.li;
 export const MotionSection = motion.section;
+export const MotionButton = motion.button;

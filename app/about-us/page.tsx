@@ -33,7 +33,7 @@ const AboutUsPage = () => {
             whileInView={{
               opacity: 1,
               transition: {
-                duration: 0.5,
+                duration: 0.8,
               },
             }}
             className="text-2xl font-bold"
@@ -47,7 +47,7 @@ const AboutUsPage = () => {
               y: 0,
               transition: {
                 delay: 0.2,
-                duration: 0.5,
+                duration: 0.8,
               },
             }}
           >
@@ -63,7 +63,7 @@ const AboutUsPage = () => {
               y: 0,
               transition: {
                 delay: 0.4,
-                duration: 0.5,
+                duration: 0.8,
               },
             }}
           >
@@ -76,8 +76,10 @@ const AboutUsPage = () => {
               opacity: 1,
               y: 0,
               transition: {
-                delay: 0.6,
-                duration: 0.5,
+                delay: 0.7,
+                type: "spring",
+                bounce: 0.5,
+                duration: 1.2,
               },
             }}
             className="ml-1"
@@ -91,7 +93,7 @@ const AboutUsPage = () => {
             opacity: 1,
             y: 0,
             transition: {
-              duration: 1,
+              duration: 1.2,
             },
           }}
           className="flex-1"

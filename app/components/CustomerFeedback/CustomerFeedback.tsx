@@ -3,7 +3,7 @@ import React from "react";
 import customerFeedbackImg from "../../../public/images/homepage/customer-feedback.png";
 import reviewAuthorImg from "../../../public/images/homepage/review-author.png";
 import { BsFillGridFill } from "react-icons/bs";
-import { MotionDiv } from "../Motion/Motion";
+import { MotionButton, MotionDiv } from "../Motion/Motion";
 
 const CustomerFeedback = () => {
   return (
@@ -121,11 +121,16 @@ const CustomerFeedback = () => {
           </div>
         </div>
         <div className="flex justify-center">
-          <button className="w-max border border-primary-color hover:bg-primary-color rounded-full px-4 h-10 text-primary-color hover:text-white font-semibold text-sm flex items-center justify-center gap-2">
+          <MotionButton
+            initial={{ opacity: 0, scale: 0 }}
+            whileTap={{ scale: 0.9 }}
+            animate={{ opacity: 1, scale: 1 }}
+            className="w-max border border-primary-color hover:border-none hover:bg-primary-color rounded-full px-4 h-10 text-primary-color hover:text-white font-semibold text-sm flex items-center justify-center gap-2 bg-white hover:bg-gradient-to-tr from-black via-primary-color to-sky-200"
+          >
             <BsFillGridFill />
             <div className="border-r-2 h-full border-gray-500"></div>
             VIEW ALL
-          </button>
+          </MotionButton>
         </div>
       </div>
     </div>

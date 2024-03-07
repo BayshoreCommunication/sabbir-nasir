@@ -4,7 +4,7 @@ import { Tabs, Tab, Card, CardBody } from "@nextui-org/react";
 import OutlineButton from "../Button/OutlineButton";
 import Image from "next/image";
 import videoThumb from "../../../public/images/homepage/video-thumb.jpg.png";
-import { MotionDiv } from "../Motion/Motion";
+import { MotionDiv, MotionH3, MotionP } from "../Motion/Motion";
 
 export default function TabSection() {
   const [selected, setSelected] = useState("money");
@@ -63,7 +63,7 @@ export default function TabSection() {
           <Card className="rounded-none bg-transparent border-none shadow-none lg:my-4 overflow-hidden">
             <CardBody className="border-none overflow-hidden">
               <MotionDiv
-                initial={{ opacity: 0, scale: 0.9 }}
+                initial={{ opacity: 0, scale: 0.8 }}
                 whileInView={{
                   opacity: 1,
                   scale: 1,
@@ -74,37 +74,67 @@ export default function TabSection() {
                     stiffness: 100,
                   },
                 }}
-                // transition={{
-                //   duration: 0.8,
-                //   delay: 0.2,
-                //   ease: [0, 0.71, 0.2, 1.01],
-                //   stiffness: 100,
-                // }}
-                // initial={{ opacity: 0, y: "40px" }}
-                // whileInView={{
-                //   opacity: 1,
-                //   y: 0,
-                //   transition: {
-                //     duration: 1,
-                //   },
-                // }}
                 className="flex flex-col lg:flex-row items-center gap-8 text-center lg:text-start"
               >
                 <div className="flex-1 flex flex-col gap-3 lg:gap-4 text-[#121212]">
-                  <h3 className="text-2xl font-bold">Who We Are</h3>
-                  <p>
+                  <MotionH3
+                    initial={{ opacity: 0 }}
+                    whileInView={{
+                      opacity: 1,
+                      transition: {
+                        duration: 0.8,
+                      },
+                    }}
+                    className="text-2xl font-bold"
+                  >
+                    Who We Are
+                  </MotionH3>
+                  <MotionP
+                    initial={{ opacity: 0, y: "30px" }}
+                    whileInView={{
+                      opacity: 1,
+                      y: 0,
+                      transition: {
+                        delay: 0.2,
+                        duration: 0.8,
+                      },
+                    }}
+                  >
                     We have over 15 years of experience Lorem ipsum dolor sit
                     amet, consectetur adipiscing elit. Aenean Lorem ipsm dolor
                     sit the power of consectetur adi pisi cing elit, sed do
                     eiusmod tempor exercitationemut labore.
-                  </p>
-                  <p>
+                  </MotionP>
+                  <MotionP
+                    initial={{ opacity: 0, y: "50px" }}
+                    whileInView={{
+                      opacity: 1,
+                      y: 0,
+                      transition: {
+                        delay: 0.4,
+                        duration: 0.8,
+                      },
+                    }}
+                  >
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                     Aenean bibendum nec risus et suscipit Curabitur metus ipsum.
-                  </p>
-                  <div className="ml-1">
+                  </MotionP>
+                  <MotionDiv
+                    initial={{ opacity: 0, y: "50px" }}
+                    whileInView={{
+                      opacity: 1,
+                      y: 0,
+                      transition: {
+                        delay: 0.7,
+                        type: "spring",
+                        bounce: 0.5,
+                        duration: 1.2,
+                      },
+                    }}
+                    className="ml-1"
+                  >
                     <OutlineButton title="READ MORE" />
-                  </div>
+                  </MotionDiv>
                 </div>
                 <div className="flex-1">
                   <Image src={videoThumb} alt="video thumb" />
@@ -165,20 +195,64 @@ export default function TabSection() {
                 className="flex flex-col lg:flex-row items-center gap-8 text-center lg:text-start"
               >
                 <div className="flex-1 flex flex-col gap-3 lg:gap-4 text-[#121212]">
-                  <h3 className="text-2xl font-bold">Who We Are</h3>
-                  <p>
-                    In Assistance We have over 15 years of experience Lorem
-                    ipsum dolor sit amet, consectetur adipiscing elit. Aenean
-                    Lorem ipsm dolor sit the power of consectetur adi pisi cing
-                    elit, sed do eiusmod tempor exercitationemut labore.
-                  </p>
-                  <p>
+                  <MotionH3
+                    initial={{ opacity: 0 }}
+                    whileInView={{
+                      opacity: 1,
+                      transition: {
+                        duration: 0.8,
+                      },
+                    }}
+                    className="text-2xl font-bold"
+                  >
+                    Who We Are
+                  </MotionH3>
+                  <MotionP
+                    initial={{ opacity: 0, y: "30px" }}
+                    whileInView={{
+                      opacity: 1,
+                      y: 0,
+                      transition: {
+                        delay: 0.2,
+                        duration: 0.8,
+                      },
+                    }}
+                  >
+                    We have over 15 years of experience Lorem ipsum dolor sit
+                    amet, consectetur adipiscing elit. Aenean Lorem ipsm dolor
+                    sit the power of consectetur adi pisi cing elit, sed do
+                    eiusmod tempor exercitationemut labore.
+                  </MotionP>
+                  <MotionP
+                    initial={{ opacity: 0, y: "50px" }}
+                    whileInView={{
+                      opacity: 1,
+                      y: 0,
+                      transition: {
+                        delay: 0.4,
+                        duration: 0.8,
+                      },
+                    }}
+                  >
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                     Aenean bibendum nec risus et suscipit Curabitur metus ipsum.
-                  </p>
-                  <div className="ml-1">
+                  </MotionP>
+                  <MotionDiv
+                    initial={{ opacity: 0, y: "50px" }}
+                    whileInView={{
+                      opacity: 1,
+                      y: 0,
+                      transition: {
+                        delay: 0.7,
+                        type: "spring",
+                        bounce: 0.5,
+                        duration: 1.2,
+                      },
+                    }}
+                    className="ml-1"
+                  >
                     <OutlineButton title="READ MORE" />
-                  </div>
+                  </MotionDiv>
                 </div>
                 <div className="flex-1">
                   <Image src={videoThumb} alt="video thumb" />
@@ -241,20 +315,64 @@ export default function TabSection() {
                 className="flex flex-col lg:flex-row items-center gap-8 text-center lg:text-start"
               >
                 <div className="flex-1 flex flex-col gap-3 lg:gap-4 text-[#121212]">
-                  <h3 className="text-2xl font-bold">Who We Are</h3>
-                  <p>
-                    In experience We have over 15 years of experience Lorem
-                    ipsum dolor sit amet, consectetur adipiscing elit. Aenean
-                    Lorem ipsm dolor sit the power of consectetur adi pisi cing
-                    elit, sed do eiusmod tempor exercitationemut labore.
-                  </p>
-                  <p>
+                  <MotionH3
+                    initial={{ opacity: 0 }}
+                    whileInView={{
+                      opacity: 1,
+                      transition: {
+                        duration: 0.8,
+                      },
+                    }}
+                    className="text-2xl font-bold"
+                  >
+                    Who We Are
+                  </MotionH3>
+                  <MotionP
+                    initial={{ opacity: 0, y: "30px" }}
+                    whileInView={{
+                      opacity: 1,
+                      y: 0,
+                      transition: {
+                        delay: 0.2,
+                        duration: 0.8,
+                      },
+                    }}
+                  >
+                    We have over 15 years of experience Lorem ipsum dolor sit
+                    amet, consectetur adipiscing elit. Aenean Lorem ipsm dolor
+                    sit the power of consectetur adi pisi cing elit, sed do
+                    eiusmod tempor exercitationemut labore.
+                  </MotionP>
+                  <MotionP
+                    initial={{ opacity: 0, y: "50px" }}
+                    whileInView={{
+                      opacity: 1,
+                      y: 0,
+                      transition: {
+                        delay: 0.4,
+                        duration: 0.8,
+                      },
+                    }}
+                  >
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                     Aenean bibendum nec risus et suscipit Curabitur metus ipsum.
-                  </p>
-                  <div className="ml-1">
+                  </MotionP>
+                  <MotionDiv
+                    initial={{ opacity: 0, y: "50px" }}
+                    whileInView={{
+                      opacity: 1,
+                      y: 0,
+                      transition: {
+                        delay: 0.7,
+                        type: "spring",
+                        bounce: 0.5,
+                        duration: 1.2,
+                      },
+                    }}
+                    className="ml-1"
+                  >
                     <OutlineButton title="READ MORE" />
-                  </div>
+                  </MotionDiv>
                 </div>
                 <div className="flex-1">
                   <Image src={videoThumb} alt="video thumb" />
@@ -315,21 +433,64 @@ export default function TabSection() {
                 className="flex flex-col lg:flex-row items-center gap-8 text-center lg:text-start"
               >
                 <div className="flex-1 flex flex-col gap-3 lg:gap-4 text-[#121212]">
-                  <h3 className="text-2xl font-bold">Who We Are</h3>
-                  <p>
-                    In Client Investment We have over 15 years of experience
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Aenean Lorem ipsm dolor sit the power of consectetur adi
-                    pisi cing elit, sed do eiusmod tempor exercitationemut
-                    labore.
-                  </p>
-                  <p>
+                  <MotionH3
+                    initial={{ opacity: 0 }}
+                    whileInView={{
+                      opacity: 1,
+                      transition: {
+                        duration: 0.8,
+                      },
+                    }}
+                    className="text-2xl font-bold"
+                  >
+                    Who We Are
+                  </MotionH3>
+                  <MotionP
+                    initial={{ opacity: 0, y: "30px" }}
+                    whileInView={{
+                      opacity: 1,
+                      y: 0,
+                      transition: {
+                        delay: 0.2,
+                        duration: 0.8,
+                      },
+                    }}
+                  >
+                    We have over 15 years of experience Lorem ipsum dolor sit
+                    amet, consectetur adipiscing elit. Aenean Lorem ipsm dolor
+                    sit the power of consectetur adi pisi cing elit, sed do
+                    eiusmod tempor exercitationemut labore.
+                  </MotionP>
+                  <MotionP
+                    initial={{ opacity: 0, y: "50px" }}
+                    whileInView={{
+                      opacity: 1,
+                      y: 0,
+                      transition: {
+                        delay: 0.4,
+                        duration: 0.8,
+                      },
+                    }}
+                  >
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                     Aenean bibendum nec risus et suscipit Curabitur metus ipsum.
-                  </p>
-                  <div className="ml-1">
+                  </MotionP>
+                  <MotionDiv
+                    initial={{ opacity: 0, y: "50px" }}
+                    whileInView={{
+                      opacity: 1,
+                      y: 0,
+                      transition: {
+                        delay: 0.7,
+                        type: "spring",
+                        bounce: 0.5,
+                        duration: 1.2,
+                      },
+                    }}
+                    className="ml-1"
+                  >
                     <OutlineButton title="READ MORE" />
-                  </div>
+                  </MotionDiv>
                 </div>
                 <div className="flex-1">
                   <Image src={videoThumb} alt="video thumb" />

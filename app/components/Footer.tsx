@@ -96,7 +96,7 @@ const Footer = () => {
                 />
                 <Button
                   radius="full"
-                  className="border border-white bg-primary-color hover:bg-gradient-to-tr from-[#00070f] via-primary-color to-[#6e8fb5] text-white shadow-lg w-max"
+                  className="border border-white bg-primary-color hover:bg-gradient-to-tr from-black via-primary-color to-sky-200 text-white shadow-lg w-max"
                 >
                   SUBSCRIBE
                 </Button>
