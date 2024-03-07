@@ -13,6 +13,7 @@ import logo4 from "../../public/images/about-us/company-logo-4.png";
 import logo5 from "../../public/images/about-us/company-logo-5.png";
 import logo6 from "../../public/images/about-us/company-logo-6.png";
 import CustomerFeedback from "../components/CustomerFeedback/CustomerFeedback";
+import { MotionDiv, MotionP } from "../components/Motion/Motion";
 
 const AboutUsPage = () => {
   return (
@@ -20,7 +21,17 @@ const AboutUsPage = () => {
       <Topbar mainPage="About Us" />
       {/* company Overview */}
       <section className="main-container flex flex-col lg:flex-row items-center gap-8 text-center lg:text-start spacer">
-        <div className="flex-1 flex flex-col gap-3 lg:gap-4 text-[#121212]">
+        <MotionDiv
+          initial={{ opacity: 0, x: "-50px" }}
+          whileInView={{
+            opacity: 1,
+            x: 0,
+            transition: {
+              duration: 1,
+            },
+          }}
+          className="flex-1 flex flex-col gap-3 lg:gap-4 text-[#121212]"
+        >
           <h3 className="text-2xl font-bold">Company Overview</h3>
           <p>
             We have over 15 years of experience Lorem ipsum dolor sit amet,
@@ -35,21 +46,52 @@ const AboutUsPage = () => {
           <div className="ml-1">
             <OutlineButton title="READ MORE" />
           </div>
-        </div>
-        <div className="flex-1">
+        </MotionDiv>
+        <MotionDiv
+          initial={{ opacity: 0, x: "50px" }}
+          whileInView={{
+            opacity: 1,
+            x: 0,
+            transition: {
+              duration: 1,
+            },
+          }}
+          className="flex-1"
+        >
           <Image src={videoThumb} alt="video thumb" />
-        </div>
+        </MotionDiv>
       </section>
       {/* company history  */}
       <section className="w-full bg-secondary-color">
         <div className="main-container spacer flex flex-col gap-3 lg:gap-4">
-          <h3 className="text-2xl font-bold">Company History</h3>
-          <p>
+          <MotionP
+            initial={{ opacity: 0, x: "-50px" }}
+            whileInView={{
+              opacity: 1,
+              x: 0,
+              transition: {
+                duration: 1,
+              },
+            }}
+            className="text-2xl font-bold"
+          >
+            Company History
+          </MotionP>
+          <MotionP
+            initial={{ opacity: 0, x: "50px" }}
+            whileInView={{
+              opacity: 1,
+              x: 0,
+              transition: {
+                duration: 1,
+              },
+            }}
+          >
             It is pleasure, but because those who do not know how to pursue
             pleasure rationally encounter consequences that are extremely
             painful. Nor again is there anyone who loves or pursues or desires
             to obtain pain of itself.
-          </p>
+          </MotionP>
           {/* stepper */}
           <div className="ml-4">
             <ol className="relative text-gray-600 border-s border-gray-300">

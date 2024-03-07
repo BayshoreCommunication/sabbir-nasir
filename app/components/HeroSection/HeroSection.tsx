@@ -7,8 +7,8 @@ const HeroSection = () => {
   const titleArray = ["Money", "Doesn't", "Come", "Without", "Care"];
 
   return (
-    <div className="bg-[url('/images/homepage/hero-background.png')] bg-cover text-center lg:text-start">
-      <div className="main-container py-12 lg:py-48">
+    <div className="bg-[url('/images/homepage/hero-background.png')] bg-fixed bg-cover text-center lg:text-start">
+      <div className="main-container py-12 lg:py-[13.5rem]">
         <div>
           <div className={``}>
             {titleArray.map((title, index) => (
@@ -21,7 +21,7 @@ const HeroSection = () => {
                     delay: index / 10,
                   }}
                   className={`${
-                    index < 2 && "mb-3"
+                    index > 1 && "mt-3"
                   } text-4xl lg:text-7xl font-bold text-primary-color inline-block ${
                     index > 2 && "text-white"
                   }`}
