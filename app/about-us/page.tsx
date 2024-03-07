@@ -13,9 +13,10 @@ import logo4 from "../../public/images/about-us/company-logo-4.png";
 import logo5 from "../../public/images/about-us/company-logo-5.png";
 import logo6 from "../../public/images/about-us/company-logo-6.png";
 import CustomerFeedback from "../components/CustomerFeedback/CustomerFeedback";
-import { MotionDiv, MotionP } from "../components/Motion/Motion";
+import { MotionDiv, MotionLi, MotionP } from "../components/Motion/Motion";
 
 const AboutUsPage = () => {
+  const companyLogo = [logo1, logo2, logo3, logo4, logo5, logo6];
   return (
     <div>
       <Topbar mainPage="About Us" />
@@ -93,9 +94,18 @@ const AboutUsPage = () => {
             to obtain pain of itself.
           </MotionP>
           {/* stepper */}
-          <div className="ml-4">
-            <ol className="relative text-gray-600 border-s border-gray-300">
-              <li className="mb-10 ms-10">
+          <div className="ml-4 mt-2">
+            <ul className="relative text-gray-600 border-s border-gray-300">
+              <MotionLi
+                initial={{ opacity: 0 }}
+                whileInView={{
+                  opacity: 1,
+                  transition: {
+                    duration: 1,
+                  },
+                }}
+                className="mb-10 ms-10"
+              >
                 <div className="absolute flex items-center justify-center w-8 h-8 bg-gray-300 rounded-full -start-4 ring-4 ring-white">
                   <FaBusinessTime />
                 </div>
@@ -112,8 +122,18 @@ const AboutUsPage = () => {
                     </p>
                   </div>
                 </div>
-              </li>
-              <li className="mb-10 ms-10">
+              </MotionLi>
+              <MotionLi
+                initial={{ opacity: 0 }}
+                whileInView={{
+                  opacity: 1,
+                  transition: {
+                    delay: 0.2,
+                    duration: 1,
+                  },
+                }}
+                className="mb-10 ms-10"
+              >
                 <div className="absolute flex items-center justify-center w-8 h-8 bg-gray-300 rounded-full -start-4 ring-4 ring-white">
                   <IoMdBusiness />
                 </div>
@@ -128,8 +148,18 @@ const AboutUsPage = () => {
                     </p>
                   </div>
                 </div>
-              </li>
-              <li className="mb-10 ms-10">
+              </MotionLi>
+              <MotionLi
+                initial={{ opacity: 0 }}
+                whileInView={{
+                  opacity: 1,
+                  transition: {
+                    delay: 0.4,
+                    duration: 1,
+                  },
+                }}
+                className="mb-10 ms-10"
+              >
                 <div className="absolute flex items-center justify-center w-8 h-8 bg-gray-300 rounded-full -start-4 ring-4 ring-white">
                   <IoBusiness />
                 </div>
@@ -146,21 +176,48 @@ const AboutUsPage = () => {
                     </p>
                   </div>
                 </div>
-              </li>
-            </ol>
+              </MotionLi>
+            </ul>
           </div>
         </div>
       </section>
       {/* our partner  */}
       <section className="main-container spacer">
-        <h2 className="text-2xl font-bold text-center mb-4">Our Partners</h2>
+        <MotionP
+          initial={{ opacity: 0, x: "-50px" }}
+          whileInView={{
+            opacity: 1,
+            x: 0,
+            transition: {
+              duration: 1,
+            },
+          }}
+          className="text-3xl font-semibold text-center mb-4"
+        >
+          Our Partners
+        </MotionP>
         <div className="grid grid-cols-3 lg:grid-cols-6 gap-1">
-          <Image src={logo1} alt="logo-image" />
-          <Image src={logo2} alt="logo-image" />
+          {companyLogo.map((logo, index) => (
+            <MotionDiv
+              initial={{ opacity: 0 }}
+              whileInView={{
+                opacity: 1,
+                transition: {
+                  delay: 0.2 * index,
+                  duration: 1,
+                },
+              }}
+              key={index}
+            >
+              <Image src={logo} alt="logo-image" />
+            </MotionDiv>
+          ))}
+
+          {/* <Image src={logo2} alt="logo-image" />
           <Image src={logo3} alt="logo-image" />
           <Image src={logo4} alt="logo-image" />
           <Image src={logo5} alt="logo-image" />
-          <Image src={logo6} alt="logo-image" />
+          <Image src={logo6} alt="logo-image" /> */}
         </div>
       </section>
       {/* customer feedback */}
