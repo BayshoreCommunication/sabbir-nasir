@@ -2,6 +2,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import { RxSlash } from "react-icons/rx";
 import CountUp from "react-countup";
+import { MotionDiv } from "../Motion/Motion";
 
 const HelpingBusiness = () => {
   const countUpRef = useRef(null);
@@ -24,7 +25,22 @@ const HelpingBusiness = () => {
     };
   }, [countUpRef]);
   return (
-    <div
+    <MotionDiv
+      initial={{ opacity: 0, scale: 0.8 }}
+      whileInView={{
+        opacity: 1,
+        scale: 1,
+        transition: {
+          duration: 1,
+          ease: [0, 0.71, 0.2, 1.01],
+          scale: {
+            type: "spring",
+            damping: 8,
+            stiffness: 100,
+            restDelta: 0.001,
+          },
+        },
+      }}
       ref={countUpRef}
       className="w-[100%] sm:w-[90%] md:w-[90%] lg:w-[80%] xl:w-[80%] 2xl:w-[74%] mx-auto bg-[url('/images/homepage/services/helping-small-business.png')] bg-cover py-4 lg:py-16 px-2 lg:px-32"
     >
@@ -64,7 +80,7 @@ const HelpingBusiness = () => {
           <p className="text-xs font-semibold font-mono">Happy Customers</p>
         </div>
       </div>
-    </div>
+    </MotionDiv>
   );
 };
 

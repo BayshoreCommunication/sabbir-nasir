@@ -6,6 +6,7 @@ import Image from "next/image";
 import advisorImg from "../../../public/images/homepage/services/carosel/advisor-icon.svg";
 import consultingImg from "../../../public/images/homepage/services/carosel/consulting-icon.svg";
 import outsourceImg from "../../../public/images/homepage/services/carosel/outsource-icon.svg";
+import { MotionDiv } from "../Motion/Motion";
 
 const ServiceCarosel = () => {
   const settings = {
@@ -54,7 +55,25 @@ const ServiceCarosel = () => {
   };
   return (
     <div className="w-full  h-full">
-      <div className="slider-container gap-4 w-[100%] sm:w-[90%] md:w-[90%] lg:w-[80%] xl:w-[80%] 2xl:w-[74%] mx-auto mb-10 lg:mb-0 lg:mt-3">
+      <MotionDiv
+        initial={{ opacity: 0, scale: 0.8 }}
+        whileInView={{
+          opacity: 1,
+          scale: 1,
+          transition: {
+            duration: 1,
+            ease: [0, 0.71, 0.2, 1.01],
+            // delay: 0.3,
+            scale: {
+              type: "spring",
+              damping: 8,
+              stiffness: 100,
+              restDelta: 0.001,
+            },
+          },
+        }}
+        className="slider-container gap-4 w-[100%] sm:w-[90%] md:w-[90%] lg:w-[80%] xl:w-[80%] 2xl:w-[74%] mx-auto mb-10 lg:mb-0 lg:mt-3"
+      >
         <Slider {...settings}>
           <div>
             <div className="bg-secondary-color shadow-md flex flex-col items-center p-8 gap-y-2 mx-1 lg:mx-3">
@@ -100,7 +119,7 @@ const ServiceCarosel = () => {
             </div>
           </div>
         </Slider>
-      </div>
+      </MotionDiv>
     </div>
   );
 };

@@ -3,6 +3,7 @@ import Image from "next/image";
 import React from "react";
 import whoWeServeImg from "../../../public/images/homepage/services/who-we-serve.png";
 import { CheckboxGroup, Checkbox } from "@nextui-org/react";
+import { MotionDiv } from "../Motion/Motion";
 
 const WhoWeServe = () => {
   const [selected, setSelected] = React.useState(["leaders"]);
@@ -10,10 +11,28 @@ const WhoWeServe = () => {
   return (
     <div className="bg-secondary-color w-full text-center lg:text-start">
       <div className="main-container flex flex-col lg:flex-row items-center gap-x-12">
-        <div className="flex-1 py-5 lg:py-16">
+        <MotionDiv
+          initial={{ x: "-100px" }}
+          whileInView={{
+            x: 0,
+            transition: {
+              duration: 1.2,
+            },
+          }}
+          className="flex-1 py-5 lg:py-16"
+        >
           <Image src={whoWeServeImg} alt="who-we-serve-image" />
-        </div>
-        <div className="flex-1 flex flex-col gap-3">
+        </MotionDiv>
+        <MotionDiv
+          initial={{ x: "100px" }}
+          whileInView={{
+            x: 0,
+            transition: {
+              duration: 1.2,
+            },
+          }}
+          className="flex-1 flex flex-col gap-3"
+        >
           <h3 className="text-2xl font-semibold">Who We Serve</h3>
           <p>
             Lorem ipsum dolor sit amet, consectetur adi pisi cing elit, sed do
@@ -49,7 +68,7 @@ const WhoWeServe = () => {
                 Selected: {selected.join(", ")}
               </p> */}
           </div>
-        </div>
+        </MotionDiv>
       </div>
     </div>
   );

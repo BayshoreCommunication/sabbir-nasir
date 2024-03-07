@@ -1,12 +1,22 @@
 import Image from "next/image";
 import React from "react";
 import meetOurAdvisors from "../../../public/images/homepage/meet-our-advisors.png";
+import { MotionDiv, MotionUl } from "../Motion/Motion";
 
 const WhyChooseUs = () => {
   return (
     <div className="bg-white">
       <div className="main-container spacer flex flex-col gap-4 lg:gap-10">
-        <div>
+        <MotionDiv
+          initial={{ x: "-50px", opacity: 0 }}
+          whileInView={{
+            x: 0,
+            opacity: 1,
+            transition: {
+              duration: 1.2,
+            },
+          }}
+        >
           <h2 className="text-center text-2xl font-semibold mb-2">
             Why Choose Us
           </h2>
@@ -14,8 +24,18 @@ const WhyChooseUs = () => {
             Lorem ipsum dolor sit amet, consectetur adi pisi cing elit, sed do
             eiusmod tempor exercitationemut labore.
           </p>
-        </div>
-        <div className="flex flex-col lg:flex-row gap-x-12 gap-y-4 items-center">
+        </MotionDiv>
+        <MotionDiv
+          initial={{ x: "50px", opacity: 0 }}
+          whileInView={{
+            x: 0,
+            opacity: 1,
+            transition: {
+              duration: 1.2,
+            },
+          }}
+          className="flex flex-col lg:flex-row gap-x-12 gap-y-4 items-center"
+        >
           <div className="lg:flex-[2] xl:flex-1">
             <Image
               className="w-full h-auto"
@@ -40,7 +60,7 @@ const WhyChooseUs = () => {
             <li>Level Up Your Company</li>
             <li>Adopt a BIG System</li>
           </ul>
-        </div>
+        </MotionDiv>
       </div>
     </div>
   );

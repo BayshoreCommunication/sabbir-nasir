@@ -1,10 +1,21 @@
 import React from "react";
 import PrimaryButton from "../Button/PrimaryButton";
+import { MotionDiv } from "../Motion/Motion";
 
 const RequestACall = () => {
   return (
     <div className="my-8 lg:my-16 main-container bg-secondary-color p-2 flex flex-col lg:flex-row gap-x-12 gap-y-4">
-      <div className='flex-1 min-h-full bg-[url("/images/homepage/request-a-call.png")] px-2 lg:px-6 py-2 lg:py-12 bg-cover bg-no-repeat bg-bottom flex flex-col gap-2 lg:gap-4 justify-center text-center lg:text-start'>
+      <MotionDiv
+        initial={{ opacity: 0, x: "-50px" }}
+        whileInView={{
+          opacity: 1,
+          x: 0,
+          transition: {
+            duration: 1,
+          },
+        }}
+        className='flex-1 min-h-full bg-[url("/images/homepage/request-a-call.png")] px-2 lg:px-6 py-2 lg:py-12 bg-cover bg-no-repeat bg-bottom flex flex-col gap-2 lg:gap-4 justify-center text-center lg:text-start'
+      >
         <h4 className="text-2xl font-semibold">Request a Call Back</h4>
         <p>
           Lorem ipsum dolor sit amet, consectetur adi pisi cing elit, sed do
@@ -16,8 +27,18 @@ const RequestACall = () => {
           adipis civelit sed quia non qui dolorem or phone +11 987 654 3210
           ipsum quia dolor sit amet, consectetur.
         </p>
-      </div>
-      <div className="flex-1 lg:pr-10">
+      </MotionDiv>
+      <MotionDiv
+        initial={{ opacity: 0, x: "50px" }}
+        whileInView={{
+          opacity: 1,
+          x: 0,
+          transition: {
+            duration: 1,
+          },
+        }}
+        className="flex-1 lg:pr-10"
+      >
         <form className="w-full flex flex-col gap-4 py-2 lg:py-12">
           <input
             type="text"
@@ -54,7 +75,7 @@ const RequestACall = () => {
             <PrimaryButton>SUBMIT</PrimaryButton>
           </div>
         </form>
-      </div>
+      </MotionDiv>
     </div>
   );
 };

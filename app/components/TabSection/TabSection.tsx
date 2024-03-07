@@ -1,9 +1,10 @@
 "use client";
 import React, { useState } from "react";
-import { Tabs, Tab, Card, CardBody, CardHeader } from "@nextui-org/react";
+import { Tabs, Tab, Card, CardBody } from "@nextui-org/react";
 import OutlineButton from "../Button/OutlineButton";
 import Image from "next/image";
 import videoThumb from "../../../public/images/homepage/video-thumb.jpg.png";
+import { MotionDiv } from "../Motion/Motion";
 
 export default function TabSection() {
   const [selected, setSelected] = useState("money");
@@ -57,11 +58,38 @@ export default function TabSection() {
               </div>
             </>
           }
-          className="main-container m-0 py-4 lg:py-7 h-full"
+          className="main-container m-0 py-4 lg:py-12 h-full"
         >
-          <Card className="rounded-none bg-transparent border-none shadow-none lg:my-4">
-            <CardBody className="border-none">
-              <div className="flex flex-col lg:flex-row items-center gap-8 text-center lg:text-start">
+          <Card className="rounded-none bg-transparent border-none shadow-none lg:my-4 overflow-hidden">
+            <CardBody className="border-none overflow-hidden">
+              <MotionDiv
+                initial={{ opacity: 0, scale: 0.9 }}
+                whileInView={{
+                  opacity: 1,
+                  scale: 1,
+                  transition: {
+                    duration: 0.8,
+                    delay: 0.2,
+                    ease: [0, 0.71, 0.2, 1.01],
+                    stiffness: 100,
+                  },
+                }}
+                // transition={{
+                //   duration: 0.8,
+                //   delay: 0.2,
+                //   ease: [0, 0.71, 0.2, 1.01],
+                //   stiffness: 100,
+                // }}
+                // initial={{ opacity: 0, y: "40px" }}
+                // whileInView={{
+                //   opacity: 1,
+                //   y: 0,
+                //   transition: {
+                //     duration: 1,
+                //   },
+                // }}
+                className="flex flex-col lg:flex-row items-center gap-8 text-center lg:text-start"
+              >
                 <div className="flex-1 flex flex-col gap-3 lg:gap-4 text-[#121212]">
                   <h3 className="text-2xl font-bold">Who We Are</h3>
                   <p>
@@ -81,7 +109,7 @@ export default function TabSection() {
                 <div className="flex-1">
                   <Image src={videoThumb} alt="video thumb" />
                 </div>
-              </div>
+              </MotionDiv>
             </CardBody>
           </Card>
         </Tab>
@@ -124,8 +152,18 @@ export default function TabSection() {
           className="main-container m-0 py-4 lg:py-7 h-full"
         >
           <Card className="rounded-none bg-transparent border-none shadow-none lg:my-4">
-            <CardBody>
-              <div className="flex flex-col lg:flex-row items-center gap-8 text-center lg:text-start">
+            <CardBody className="border-none overflow-hidden">
+              <MotionDiv
+                initial={{ opacity: 0, scale: 0.9 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{
+                  duration: 0.8,
+                  delay: 0.2,
+                  ease: [0, 0.71, 0.2, 1.01],
+                  stiffness: 100,
+                }}
+                className="flex flex-col lg:flex-row items-center gap-8 text-center lg:text-start"
+              >
                 <div className="flex-1 flex flex-col gap-3 lg:gap-4 text-[#121212]">
                   <h3 className="text-2xl font-bold">Who We Are</h3>
                   <p>
@@ -145,7 +183,7 @@ export default function TabSection() {
                 <div className="flex-1">
                   <Image src={videoThumb} alt="video thumb" />
                 </div>
-              </div>
+              </MotionDiv>
             </CardBody>
           </Card>
         </Tab>
@@ -190,8 +228,18 @@ export default function TabSection() {
           className="main-container m-0 py-4 lg:py-7 h-full"
         >
           <Card className="rounded-none bg-transparent border-none shadow-none lg:my-4">
-            <CardBody>
-              <div className="flex flex-col lg:flex-row items-center gap-8 text-center lg:text-start">
+            <CardBody className="border-none overflow-hidden">
+              <MotionDiv
+                initial={{ opacity: 0, scale: 0.9 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{
+                  duration: 0.8,
+                  delay: 0.2,
+                  ease: [0, 0.71, 0.2, 1.01],
+                  stiffness: 100,
+                }}
+                className="flex flex-col lg:flex-row items-center gap-8 text-center lg:text-start"
+              >
                 <div className="flex-1 flex flex-col gap-3 lg:gap-4 text-[#121212]">
                   <h3 className="text-2xl font-bold">Who We Are</h3>
                   <p>
@@ -211,7 +259,7 @@ export default function TabSection() {
                 <div className="flex-1">
                   <Image src={videoThumb} alt="video thumb" />
                 </div>
-              </div>
+              </MotionDiv>
             </CardBody>
           </Card>
         </Tab>
@@ -254,8 +302,18 @@ export default function TabSection() {
           className="main-container m-0 py-4 lg:py-7 h-full"
         >
           <Card className="rounded-none bg-transparent border-none shadow-none lg:my-4">
-            <CardBody>
-              <div className="flex flex-col lg:flex-row items-center gap-8 text-center lg:text-start">
+            <CardBody className="border-none overflow-hidden">
+              <MotionDiv
+                initial={{ opacity: 0, scale: 0.9 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{
+                  duration: 0.8,
+                  delay: 0.2,
+                  ease: [0, 0.71, 0.2, 1.01],
+                  stiffness: 100,
+                }}
+                className="flex flex-col lg:flex-row items-center gap-8 text-center lg:text-start"
+              >
                 <div className="flex-1 flex flex-col gap-3 lg:gap-4 text-[#121212]">
                   <h3 className="text-2xl font-bold">Who We Are</h3>
                   <p>
@@ -276,7 +334,7 @@ export default function TabSection() {
                 <div className="flex-1">
                   <Image src={videoThumb} alt="video thumb" />
                 </div>
-              </div>
+              </MotionDiv>
             </CardBody>
           </Card>
         </Tab>
