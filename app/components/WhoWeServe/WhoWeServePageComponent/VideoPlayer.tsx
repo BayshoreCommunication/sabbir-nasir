@@ -11,7 +11,7 @@ const VideoPlayer = () => {
           ref={videoRef}
           width="100%"
           height="240"
-          className="h-full sm:h-[34rem] border rounded-md shadow-medium"
+          className="h-full sm:h-[38rem] border rounded-md shadow-medium"
           controls
         >
           <source src={"/videos/trip-law.mp4"} type="video/mp4" />

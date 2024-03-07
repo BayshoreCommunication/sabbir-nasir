@@ -4,6 +4,7 @@ import { FaLocationDot } from "react-icons/fa6";
 import { FiPhoneCall } from "react-icons/fi";
 import { CgMail } from "react-icons/cg";
 import PrimaryButton from "../components/Button/PrimaryButton";
+import { MotionDiv } from "../components/Motion/Motion";
 
 const ContactUs = () => {
   return (
@@ -12,23 +13,64 @@ const ContactUs = () => {
       <section className="main-container spacer">
         <div className="grid grid-cols-1 lg:grid-cols-2 items-center justify-center gap-6 lg:gap-12">
           <div className="flex flex-col gap-3">
-            <div className="bg-white shadow-medium p-3 flex flex-col gap-2">
+            <MotionDiv
+              initial={{ opacity: 0, y: "50px" }}
+              whileInView={{
+                opacity: 1,
+                y: 0,
+                transition: {
+                  duration: 1,
+                },
+              }}
+              className="bg-white shadow-medium p-3 flex flex-col gap-2"
+            >
               <FaLocationDot size={20} />
               <h6 className="font-semibold">Your Company location here</h6>
               <p className="text-gray-400 text-xs font-medium">Our Location</p>
-            </div>
-            <div className="bg-white shadow-medium p-3 flex flex-col gap-2">
+            </MotionDiv>
+            <MotionDiv
+              initial={{ opacity: 0, y: "50px" }}
+              whileInView={{
+                opacity: 1,
+                y: 0,
+                transition: {
+                  delay: 0.3,
+                  duration: 0.8,
+                },
+              }}
+              className="bg-white shadow-medium p-3 flex flex-col gap-2"
+            >
               <FiPhoneCall size={18} />
               <h6 className="font-semibold">(813) 560-3005</h6>
               <p className="text-gray-400 text-xs font-medium">Let’s Talk</p>
-            </div>
-            <div className="bg-white shadow-medium p-3 flex flex-col gap-2">
+            </MotionDiv>
+            <MotionDiv
+              initial={{ opacity: 0, y: "50px" }}
+              whileInView={{
+                opacity: 1,
+                y: 0,
+                transition: {
+                  delay: 0.6,
+                  duration: 0.8,
+                },
+              }}
+              className="bg-white shadow-medium p-3 flex flex-col gap-2"
+            >
               <CgMail size={20} />
               <h6 className="font-semibold">sabbirnasir@gmail.com</h6>
               <p className="text-gray-400 text-xs font-medium">Drop a Line</p>
-            </div>
+            </MotionDiv>
           </div>
-          <div>
+          <MotionDiv
+            initial={{ opacity: 0, y: "-50px" }}
+            whileInView={{
+              opacity: 1,
+              y: 0,
+              transition: {
+                duration: 1,
+              },
+            }}
+          >
             <form className="w-full flex flex-col gap-4">
               <input
                 type="text"
@@ -65,7 +107,7 @@ const ContactUs = () => {
               * I understand that the use of this form for communication with
               Digital Xperience Group (DXG).
             </p>
-          </div>
+          </MotionDiv>
         </div>
       </section>
       <section>

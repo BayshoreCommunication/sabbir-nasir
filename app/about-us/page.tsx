@@ -13,7 +13,12 @@ import logo4 from "../../public/images/about-us/company-logo-4.png";
 import logo5 from "../../public/images/about-us/company-logo-5.png";
 import logo6 from "../../public/images/about-us/company-logo-6.png";
 import CustomerFeedback from "../components/CustomerFeedback/CustomerFeedback";
-import { MotionDiv, MotionLi, MotionP } from "../components/Motion/Motion";
+import {
+  MotionDiv,
+  MotionH3,
+  MotionLi,
+  MotionP,
+} from "../components/Motion/Motion";
 
 const AboutUsPage = () => {
   const companyLogo = [logo1, logo2, logo3, logo4, logo5, logo6];
@@ -22,37 +27,69 @@ const AboutUsPage = () => {
       <Topbar mainPage="About Us" />
       {/* company Overview */}
       <section className="main-container flex flex-col lg:flex-row items-center gap-8 text-center lg:text-start spacer">
-        <MotionDiv
-          initial={{ opacity: 0, x: "-50px" }}
-          whileInView={{
-            opacity: 1,
-            x: 0,
-            transition: {
-              duration: 1,
-            },
-          }}
-          className="flex-1 flex flex-col gap-3 lg:gap-4 text-[#121212]"
-        >
-          <h3 className="text-2xl font-bold">Company Overview</h3>
-          <p>
+        <div className="flex-1 flex flex-col gap-3 lg:gap-4 text-[#121212]">
+          <MotionH3
+            initial={{ opacity: 0 }}
+            whileInView={{
+              opacity: 1,
+              transition: {
+                duration: 0.5,
+              },
+            }}
+            className="text-2xl font-bold"
+          >
+            Company Overview
+          </MotionH3>
+          <MotionP
+            initial={{ opacity: 0, y: "30px" }}
+            whileInView={{
+              opacity: 1,
+              y: 0,
+              transition: {
+                delay: 0.2,
+                duration: 0.5,
+              },
+            }}
+          >
             We have over 15 years of experience Lorem ipsum dolor sit amet,
             consectetur adipiscing elit. Aenean Lorem ipsm dolor sit the power
             of consectetur adi pisi cing elit, sed do eiusmod tempor
             exercitationemut labore.
-          </p>
-          <p>
+          </MotionP>
+          <MotionP
+            initial={{ opacity: 0, y: "50px" }}
+            whileInView={{
+              opacity: 1,
+              y: 0,
+              transition: {
+                delay: 0.4,
+                duration: 0.5,
+              },
+            }}
+          >
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
             bibendum nec risus et suscipit Curabitur metus ipsum.
-          </p>
-          <div className="ml-1">
+          </MotionP>
+          <MotionDiv
+            initial={{ opacity: 0, y: "50px" }}
+            whileInView={{
+              opacity: 1,
+              y: 0,
+              transition: {
+                delay: 0.6,
+                duration: 0.5,
+              },
+            }}
+            className="ml-1"
+          >
             <OutlineButton title="READ MORE" />
-          </div>
-        </MotionDiv>
+          </MotionDiv>
+        </div>
         <MotionDiv
-          initial={{ opacity: 0, x: "50px" }}
+          initial={{ opacity: 0, y: "-50px" }}
           whileInView={{
             opacity: 1,
-            x: 0,
+            y: 0,
             transition: {
               duration: 1,
             },

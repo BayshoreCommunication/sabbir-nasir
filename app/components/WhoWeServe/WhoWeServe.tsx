@@ -7,7 +7,6 @@ import { MotionDiv } from "../Motion/Motion";
 
 const WhoWeServe = () => {
   const [selected, setSelected] = React.useState(["leaders"]);
-  //   console.log(selected.join(", "));
   return (
     <div className="bg-secondary-color w-full text-center lg:text-start">
       <div className="main-container flex flex-col lg:flex-row items-center gap-x-12">

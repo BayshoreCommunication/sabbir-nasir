@@ -5,16 +5,37 @@ import VideoPlayer from "../components/WhoWeServe/WhoWeServePageComponent/VideoP
 import Image from "next/image";
 import whoWeServeImg from "../../public/images/who-we-serve/who-we-serve.png";
 import CustomerFeedback from "../components/CustomerFeedback/CustomerFeedback";
+import { MotionDiv, MotionSection } from "../components/Motion/Motion";
 
 const WhoWeServe = () => {
   return (
     <div>
       <Topbar mainPage="Who We Serve" />
-      <section className="main-container spacer">
+      <MotionSection
+        initial={{ opacity: 0, y: "-100px" }}
+        whileInView={{
+          opacity: 1,
+          y: 0,
+          transition: {
+            duration: 1,
+          },
+        }}
+        className="main-container spacer"
+      >
         <VideoPlayer />
-      </section>
+      </MotionSection>
       <section className="main-container flex flex-col lg:flex-row items-center gap-6 lg:gap-12">
-        <div className="flex-[1.5] flex flex-col gap-5">
+        <MotionDiv
+          initial={{ opacity: 0, x: "-50px" }}
+          whileInView={{
+            opacity: 1,
+            x: 0,
+            transition: {
+              duration: 1,
+            },
+          }}
+          className="flex-[1.5] flex flex-col gap-5"
+        >
           <p>
             {`Our diverse team of audiovisual technical producers, directors,
             project managers, engineers, technicians, and creatives brings a
@@ -37,10 +58,20 @@ const WhoWeServe = () => {
             turning your vision into a dynamic reality that leaves a lasting
             impression.
           </p>
-        </div>
-        <div className="flex-1">
+        </MotionDiv>
+        <MotionDiv
+          initial={{ opacity: 0, x: "50px" }}
+          whileInView={{
+            opacity: 1,
+            x: 0,
+            transition: {
+              duration: 1,
+            },
+          }}
+          className="flex-1"
+        >
           <Image src={whoWeServeImg} alt="who-we-serve-image" />
-        </div>
+        </MotionDiv>
       </section>
       <section>
         <CustomerFeedback />
