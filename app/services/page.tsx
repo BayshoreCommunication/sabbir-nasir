@@ -72,6 +72,24 @@ const ServicesPage = () => {
             of consectetur adi pisi cing elit, sed do eiusmod tempor
             xercitationemut labore. Lorem ipsum dolor sit amet, consectetur`,
     },
+    {
+      icon: <TbBrand4Chan size={24} />,
+      title: "Branding Consultancy",
+      link: `/services/business-problem-solving-consultancy`,
+      description: `In Branding Consultancy We have over 15 years of experience Lorem ipsum dolor sit amet,
+            consectetur adipiscing elit. Aenean Lorem ipsm dolor sit the power
+            of consectetur adi pisi cing elit, sed do eiusmod tempor
+            xercitationemut labore. Lorem ipsum dolor sit amet, consectetur`,
+    },
+    {
+      icon: <TbBrand4Chan size={24} />,
+      title: "Branding Consultancy",
+      link: `/services/business-problem-solving-consultancy`,
+      description: `In Branding Consultancy We have over 15 years of experience Lorem ipsum dolor sit amet,
+            consectetur adipiscing elit. Aenean Lorem ipsm dolor sit the power
+            of consectetur adi pisi cing elit, sed do eiusmod tempor
+            xercitationemut labore. Lorem ipsum dolor sit amet, consectetur`,
+    },
   ];
   return (
     <div className="overflow-hidden">
