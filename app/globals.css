@@ -31,3 +31,8 @@
 .hola-test > div > div > div {
   padding: 0;
 }
+/* slick  */
+.slick-prev:before,
+.slick-next:before {
+  color: #132841 !important;
+}

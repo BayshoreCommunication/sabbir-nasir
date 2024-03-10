@@ -69,7 +69,7 @@ export default function NavContent() {
                 <Image
                   src={logo}
                   alt="sabbir-nasir-logo"
-                  className="h-[3.0rem] w-auto"
+                  className="h-[3.5rem] w-auto"
                 />
               </Link>
             </NavbarBrand>

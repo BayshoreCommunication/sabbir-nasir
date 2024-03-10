@@ -2,17 +2,23 @@ import React from "react";
 import logo from "../../public/images/logo/sabbir-nasir-svg-footer-logo.svg";
 import Image from "next/image";
 import { Button } from "@nextui-org/react";
-import { FaFacebook, FaInstagram, FaLinkedin, FaYoutube } from "react-icons/fa";
+import {
+  FaFacebook,
+  FaFacebookF,
+  FaInstagram,
+  FaLinkedin,
+  FaYoutube,
+} from "react-icons/fa";
 
 const Footer = () => {
   return (
     <main className="bg-primary-color text-white ">
       <div className="main-container flex flex-col gap-4 py-3 lg:py-10">
-        <div className="flex flex-col lg:flex-row gap-4">
+        <div className="flex flex-col lg:flex-row lg:items-center gap-4 lg:gap-6">
           <Image
             src={logo}
             alt="sabbir-nasir-logo"
-            className="h-[3.0rem] w-auto"
+            className="h-[3.5rem] w-auto"
           />
           <p className="text-sm">
             Lorem ipsum dolor sit amet, consectetur adi pisi cing elit, sed do
@@ -104,18 +110,34 @@ const Footer = () => {
             </div>
             <div className="flex justify-center py-3 bg-[#0F2136]">
               <div className="flex gap-2">
-                <div className="bg-white w-7 h-7 rounded-full flex items-center justify-center">
-                  <FaFacebook color="#132841" />
-                </div>
-                <div className="bg-white w-7 h-7 rounded-full flex items-center justify-center">
-                  <FaYoutube color="#132841" />
-                </div>
-                <div className="bg-white w-7 h-7 rounded-full flex items-center justify-center">
-                  <FaInstagram color="#132841" />
-                </div>
-                <div className="bg-white w-7 h-7 rounded-full flex items-center justify-center">
-                  <FaLinkedin color="#132841" />
-                </div>
+                <a
+                  href="https://www.bayshorecommunication.com/"
+                  target="_blank"
+                  className="bg-white w-8 h-8 rounded-full flex items-center justify-center text-primary-color hover:text-white hover:bg-primary-color hover:border border-white"
+                >
+                  <FaFacebookF />
+                </a>
+                <a
+                  href="https://www.bayshorecommunication.com/"
+                  target="_blank"
+                  className="bg-white w-8 h-8 rounded-full flex items-center justify-center text-primary-color hover:text-white hover:bg-primary-color hover:border border-white"
+                >
+                  <FaYoutube />
+                </a>
+                <a
+                  href="https://www.bayshorecommunication.com/"
+                  target="_blank"
+                  className="bg-white w-8 h-8 rounded-full flex items-center justify-center text-primary-color hover:text-white hover:bg-primary-color hover:border border-white"
+                >
+                  <FaInstagram />
+                </a>
+                <a
+                  href="https://www.bayshorecommunication.com/"
+                  target="_blank"
+                  className="bg-white w-8 h-8 rounded-full flex items-center justify-center text-primary-color hover:text-white hover:bg-primary-color hover:border border-white"
+                >
+                  <FaLinkedin />
+                </a>
               </div>
             </div>
           </div>
