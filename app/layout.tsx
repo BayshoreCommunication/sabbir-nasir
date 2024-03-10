@@ -27,7 +27,7 @@ export default function RootLayout({
       <body className={openSans.className}>
         <Providers>
           <Navbar />
-          <main>{children}</main>
+          <main className="overflow-x-hidden">{children}</main>
           <Footer />
         </Providers>
       </body>
