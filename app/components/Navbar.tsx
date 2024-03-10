@@ -88,7 +88,7 @@ export default function NavContent() {
                 <Link
                   className={`hover:text-primary-color font-medium text-black ${
                     pathname === item.link &&
-                    "text-primary-color border-b border-primary-color"
+                    "text-primary-color underline underline-offset-4"
                   }`}
                   href={item.link}
                 >

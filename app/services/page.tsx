@@ -98,11 +98,14 @@ const ServicesPage = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 h-full bg-white">
           {serviceData.map((service, index) => (
             <MotionDiv
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{
-                delay: 0.2 * index,
-                duration: 0.8,
+              initial={{ opacity: 0, y: 100 }}
+              whileInView={{
+                opacity: 1,
+                y: 0,
+                transition: {
+                  duration: 0.8,
+                  delay: 0.2 * index,
+                },
               }}
               key={index}
               //   className="bg-secondary-color"
