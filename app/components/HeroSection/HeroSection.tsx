@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Fragment } from "react";
 import PrimaryButton from "../Button/PrimaryButton";
 import SecondaryButton from "../Button/SecondaryButton";
 import { MotionDiv, MotionP, MotionSpan } from "../Motion/Motion";
@@ -12,7 +12,7 @@ const HeroSection = () => {
         <div>
           <div className={``}>
             {titleArray.map((title, index) => (
-              <>
+              <Fragment key={index}>
                 <MotionSpan
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
@@ -25,7 +25,6 @@ const HeroSection = () => {
                   } text-4xl lg:text-7xl font-bold text-primary-color inline-block ${
                     index > 2 && "text-white"
                   }`}
-                  key={index}
                 >
                   <span
                     className={`tracking-wider ${
@@ -38,7 +37,7 @@ const HeroSection = () => {
                   </span>
                 </MotionSpan>
                 {index === 1 && <br />}
-              </>
+              </Fragment>
             ))}
           </div>
 

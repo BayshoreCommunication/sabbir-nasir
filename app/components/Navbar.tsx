@@ -83,8 +83,8 @@ export default function NavContent() {
           </NavbarContent>
 
           <NavbarContent className="hidden lg:flex gap-5" justify="end">
-            {navItems.map((item) => (
-              <NavbarItem key={item.title}>
+            {navItems.map((item, index) => (
+              <NavbarItem key={index}>
                 <Link
                   className={`hover:text-primary-color font-medium text-black ${
                     pathname === item.link &&
@@ -105,7 +105,7 @@ export default function NavContent() {
 
           <NavbarMenu className="h-[3rem] pt-8">
             {navItems.map((item, index) => (
-              <NavbarMenuItem key={item.title} className="pt-1">
+              <NavbarMenuItem key={index} className="pt-1">
                 <Link
                   onClick={() => setIsMenuOpen(false)}
                   // className="w-full text-base"
