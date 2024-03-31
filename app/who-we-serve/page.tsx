@@ -28,7 +28,7 @@ const WhoWeServe = () => {
           height="400"
           src="https://www.youtube.com/embed/_gwtroFSQAo?si=0hKhalHb_W7EAR2x"
           title="Sabbir Nasir at Live with a Purpose"
-          // frameBorder="0"
+          frameBorder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           referrerPolicy="strict-origin-when-cross-origin"
           allowFullScreen
