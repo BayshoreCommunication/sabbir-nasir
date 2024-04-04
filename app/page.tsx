@@ -20,7 +20,7 @@ export default function Home() {
         <HelpingBusiness />
       </div>
       <OurServices />
-      <div className=" lg:-translate-y-20">
+      <div className="lg:-translate-y-20">
         <ServiceCarosel />
       </div>
       <WhoWeServe />
