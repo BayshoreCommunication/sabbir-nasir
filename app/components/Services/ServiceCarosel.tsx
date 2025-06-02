@@ -55,8 +55,8 @@ const ServiceCarosel = () => {
               <Image src={advisorImg} alt="advisor image" />
               <h2 className="text-xl font-semibold">Advisor</h2>
               <p className="text-center">
-                Lorem ipsum dolor sit amet, Let it it floats back to you, Let it
-                it floats back to you.
+                Providing expert guidance to support your strategic decisions
+                and growth.
               </p>
             </div>
           </div>
@@ -66,8 +66,8 @@ const ServiceCarosel = () => {
               <Image src={consultingImg} alt="advisor image" />
               <h2 className="text-xl font-semibold">Consulting</h2>
               <p className="text-center">
-                Lorem ipsum dolor sit amet, Let it it floats back to you, Let it
-                it floats back to you.
+                Tailored solutions to address your unique business challenges
+                and opportunities.
               </p>
             </div>
           </div>
@@ -77,8 +77,8 @@ const ServiceCarosel = () => {
               <Image src={outsourceImg} alt="advisor image" />
               <h2 className="text-xl font-semibold">Outsource CEO</h2>
               <p className="text-center">
-                Lorem ipsum dolor sit amet, Let it it floats back to you, Let it
-                it floats back to you.
+                Offering experienced leadership on demand to steer your
+                organization effectively without a full-time hire.
               </p>
             </div>
           </div>
@@ -88,8 +88,8 @@ const ServiceCarosel = () => {
               <Image src={consultingImg} alt="advisor image" />
               <h2 className="text-xl font-semibold">Consult CEO</h2>
               <p className="text-center">
-                Lorem ipsum dolor sit amet, Let it it floats back to you, Let it
-                it floats back to you.
+                Strategic CEO-level consulting to optimize leadership,
+                operations, and long-term vision.
               </p>
             </div>
           </div>

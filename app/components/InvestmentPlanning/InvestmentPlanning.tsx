@@ -36,9 +36,13 @@ const InvestmentPlanning = () => {
         >
           <h3 className="text-xl font-semibold">Why Our Consulting</h3>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adi pisi cing elit, sed do
-            eiusmod tempor exercitationemut labore. Love life’s sweetest reward
-            Let it flow it floats back to you.
+            Our consulting stands out because we provide clear, actionable
+            advice tailored to your needs. We combine strategy with emotional
+            insight to help you navigate challenges and achieve growth.
+          </p>
+          <p>
+            We work closely with you to ensure practical solutions that deliver
+            real impact.
           </p>
         </MotionDiv>
       </div>
@@ -57,9 +61,13 @@ const InvestmentPlanning = () => {
         >
           <h3 className="text-xl font-semibold">Investment Planning</h3>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adi pisi cing elit, sed do
-            eiusmod tempor exercitationemut labore. Love life’s sweetest reward
-            Let it flow it floats back to you.
+            We assist you in planning your investments carefully to align with
+            your long-term goals. Our approach balances risk and opportunity to
+            help you grow steadily and confidently.
+          </p>
+          <p>
+            Our goal is to help you make smart decisions that bring meaningful
+            results.
           </p>
         </MotionDiv>
         <MotionDiv

@@ -1,6 +1,7 @@
 import React from "react";
 import PrimaryButton from "../Button/PrimaryButton";
 import { MotionDiv } from "../Motion/Motion";
+import Link from "next/link";
 
 const RequestACall = () => {
   return (
@@ -18,14 +19,19 @@ const RequestACall = () => {
       >
         <h4 className="text-2xl font-semibold">Request a Call Back</h4>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adi pisi cing elit, sed do
-          eiusmod tempor exercitationemut.
+          We are here to assist you with any questions or to discuss your
+          specific needs. Please leave your details, and our team will get back
+          to you promptly.
         </p>
         <p className="">
-          <span className="font-semibold">For Investment:</span> Neque porro
-          quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur,
-          adipis civelit sed quia non qui dolorem or phone +11 987 654 3210
-          ipsum quia dolor sit amet, consectetur.
+          <span className="font-semibold">For Investment Inquiries:</span> If
+          you have questions about investment planning or related services, feel
+          free to{" "}
+          <Link href="/contact-us" className="text-blue-700 underline">
+            contact us
+          </Link>{" "}
+          or send us a message. We’re committed to providing you with the
+          support and information you need
         </p>
       </MotionDiv>
       <MotionDiv

@@ -14,7 +14,7 @@ export const inter = Inter({
 
 export const metadata: Metadata = {
   title: "Sabbir Nasir",
-  description: "Money Doesn't Come Without Care",
+  description: "Success Doesn’t Happen Without Strategy",
   metadataBase: new URL("https://sabbir-nasir.vercel.app"),
   alternates: {
     canonical: "/",

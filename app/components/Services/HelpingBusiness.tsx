@@ -48,8 +48,8 @@ const HelpingBusiness = () => {
         Helping Small Businesses
       </h2>
       <p className="text-center text-sm mb-4 lg:mb-10 mt-2">
-        Lorem ipsum dolor sit amet, consectetur adi pisi cing elit, sed do
-        eiusmod tempor exercitationemut labore.
+        We provide tailored consulting services to help small businesses
+        overcome challenges, improve operations, and achieve sustainable growth.
       </p>
       <div className="grid grid-cols-2 lg:grid-cols-7 justify-center gap-y-4 items-center text-5xl font-bold text-center">
         <div>

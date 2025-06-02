@@ -21,10 +21,8 @@ const Footer = () => {
             className="h-[3.5rem] w-auto"
           />
           <p className="text-sm">
-            Lorem ipsum dolor sit amet, consectetur adi pisi cing elit, sed do
-            eiusmod tempor Neque porro quisquam est, qui dolorem ipsum quia
-            dolor sit amet, consectetur, adipis civelit sed quia non qui dolorem
-            or phone +11 987 654 3210 ipsum quia dolor sit amet, consectetur.
+            Need expert guidance? Get in touch with our team today or call
+            01973-062749 for personalized support and consulting services.
           </p>
         </div>
 
@@ -32,12 +30,12 @@ const Footer = () => {
           <div className="flex-[3] flex flex-col gap-4">
             <div className="bg-[#0F2136] flex flex-col lg:flex-row gap-y-4 justify-around py-2 px-2 lg:px-0">
               <div>
-                <p>+1 900 234 567</p>
-                <small>supprt@advisor.com</small>
+                <p>+88 01973-062749</p>
+                <small>sabbir@teamsabbirnasir.com</small>
               </div>
               <div>
-                <p>Manhattan Hall,</p>
-                <small>Advisor Ltd 1258, Melbourne, australia</small>
+                <p>House 21, Road 1, Block A,</p>
+                <small>Aftab Nagar, Dhaka, Bangladesh</small>
               </div>
             </div>
             <div className="flex flex-col lg:flex-row gap-y-4 lg:gap-y-0 lg:gap-x-10">
@@ -88,8 +86,8 @@ const Footer = () => {
             <div className="bg-[#0C1929] p-3 lg:p-6 flex flex-col gap-3">
               <h4 className="text-lg">Our Newsletter</h4>
               <p className="text-sm">
-                Lorem ipsum dolor sit amet, consectetur adi pisi cing elit, sed
-                do eiusmod.
+                Stay informed with the latest insights, strategies, updates and
+                receive expert tips from Team Sabbir Nasir to your inbox.
               </p>
               <form action="#" className="flex flex-col gap-2">
                 <input
@@ -111,28 +109,28 @@ const Footer = () => {
             <div className="flex justify-center py-3 bg-[#0F2136]">
               <div className="flex gap-2">
                 <a
-                  href="https://www.bayshorecommunication.com/"
+                  href="https://www.facebook.com/sabbirnasirassociates"
                   target="_blank"
                   className="bg-white w-8 h-8 rounded-full flex items-center justify-center text-primary-color hover:text-white hover:bg-primary-color hover:border border-white"
                 >
                   <FaFacebookF />
                 </a>
                 <a
-                  href="https://www.bayshorecommunication.com/"
+                  href="https://www.youtube.com/channel/UCBCJ4RGRj0DmknwSe1Rjqcg"
                   target="_blank"
                   className="bg-white w-8 h-8 rounded-full flex items-center justify-center text-primary-color hover:text-white hover:bg-primary-color hover:border border-white"
                 >
                   <FaYoutube />
                 </a>
                 <a
-                  href="https://www.bayshorecommunication.com/"
+                  href="https://www.instagram.com/associatessabbirnasir/"
                   target="_blank"
                   className="bg-white w-8 h-8 rounded-full flex items-center justify-center text-primary-color hover:text-white hover:bg-primary-color hover:border border-white"
                 >
                   <FaInstagram />
                 </a>
                 <a
-                  href="https://www.bayshorecommunication.com/"
+                  href="https://www.linkedin.com/company/sabbir-nasir-associates/"
                   target="_blank"
                   className="bg-white w-8 h-8 rounded-full flex items-center justify-center text-primary-color hover:text-white hover:bg-primary-color hover:border border-white"
                 >
@@ -145,7 +143,7 @@ const Footer = () => {
       </div>
       <div className="bg-white py-3 text-sm text-center">
         <div className="flex flex-col lg:flex-row gap-1 justify-between text-black main-container">
-          <p>Copyright © 2024 Sabbir Nasir. All rights reserved.</p>
+          <p>Copyright © 2025 Sabbir Nasir. All rights reserved.</p>
           <p>
             Designed & Developed By{" "}
             <a

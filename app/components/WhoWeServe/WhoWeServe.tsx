@@ -34,8 +34,9 @@ const WhoWeServe = () => {
         >
           <h3 className="text-2xl font-semibold">Who We Serve</h3>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adi pisi cing elit, sed do
-            eiusmod tempor exercitationemut labore.
+            We work with a diverse range of clients including small businesses,
+            entrepreneurs, executives, and organizations seeking strategic
+            guidance and growth solutions.
           </p>
           <div className="flex flex-col gap-3 mb-5 lg:mb-0 text-start">
             <CheckboxGroup

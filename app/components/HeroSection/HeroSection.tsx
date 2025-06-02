@@ -2,9 +2,10 @@ import React, { Fragment } from "react";
 import PrimaryButton from "../Button/PrimaryButton";
 import SecondaryButton from "../Button/SecondaryButton";
 import { MotionDiv, MotionP, MotionSpan } from "../Motion/Motion";
+import Link from "next/link";
 
 const HeroSection = () => {
-  const titleArray = ["Money", "Doesn't", "Come", "Without", "Care"];
+  const titleArray = ["Success", "Doesn't", "Happen", "Without", "Strategy"];
 
   return (
     <div className="bg-[url('/images/homepage/hero-background.png')] bg-fixed bg-cover text-center lg:text-start">
@@ -49,8 +50,7 @@ const HeroSection = () => {
             }}
             className="font-semibold my-6"
           >
-            Finding your next Financial Advisor is as easy as counting from one
-            to five.
+            Finding your trusted partner is as simple as one, two, three.
           </MotionP>
         </div>
         <MotionDiv
@@ -64,8 +64,12 @@ const HeroSection = () => {
           }}
           className="flex justify-center lg:justify-start gap-2 lg:gap-4"
         >
-          <PrimaryButton>READ MORE</PrimaryButton>
-          <SecondaryButton>CONTACT US</SecondaryButton>
+          <Link href="/about-us">
+            <PrimaryButton>READ MORE</PrimaryButton>
+          </Link>
+          <Link href="/contact-us">
+            <SecondaryButton>CONTACT US</SecondaryButton>
+          </Link>
         </MotionDiv>
       </div>
     </div>

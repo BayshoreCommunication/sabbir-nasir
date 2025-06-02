@@ -43,9 +43,9 @@ export default function TabSection() {
                   1
                 </span>
                 <div className="text-start">
-                  <p>Money Care</p>
+                  <p>Vision & Strategy</p>
                   <small className="font-normal">
-                    Finding your Next Advisor
+                    Finding Your Next Consultant with Confidence
                   </small>
                 </div>
               </div>
@@ -100,10 +100,10 @@ export default function TabSection() {
                       },
                     }}
                   >
-                    We have over 15 years of experience Lorem ipsum dolor sit
-                    amet, consectetur adipiscing elit. Aenean Lorem ipsm dolor
-                    sit the power of consectetur adi pisi cing elit, sed do
-                    eiusmod tempor exercitationemut labore.
+                    We have over 20 years of experience in strategic consulting,
+                    emotional intelligence coaching, and leadership development.
+                    Our team helps individuals and organizations find clear,
+                    practical solutions to reach their goals.
                   </MotionP>
                   <MotionP
                     initial={{ opacity: 0, y: "50px" }}
@@ -116,8 +116,8 @@ export default function TabSection() {
                       },
                     }}
                   >
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Aenean bibendum nec risus et suscipit Curabitur metus ipsum.
+                    We focus on combining real-world knowledge with a thoughtful
+                    approach to long lasting success.
                   </MotionP>
                   <MotionDiv
                     initial={{ opacity: 0, y: "50px" }}
@@ -164,8 +164,10 @@ export default function TabSection() {
                   2
                 </span>
                 <div className="text-start">
-                  <p>Friendly Assistance</p>
-                  <small className="font-normal">Export Financial Advice</small>
+                  <p>Personalized Guidance</p>
+                  <small className="font-normal">
+                    Expert Coaching for Your Unique Challenges
+                  </small>
                 </div>
               </div>
               <div
@@ -282,9 +284,9 @@ export default function TabSection() {
                   3
                 </span>
                 <div className="text-start">
-                  <p>Our Experience</p>
+                  <p>Proven Expertise</p>
                   <small className="font-normal">
-                    We have 15 Years Experience
+                    Backed by Over 20 Years of Leadership Experience
                   </small>
                 </div>
               </div>
@@ -402,8 +404,10 @@ export default function TabSection() {
                   4
                 </span>
                 <div className="text-start">
-                  <p>Client Investment</p>
-                  <small className="font-normal">Doing the right thing</small>
+                  <p>Client Success</p>
+                  <small className="font-normal">
+                    Committed to Doing What Truly Matters
+                  </small>
                 </div>
               </div>
               <div

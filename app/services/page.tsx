@@ -129,7 +129,8 @@ const ServicesPage = () => {
               //   className="bg-secondary-color"
             >
               <Link
-                href={service.link}
+                href="#"
+                // href={service.link}
                 className="shadow-medium hover:shadow-large transition-all duration-500 p-4 flex flex-col gap-2 h-full"
               >
                 {service.icon}

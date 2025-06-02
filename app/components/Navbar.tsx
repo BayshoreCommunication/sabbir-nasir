@@ -52,10 +52,12 @@ export default function NavContent() {
     <main className="w-full bg-white relative z-50">
       <div className="main-container">
         <div className="hidden lg:flex bg-[url('/images/logo/navbar-frame.png')] w-full h-[2.2rem] bg-cover justify-between items-center text-white px-16 text-sm font-normal">
-          <small>We have over 15 years of experience.</small>
-          <small>+1 900 234 567</small>
-          <small>786 South Park Avenue</small>
-          <small>Mon to Sat 08:00 - 16:30</small>
+          <small>We have over 20 years of experience.</small>
+          <small>01973-062749</small>
+          <small>
+            House 21, Road 1, Block A, Aftab Nagar, Dhaka, Bangladesh
+          </small>
+          <small>Sun to Thu 08:00 - 16:30</small>
         </div>
         <Navbar
           maxWidth="full"
