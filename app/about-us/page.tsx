@@ -276,7 +276,7 @@ const AboutUsPage = () => {
         </div>
       </section>
       {/* our partner  */}
-      <section className="main-container spacer">
+      {/* <section className="main-container spacer">
         <MotionP
           initial={{ opacity: 0, x: "-50px" }}
           whileInView={{
@@ -306,14 +306,8 @@ const AboutUsPage = () => {
               <Image src={logo} alt="logo-image" />
             </MotionDiv>
           ))}
-
-          {/* <Image src={logo2} alt="logo-image" />
-          <Image src={logo3} alt="logo-image" />
-          <Image src={logo4} alt="logo-image" />
-          <Image src={logo5} alt="logo-image" />
-          <Image src={logo6} alt="logo-image" /> */}
         </div>
-      </section>
+      </section> */}
       {/* customer feedback */}
       <CustomerFeedback />
     </div>

@@ -51,6 +51,26 @@ const Footer = () => {
                     <li>News</li>
                     <li>Contact Us</li>
                   </ul>
+                  {/* <ul className="list-disc flex flex-col gap-1 list-inside">
+                    <li>Bonds</li>
+                    <li>Commodities</li>
+                    <li>Investments</li>
+                    <li>Retirement</li>
+                  </ul> */}
+                </div>
+              </div>
+              {/* Twitter feeds */}
+              <div className="flex-1 flex flex-col gap-y-3">
+                <h4>Useful Links</h4>
+                <div className="flex gap-16 font-thin text-sm">
+                  {/* <ul className="list-disc flex flex-col gap-1 list-inside">
+                    <li>Home</li>
+                    <li>About Us</li>
+                    <li>Services</li>
+                    <li>Projects</li>
+                    <li>News</li>
+                    <li>Contact Us</li>
+                  </ul> */}
                   <ul className="list-disc flex flex-col gap-1 list-inside">
                     <li>Bonds</li>
                     <li>Commodities</li>
@@ -59,8 +79,8 @@ const Footer = () => {
                   </ul>
                 </div>
               </div>
-              {/* Twitter feeds */}
-              <div className="flex-1 flex flex-col gap-y-3">
+
+              {/* <div className="flex-1 flex flex-col gap-y-3">
                 <h4>Twitter Feeds</h4>
                 <div className="flex flex-col gap-5">
                   <div className="flex flex-col gap-2">
@@ -78,7 +98,7 @@ const Footer = () => {
                     <small>about a month ago</small>
                   </div>
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
           {/* newslatter  */}

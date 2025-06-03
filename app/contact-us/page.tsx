@@ -25,7 +25,9 @@ const ContactUs = () => {
               className="bg-white shadow-medium p-3 flex flex-col gap-2"
             >
               <FaLocationDot size={20} />
-              <h6 className="font-semibold">Your Company location here</h6>
+              <h6 className="font-semibold">
+                House 21, Road 1, Block A, Aftab Nagar, Dhaka, Bangladesh
+              </h6>
               <p className="text-gray-400 text-xs font-medium">Our Location</p>
             </MotionDiv>
             <MotionDiv
@@ -41,7 +43,7 @@ const ContactUs = () => {
               className="bg-white shadow-medium p-3 flex flex-col gap-2"
             >
               <FiPhoneCall size={18} />
-              <h6 className="font-semibold">(813) 560-3005</h6>
+              <h6 className="font-semibold">+88 01973-062749</h6>
               <p className="text-gray-400 text-xs font-medium">Let’s Talk</p>
             </MotionDiv>
             <MotionDiv
@@ -57,7 +59,7 @@ const ContactUs = () => {
               className="bg-white shadow-medium p-3 flex flex-col gap-2"
             >
               <CgMail size={20} />
-              <h6 className="font-semibold">sabbirnasir@gmail.com</h6>
+              <h6 className="font-semibold">sabbir@teamsabbirnasir.com</h6>
               <p className="text-gray-400 text-xs font-medium">Drop a Line</p>
             </MotionDiv>
           </div>
@@ -112,7 +114,7 @@ const ContactUs = () => {
       </section>
       <section>
         <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6142.475588110276!2d90.38124945835504!3d23.735329241886532!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b8c8e1ea9fd1%3A0xa6e274882fdbce53!2sDhaka%20College!5e0!3m2!1sen!2sbd!4v1709715803147!5m2!1sen!2sbd"
+          src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d58401.3881589751!2d90.39031011784334!3d23.815513697330836!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sHouse%2021%2C%20Road%201%2C%20Block%20A%2C%20Aftab%20Nagar%2C%20Dhaka%2C%20Bangladesh!5e0!3m2!1sen!2sbd!4v1748955900009!5m2!1sen!2sbd"
           width="100%"
           height="450"
           style={{ border: 0 }}

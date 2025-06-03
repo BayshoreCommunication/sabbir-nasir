@@ -75,8 +75,8 @@ const ServiceCarosel = () => {
           <div>
             <div className="bg-secondary-color shadow-md flex flex-col items-center p-8 gap-y-2 mx-1 lg:mx-3">
               <Image src={outsourceImg} alt="advisor image" />
-              <h2 className="text-xl font-semibold">Outsource CEO</h2>
-              <p className="text-center">
+              <h2 className="text-xl font-semibold ">Outsource CEO</h2>
+              <p className="text-center line-clamp-2">
                 Offering experienced leadership on demand to steer your
                 organization effectively without a full-time hire.
               </p>

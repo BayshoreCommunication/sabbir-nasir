@@ -105,11 +105,11 @@ const CustomerFeedback = () => {
               </MotionDiv>
 
               <div className="flex mt-1 items-center gap-2 text-sm font-semibold font-sans ml-[4%] sm:ml-[6%] md:ml-[7%] lg:ml-[6%] 2xl:ml-[6.5%]">
-                <Image
+                {/* <Image
                   className="w-11"
                   src={reviewAuthorImg}
                   alt="meet-our-advisor"
-                />
+                /> */}
                 <div>
                   <p>Sarah M., CEO, </p>
                   <p className="font-normal text-gray-500 text-xs">
@@ -152,11 +152,11 @@ const CustomerFeedback = () => {
               </MotionDiv>
 
               <div className="flex mt-1 items-center gap-2 text-sm font-semibold font-sans ml-[4%] sm:ml-[6%] md:ml-[7%] lg:ml-[6%] 2xl:ml-[6.5%]">
-                <Image
+                {/* <Image
                   className="w-11"
                   src={reviewAuthorImg}
                   alt="meet-our-advisor"
-                />
+                /> */}
                 <div>
                   <p>James L., Senior Manager</p>
                   <p className="font-normal text-gray-500 text-xs">
@@ -198,11 +198,11 @@ const CustomerFeedback = () => {
               </MotionDiv>
 
               <div className="flex mt-1 items-center gap-2 text-sm font-semibold font-sans ml-[4%] sm:ml-[6%] md:ml-[7%] lg:ml-[6%] 2xl:ml-[6.5%]">
-                <Image
+                {/* <Image
                   className="w-11"
                   src={reviewAuthorImg}
                   alt="meet-our-advisor"
-                />
+                /> */}
                 <div>
                   <p>Priya S., Entrepreneur</p>
                   <p className="font-normal text-gray-500 text-xs">
@@ -244,11 +244,11 @@ const CustomerFeedback = () => {
               </MotionDiv>
 
               <div className="flex mt-1 items-center gap-2 text-sm font-semibold font-sans ml-[4%] sm:ml-[6%] md:ml-[7%] lg:ml-[6%] 2xl:ml-[6.5%]">
-                <Image
+                {/* <Image
                   className="w-11"
                   src={reviewAuthorImg}
                   alt="meet-our-advisor"
-                />
+                /> */}
                 <div>
                   <p>Michael T.</p>
                   <p className="font-normal text-gray-500 text-xs">
@@ -290,11 +290,11 @@ const CustomerFeedback = () => {
               </MotionDiv>
 
               <div className="flex mt-1 items-center gap-2 text-sm font-semibold font-sans ml-[4%] sm:ml-[6%] md:ml-[7%] lg:ml-[6%] 2xl:ml-[6.5%]">
-                <Image
+                {/* <Image
                   className="w-11"
                   src={reviewAuthorImg}
                   alt="meet-our-advisor"
-                />
+                /> */}
                 <div>
                   <p>Lisa K.</p>
                   <p className="font-normal text-gray-500 text-xs">
@@ -336,11 +336,11 @@ const CustomerFeedback = () => {
               </MotionDiv>
 
               <div className="flex mt-1 items-center gap-2 text-sm font-semibold font-sans ml-[4%] sm:ml-[6%] md:ml-[7%] lg:ml-[6%] 2xl:ml-[6.5%]">
-                <Image
+                {/* <Image
                   className="w-11"
                   src={reviewAuthorImg}
                   alt="meet-our-advisor"
-                />
+                /> */}
                 <div>
                   <p>David R.</p>
                   <p className="font-normal text-gray-500 text-xs">

@@ -157,16 +157,16 @@ export const serviceData = [
                     understanding.
                   </li>
                   <li>
-                    <span className="font-bold">Authentic Communication:</span>{" "}
+                    <span className="font-bold">Authentic Communication:</span> 
                     Engaging in genuine dialogues that build trust.
                   </li>
                   <li>
-                    <span className="font-bold">Conflict Resolution:</span>{" "}
+                    <span className="font-bold">Conflict Resolution:</span> 
                     Navigating disputes with composure and fairness.
                   </li>
 
                   <li>
-                    <span className="font-bold">Inspirational Motivation:</span>{" "}
+                    <span className="font-bold">Inspirational Motivation:</span> 
                     Articulating a vision that resonates emotionally with others
                     (
                     <a
@@ -200,25 +200,25 @@ export const serviceData = [
                 <ul>
                   <li>
                     <span className="font-bold">
-                      {" "}
-                      Personalized Assessments:{" "}
+                       
+                      Personalized Assessments: 
                     </span>
                     Utilizing tools like the Emotional Quotient Inventory (EQ-i)
                     to identify strengths and areas for development .
                   </li>
                   <li>
-                    <span className="font-bold">Goal-Oriented Strategies:</span>{" "}
+                    <span className="font-bold">Goal-Oriented Strategies:</span> 
                     Setting clear, measurable objectives aligned with clients
                     aspirations.
                   </li>
                   <li>
-                    <span className="font-bold">Practical Exercises:</span>{" "}
+                    <span className="font-bold">Practical Exercises:</span> 
                     Engaging in activities that enhance self-awareness, empathy,
                     and emotional regulation.
                   </li>
 
                   <li>
-                    <span className="font-bold">Continuous Feedback:</span>{" "}
+                    <span className="font-bold">Continuous Feedback:</span> 
                     Providing ongoing support and adjustments to ensure
                     sustained growth. (
                     <a
@@ -245,8 +245,8 @@ export const serviceData = [
                 <ul>
                   <li>
                     <span className="font-bold">
-                      {" "}
-                      Enhanced Self-Awareness:{" "}
+                       
+                      Enhanced Self-Awareness: 
                     </span>
                     Gaining deeper insights into personal emotional patterns and
                     triggers.
@@ -254,23 +254,23 @@ export const serviceData = [
                   <li>
                     <span className="font-bold">
                       Improved Relationship Management:
-                    </span>{" "}
+                    </span> 
                     Building stronger, more empathetic connections with others.
                   </li>
                   <li>
-                    <span className="font-bold">Increased Resilience:</span>{" "}
+                    <span className="font-bold">Increased Resilience:</span> 
                     Developing the capacity to navigate challenges with
                     composure.
                   </li>
 
                   <li>
-                    <span className="font-bold">Better Decision-Making:</span>{" "}
+                    <span className="font-bold">Better Decision-Making:</span> 
                     Leveraging emotional insights to make informed choices.
                   </li>
                   <li>
                     <span className="font-bold">
                       Elevated Leadership Effectiveness:
-                    </span>{" "}
+                    </span> 
                     Inspiring and guiding teams with authenticity and empathy. (
                     <a
                       className="underline text-blue-700"
@@ -306,7 +306,7 @@ export const serviceData = [
 
                   <li>
                     <span className="font-bold">Individuals:</span> Desiring
-                    personal growth and better emotional well-being. ({" "}
+                    personal growth and better emotional well-being. ( 
                     <a
                       className="underline text-blue-700"
                       href="https://icfmalaysia.org/articles/research-paper-emotional-intelligence-in-coaching/?utm_source=chatgpt.com"
@@ -371,7 +371,7 @@ export const serviceData = [
                     target="_blank"
                   >
                     Contact us
-                  </a>{" "}
+                  </a> 
                   today to schedule a consultation and take the first step
                   towards emotional mastery.
                 </p>
@@ -534,16 +534,16 @@ export const serviceData = [
                     understanding.
                   </li>
                   <li>
-                    <span className="font-bold">Authentic Communication:</span>{" "}
+                    <span className="font-bold">Authentic Communication:</span> 
                     Engaging in genuine dialogues that build trust.
                   </li>
                   <li>
-                    <span className="font-bold">Conflict Resolution:</span>{" "}
+                    <span className="font-bold">Conflict Resolution:</span> 
                     Navigating disputes with composure and fairness.
                   </li>
 
                   <li>
-                    <span className="font-bold">Inspirational Motivation:</span>{" "}
+                    <span className="font-bold">Inspirational Motivation:</span> 
                     Articulating a vision that resonates emotionally with others
                     (
                     <a
@@ -577,25 +577,25 @@ export const serviceData = [
                 <ul>
                   <li>
                     <span className="font-bold">
-                      {" "}
-                      Personalized Assessments:{" "}
+                       
+                      Personalized Assessments: 
                     </span>
                     Utilizing tools like the Emotional Quotient Inventory (EQ-i)
                     to identify strengths and areas for development .
                   </li>
                   <li>
-                    <span className="font-bold">Goal-Oriented Strategies:</span>{" "}
+                    <span className="font-bold">Goal-Oriented Strategies:</span> 
                     Setting clear, measurable objectives aligned with clients
                     aspirations.
                   </li>
                   <li>
-                    <span className="font-bold">Practical Exercises:</span>{" "}
+                    <span className="font-bold">Practical Exercises:</span> 
                     Engaging in activities that enhance self-awareness, empathy,
                     and emotional regulation.
                   </li>
 
                   <li>
-                    <span className="font-bold">Continuous Feedback:</span>{" "}
+                    <span className="font-bold">Continuous Feedback:</span> 
                     Providing ongoing support and adjustments to ensure
                     sustained growth. (
                     <a
@@ -622,8 +622,8 @@ export const serviceData = [
                 <ul>
                   <li>
                     <span className="font-bold">
-                      {" "}
-                      Enhanced Self-Awareness:{" "}
+                       
+                      Enhanced Self-Awareness: 
                     </span>
                     Gaining deeper insights into personal emotional patterns and
                     triggers.
@@ -631,23 +631,23 @@ export const serviceData = [
                   <li>
                     <span className="font-bold">
                       Improved Relationship Management:
-                    </span>{" "}
+                    </span> 
                     Building stronger, more empathetic connections with others.
                   </li>
                   <li>
-                    <span className="font-bold">Increased Resilience:</span>{" "}
+                    <span className="font-bold">Increased Resilience:</span> 
                     Developing the capacity to navigate challenges with
                     composure.
                   </li>
 
                   <li>
-                    <span className="font-bold">Better Decision-Making:</span>{" "}
+                    <span className="font-bold">Better Decision-Making:</span> 
                     Leveraging emotional insights to make informed choices.
                   </li>
                   <li>
                     <span className="font-bold">
                       Elevated Leadership Effectiveness:
-                    </span>{" "}
+                    </span> 
                     Inspiring and guiding teams with authenticity and empathy. (
                     <a
                       className="underline text-blue-700"
@@ -683,7 +683,7 @@ export const serviceData = [
 
                   <li>
                     <span className="font-bold">Individuals:</span> Desiring
-                    personal growth and better emotional well-being. ({" "}
+                    personal growth and better emotional well-being. ( 
                     <a
                       className="underline text-blue-700"
                       href="https://icfmalaysia.org/articles/research-paper-emotional-intelligence-in-coaching/?utm_source=chatgpt.com"
@@ -748,7 +748,7 @@ export const serviceData = [
                     target="_blank"
                   >
                     Contact us
-                  </a>{" "}
+                  </a> 
                   today to schedule a consultation and take the first step
                   towards emotional mastery.
                 </p>
@@ -773,7 +773,7 @@ export const serviceData = [
                 In the pursuit of success and fulfillment, many individuals find
                 themselves navigating external achievements while yearning for
                 deeper meaning and connection. The "Exploring Your Higher Self"
-                program, curated by esteemed strategist and Sufi thinker{" "}
+                program, curated by esteemed strategist and Sufi thinker 
                 <b>Sabbir Nasir</b>, offers a transformative journey that
                 bridges the gap between worldly accomplishments and inner
                 enlightenment.
@@ -823,8 +823,8 @@ export const serviceData = [
                   </li>
                   <li>
                     <span className="font-bold">
-                      Mindfulness and Breathwork:{" "}
-                    </span>{" "}
+                      Mindfulness and Breathwork: 
+                    </span> 
                     Exercises focusing on controlled breathing (Pas Anfas) and
                     breath retention (Hifz-e-Dam) to enhance concentration and
                     spiritual receptivity .
@@ -837,7 +837,7 @@ export const serviceData = [
                     </a>
                   </li>
                   <li>
-                    <span className="font-bold">Self-Inquiry Sessions:</span>{" "}
+                    <span className="font-bold">Self-Inquiry Sessions:</span> 
                     Guided explorations into one's beliefs, values, and purpose,
                     facilitating a deeper understanding of the self.
                   </li>
@@ -845,7 +845,7 @@ export const serviceData = [
                   <li>
                     <span className="font-bold">
                       Integration of Sufi Literature:
-                    </span>{" "}
+                    </span> 
                     Engagement with poetic and philosophical texts to inspire
                     introspection and spiritual growth.
                   </li>
@@ -867,12 +867,12 @@ export const serviceData = [
                     behaviors.
                   </li>
                   <li>
-                    <span className="font-bold">Emotional Resilience:</span>{" "}
+                    <span className="font-bold">Emotional Resilience:</span> 
                     Improved ability to navigate life's challenges with
                     equanimity and grace.
                   </li>
                   <li>
-                    <span className="font-bold">Clarity of Purpose:</span>{" "}
+                    <span className="font-bold">Clarity of Purpose:</span> 
                     Alignment of personal and professional goals with one's core
                     values and aspirations.
                   </li>
@@ -900,18 +900,18 @@ export const serviceData = [
                   <li>
                     <span className="font-bold">
                       Individuals on a Spiritual Quest:
-                    </span>{" "}
+                    </span> 
                     Desiring a structured pathway to inner awakening.
                   </li>
                   <li>
                     <span className="font-bold">
                       Professionals Facing Burnout:
-                    </span>{" "}
+                    </span> 
                     Looking to rediscover passion and purpose in their careers.
                   </li>
                   <li>
                     <span className="font-bold">
-                      Anyone Committed to Personal Growth:{" "}
+                      Anyone Committed to Personal Growth: 
                     </span>
                     Aspiring to lead a life of authenticity and fulfillment.
                   </li>
@@ -972,7 +972,7 @@ export const serviceData = [
                     target="_blank"
                   >
                     Contact us
-                  </a>{" "}
+                  </a> 
                   today to enroll in the "Exploring Your Higher Self" program
                   and take the first step towards inner transformation.
                 </p>
@@ -999,7 +999,7 @@ export const serviceData = [
                 In an era of rapid change, long-term clarity is more than a
                 competitive advantage—it’s a necessity. Most individuals and
                 organizations get caught in short-term cycles of decision-making
-                without a structured vision for the future. At{" "}
+                without a structured vision for the future. At 
                 <b>Team Sabbir Nasir</b>, we help leaders, entrepreneurs,
                 creatives, and high-potential professionals chart a meaningful
                 10-year roadmap that aligns their ambitions with actionable
@@ -1016,7 +1016,7 @@ export const serviceData = [
             <div className="flex flex-col gap-3">
               <h2 className="">Our Core Philosophy</h2>
               <p>
-                Our 10 Years Plan Consultancy is rooted in a guiding principle:{" "}
+                Our 10 Years Plan Consultancy is rooted in a guiding principle: 
                 <br />
                 <b>
                   “When the future is imagined with clarity, the present becomes
@@ -1357,7 +1357,7 @@ export const serviceData = [
                     target="_blank"
                   >
                     Contact us
-                  </a>{" "}
+                  </a> 
                   today to begin designing your decade. Your future deserves to
                   be intentional.
                 </p>
@@ -1389,14 +1389,14 @@ export const serviceData = [
               </p>
               <p>
                 With over two decades of leadership experience in business,
-                education, and human development,{" "}
+                education, and human development, 
                 <a
                   className="underline text-blue-700"
                   href="https://www.teamsabbirnasir.com/"
                   target="_blank"
                 >
                   Sabbir Nasir
-                </a>{" "}
+                </a> 
                 brings a rare blend of analytical precision and philosophical
                 depth. Our strategic planning engagements are designed to be
                 both practical and profound—anchored in your mission and
@@ -1768,13 +1768,13 @@ export const serviceData = [
               Build More Than a Brand—Build a Legacy
             </h3>
             <p className="mb-4">
-              In a world oversaturated with logos, taglines, and digital noise,{" "}
+              In a world oversaturated with logos, taglines, and digital noise, 
               <strong>authentic branding</strong> is no longer a luxury—it is a
               necessity. A compelling brand is not just how you look or what you
               say; it is how people feel when they interact with your business,
-              your message, and your mission. At{" "}
+              your message, and your mission. At 
               <strong>Team Sabbir Nasir</strong>, we go beyond surface
-              aesthetics to design brands that are{" "}
+              aesthetics to design brands that are 
               <strong>
                 deeply human, emotionally resonant, and strategically positioned
               </strong>
@@ -1783,9 +1783,9 @@ export const serviceData = [
             <p className="mb-8">
               Our Branding Consultancy empowers individuals, businesses, and
               organizations to define their <strong>identity</strong>, refine
-              their <strong>message</strong>, and amplify their{" "}
+              their <strong>message</strong>, and amplify their 
               <strong>presence</strong>. Whether you're a founder, thought
-              leader, educator, or institution, we help you become{" "}
+              leader, educator, or institution, we help you become 
               <strong>memorable in meaning, not just in marketing</strong>.
             </p>
 
@@ -1863,7 +1863,7 @@ export const serviceData = [
                 A meaningful and market-relevant <strong>Brand Story</strong>
               </li>
               <li>
-                Core messaging including{" "}
+                Core messaging including 
                 <strong>Tagline, Mission, Vision, and Values</strong>
               </li>
               <li>Target audience personas and brand positioning strategy</li>
@@ -1879,7 +1879,7 @@ export const serviceData = [
 
             <h3 className="text-2xl font-bold mb-6">Our Branding Process</h3>
             <p className="mb-8">
-              At <strong>Team Sabbir Nasir</strong>, branding is a{" "}
+              At <strong>Team Sabbir Nasir</strong>, branding is a 
               <strong>transformational process</strong>—a combination of
               discovery, strategy, creativity, and alignment.
             </p>
@@ -1897,7 +1897,7 @@ export const serviceData = [
               <li>Competitive landscape analysis</li>
               <li>Internal culture and customer perception mapping</li>
               <li>
-                Emotional intelligence mapping: What does your brand{" "}
+                Emotional intelligence mapping: What does your brand 
                 <em>feel</em> like?
               </li>
             </ul>
@@ -1967,8 +1967,8 @@ export const serviceData = [
               The Sabbir Nasir Approach to Branding
             </h3>
             <p className="mb-4">
-              Unlike traditional branding firms,{" "}
-              <strong>Team Sabbir Nasir</strong> blends marketing strategy with{" "}
+              Unlike traditional branding firms, 
+              <strong>Team Sabbir Nasir</strong> blends marketing strategy with 
               <strong>philosophical insight and human behavior analysis</strong>
               . We believe a truly sustainable brand emerges at the intersection
               of:
@@ -1991,7 +1991,7 @@ export const serviceData = [
               </li>
             </ul>
             <p className="mb-8">
-              By integrating{" "}
+              By integrating 
               <strong>
                 Sufi wisdom, psychological depth, and modern branding science
               </strong>
@@ -2041,11 +2041,11 @@ export const serviceData = [
                 </strong>
               </li>
               <li>
-                A hybrid of{" "}
+                A hybrid of 
                 <strong>philosophy, psychology, and business strategy</strong>
               </li>
               <li>
-                Deep understanding of{" "}
+                Deep understanding of 
                 <strong>human emotion, motivation, and perception</strong>
               </li>
               <li>
@@ -2062,8 +2062,8 @@ export const serviceData = [
             </h3>
             <p className="mb-8">
               You are not just creating a logo. You are creating an impression,
-              a culture, a promise. Let us help you shape a brand that is as{" "}
-              <strong>authentic as it is aspirational</strong>, and as{" "}
+              a culture, a promise. Let us help you shape a brand that is as 
+              <strong>authentic as it is aspirational</strong>, and as 
               <strong>strategic as it is soulful</strong>.
             </p>
           </div>`,
@@ -2092,18 +2092,18 @@ export const serviceData = [
               leadership, and social innovation, execution defines success.
             </p>
             <p className="mb-4">
-              At <strong>Team Sabbir Nasir</strong>, our{" "}
+              At <strong>Team Sabbir Nasir</strong>, our 
               <strong>Action Plan Consultancy</strong> is designed to bridge the
               critical gap between <strong>strategy and implementation</strong>.
               We work with visionary individuals and organizations to transform
               goals into concrete, measurable, and time-bound action plans. Our
-              approach is rooted in{" "}
+              approach is rooted in 
               <strong>clarity, accountability, and momentum</strong>, ensuring
               that each step you take is aligned with your purpose and supported
               by a replicable framework.
             </p>
             <p className="mb-6">
-              This is not a one-size-fits-all template. This is{" "}
+              This is not a one-size-fits-all template. This is 
               <strong>tailored execution design</strong>, curated for your
               unique context, challenges, and aspirations.
             </p>
@@ -2142,7 +2142,7 @@ export const serviceData = [
             </h3>
             <p className="mb-4">
               Execution is often overlooked in traditional consultancy. Many
-              strategies fail not because they're flawed, but because{" "}
+              strategies fail not because they're flawed, but because 
               <strong>they are never fully implemented</strong>. Our methodology
               blends:
             </p>
@@ -2175,7 +2175,7 @@ export const serviceData = [
             </p>
             <ul className="list-disc pl-6 mb-6 space-y-2">
               <li>
-                A <strong>comprehensive, step-by-step action plan</strong>{" "}
+                A <strong>comprehensive, step-by-step action plan</strong> 
                 tailored to your goal
               </li>
               <li>Defined timelines, deliverables, and checkpoints</li>
@@ -2184,7 +2184,7 @@ export const serviceData = [
                 team (or just for yourself)
               </li>
               <li>
-                Customized <strong>Key Performance Indicators (KPIs)</strong>{" "}
+                Customized <strong>Key Performance Indicators (KPIs)</strong> 
                 and review mechanisms
               </li>
               <li>Systems to track, measure, and adjust progress</li>
@@ -2265,7 +2265,7 @@ export const serviceData = [
               <li>Contingency actions for high-risk steps</li>
             </ul>
             <p className="mb-6">
-              Everything is structured into a{" "}
+              Everything is structured into a 
               <strong>visually clean, trackable format</strong>—ideal for both
               individuals and teams.
             </p>
@@ -2278,7 +2278,7 @@ export const serviceData = [
               of your systems."
             </p>
             <p className="mb-4">
-              We don't just build the plan—we also build the{" "}
+              We don't just build the plan—we also build the 
               <strong>support systems</strong>. This includes:
             </p>
             <ul className="list-disc pl-6 mb-6 space-y-1">
@@ -2305,7 +2305,7 @@ export const serviceData = [
               "No plan survives first contact—so build for agility."
             </p>
             <p className="mb-4">
-              We implement systems for{" "}
+              We implement systems for 
               <strong>
                 ongoing monitoring, reflection, and course correction
               </strong>
@@ -2373,7 +2373,7 @@ export const serviceData = [
                 </strong>
               </li>
               <li>
-                Approach informed by{" "}
+                Approach informed by 
                 <strong>
                   strategic insight, emotional intelligence, and spiritual
                   alignment

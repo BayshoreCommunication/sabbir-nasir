@@ -40,7 +40,7 @@ export default function NavContent() {
     },
     {
       title: "NEWS",
-      link: "/news",
+      link: "#",
     },
     {
       title: "CONTACT US",
