@@ -48,11 +48,8 @@ const WhoWeServe = () => {
           className="flex-[1.5] flex flex-col gap-5"
         >
           <p>
-            {`Our diverse team of audiovisual technical producers, directors,
-            project managers, engineers, technicians, and creatives brings a
-            collective wealth of experience to your event. We've orchestrated
-            the marvel of audiovisuals for many notable events, pushing the
-            boundaries of what's possible in event production.`}
+            {`At Team Sabbir Nasir, we partner with individuals, teams, and organizations who are ready to challenge the status quo, embrace meaningful growth, and operate with clarity and purpose. Our services are designed to meet the needs of a diverse range of clients:
+`}
           </p>
           <p>
             {` At DXG, our approach is to intimately understand your event's

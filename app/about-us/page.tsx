@@ -51,10 +51,10 @@ const AboutUsPage = () => {
               },
             }}
           >
-            We have over 15 years of experience Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit. Aenean Lorem ipsm dolor sit the power
-            of consectetur adi pisi cing elit, sed do eiusmod tempor
-            exercitationemut labore.
+            <strong>Team Sabbir Nasir</strong> is a visionary platform dedicated
+            to transforming individuals, businesses, and institutions through
+            strategic consulting, emotional intelligence coaching, and
+            purposeful self-discovery.
           </MotionP>
           <MotionP
             initial={{ opacity: 0, y: "50px" }}
@@ -67,8 +67,63 @@ const AboutUsPage = () => {
               },
             }}
           >
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
-            bibendum nec risus et suscipit Curabitur metus ipsum.
+            Founded by <strong>Sabbir Hasan Nasir</strong>, a renowned corporate
+            leader, retail strategist, and thought mentor, our mission is to
+            help people and organizations achieve clarity, sustainability, and
+            growth—both internally and externally. Drawing from decades of
+            experience leading multinationals and transforming Bangladesh’s
+            retail landscape, Sabbir combines business acumen with human-centric
+            wisdom rooted in systems thinking, leadership theory, and Sufi
+            philosophy.
+          </MotionP>
+          <MotionP
+            initial={{ opacity: 0, y: "50px" }}
+            whileInView={{
+              opacity: 1,
+              y: 0,
+              transition: {
+                delay: 0.4,
+                duration: 0.8,
+              },
+            }}
+          >
+            At the heart of our work is the belief that transformation begins
+            within. Whether we are building strategic roadmaps for a
+            corporation, guiding a professional toward emotional mastery, or
+            helping an individual explore their higher self, we approach every
+            engagement with deep listening, analytical precision, and authentic
+            care.
+          </MotionP>
+          <MotionP
+            initial={{ opacity: 0, y: "50px" }}
+            whileInView={{
+              opacity: 1,
+              y: 0,
+              transition: {
+                delay: 0.4,
+                duration: 0.8,
+              },
+            }}
+          >
+            Our multidisciplinary team brings together experts in strategy,
+            branding, organizational development, emotional intelligence, and
+            spiritual coaching. This allows us to serve a wide range of
+            clients—from startups and corporate leaders to seekers and
+            creatives—with tailored programs designed to create real impact.
+          </MotionP>
+          <MotionP
+            initial={{ opacity: 0, y: "50px" }}
+            whileInView={{
+              opacity: 1,
+              y: 0,
+              transition: {
+                delay: 0.4,
+                duration: 0.8,
+              },
+            }}
+          >
+            We are not just consultants. We are co-travelers in your journey of
+            becoming.
           </MotionP>
           <MotionDiv
             initial={{ opacity: 0, y: "50px" }}
