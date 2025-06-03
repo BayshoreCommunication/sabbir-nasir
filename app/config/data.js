@@ -7,7 +7,7 @@ export const serviceData = [
   {
     icon: <FaBusinessTime size={24} />,
     title: "Business Problem Solving Consultancy",
-    link: `/business-problem-solving-consultancy`,
+    link: `business-problem-solving-consultancy`,
     shortDescription: `We provide strategic insight to help organizations navigate complex challenges, optimize performance, and unlock growth opportunities. From operational bottlenecks to leadership dilemmas, our solutions are grounded in real-world   and data-driven methodologies.`,
     description: `  <div className="flex flex-col gap-5">
             <div>
@@ -383,7 +383,7 @@ export const serviceData = [
   {
     icon: <FaBusinessTime size={24} />,
     title: "Emotional Intelligence Coaching",
-    link: `/emotional-intelligence-coaching`,
+    link: `emotional-intelligence-coaching`,
     shortDescription: `Develop the inner strength to lead with empathy, resilience, and self-awareness. Our EI coaching empowers professionals to understand themselves and others, manage stress, build stronger relationships, and lead with authenticity in both personal and professional spheres.
 `,
     description: `<div className="flex flex-col gap-5">
@@ -760,7 +760,7 @@ export const serviceData = [
   {
     icon: <GiBrain size={24} />,
     title: "Exploring Your Higher Self",
-    link: `/exploring-your-higher-self`,
+    link: `exploring-your-higher-self`,
     shortDescription: `This deeply personal journey integrates Sufi wisdom with modern self-development practices to help individuals discover their true essence. Designed for leaders and seekers alike, this program promotes inner clarity, mindfulness, and alignment with a higher purpose.`,
     description: `
     
@@ -987,7 +987,7 @@ export const serviceData = [
   {
     icon: <GiBrain size={24} />,
     title: "10 Years Plan Consultancy",
-    link: `/10-years-plan-consultancy`,
+    link: `10-years-plan-consultancy`,
     shortDescription: `Create a decade-long strategic vision with measurable milestones. Whether you're an executive, entrepreneur, or creative leader, we help you map out a 10-year trajectory that aligns with your aspirations, values, and global trends.
 `,
     description: ` <div className="flex flex-col gap-5">
@@ -1369,7 +1369,7 @@ export const serviceData = [
   {
     icon: <GiBrain size={24} />,
     title: "Strategic Planning Consultancy",
-    link: `/strategic-planning-consultancy`,
+    link: `strategic-planning-consultancy`,
     shortDescription: `We design actionable strategic roadmaps tailored to your industry, goals, and organizational structure. With a focus on sustainability, innovation, and competitive advantage, we ensure your long-term success through practical and visionary planning.
 `,
     description: `    <div className="flex flex-col gap-5">
@@ -1753,7 +1753,7 @@ export const serviceData = [
   {
     icon: <GiBrain size={24} />,
     title: "Branding Consultancy",
-    link: `/branding-consultancy`,
+    link: `branding-consultancy`,
     shortDescription: `In an era where perception drives success, we help brands define their voice, story, and market position. From ideation to execution, our branding consultancy shapes reputations that resonate with customers and reflect the core identity of the business.
 .
 
@@ -2072,7 +2072,7 @@ export const serviceData = [
   {
     icon: <TbBrand4Chan size={24} />,
     title: "Action Plan Consultancy",
-    link: `/action-plan-consultancy`,
+    link: `action-plan-consultancy`,
     shortDescription: `Strategy without execution is theory. We translate your goals into structured, time-bound action plans with defined responsibilities, KPIs, and review mechanisms—ensuring clarity, accountability, and momentum at every stage.`,
     description: `
     
