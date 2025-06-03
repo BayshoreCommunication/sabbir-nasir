@@ -558,7 +558,7 @@ export const serviceData = [
                 </ul>
               </div>
             </div>
-            {/* Sabbir Nasir’s Approach to Emotional Intelligence Coaching*/}
+           
             <div className="flex flex-col gap-3">
               <h2 className="">
                 Sabbir Nasir’s Approach to Emotional Intelligence Coaching
@@ -610,7 +610,7 @@ export const serviceData = [
                 </ul>
               </div>
             </div>
-            {/* Benefits of Emotional Intelligence Coaching */}
+           
             <div className="flex flex-col gap-3">
               <h2 className="">Benefits of Emotional Intelligence Coaching</h2>
 
@@ -661,7 +661,7 @@ export const serviceData = [
                 </ul>
               </div>
             </div>
-            {/* Who Can Benefit from This Coaching?   */}
+           
             <div className="flex flex-col gap-3">
               <h2 className="">Who Can Benefit from This Coaching?</h2>
 
@@ -696,7 +696,7 @@ export const serviceData = [
                 </ul>
               </div>
             </div>
-            {/* Client Testimonials   */}
+           
             <div className="flex flex-col gap-3">
               <h2 className="">Client Testimonials</h2>
 
