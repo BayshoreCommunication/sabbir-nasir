@@ -49,7 +49,7 @@ const ServicesPage = () => {
               >
                 {service.icon}
                 <h4 className="text-lg font-semibold">{service.title}</h4>
-                <p>{service.shortDescription}</p>
+                <p className="line-clamp-4">{service.shortDescription}</p>
               </Link>
             </MotionDiv>
           ))}

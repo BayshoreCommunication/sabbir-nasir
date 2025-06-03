@@ -58,17 +58,7 @@ const page = async ({ params }) => {
       <style>{css}</style>
 
       <section className="bg-white">
-        <div className="container py-10 md:py-20">
-          {/* {servicesDetails?.map((services, index) => (
-            <div key={index} className="">
-              <div className="mt-5 text-base">
-                {parse(services?.description)}
-              </div>
-            </div>
-          ))} */}
-          {/* Service 1 */}
-          <div></div>
-        </div>
+        <div className="main-container  py-10 md:py-20"></div>
       </section>
     </>
   );
