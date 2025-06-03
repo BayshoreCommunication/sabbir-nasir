@@ -38,10 +38,18 @@ nav{
 
 `;
 
-const page = async ({ params }) => {
+const ServiceDetailsPage = async ({
+  params,
+}: {
+  params: Promise<{ link: string }>;
+}) => {
+  const { link } = await params;
+
   const servicesDetails = serviceData?.filter(
-    (service) => service.slug === params.slug
+    (service: any) => service.link === link
   );
+
+  // console.log("serviceData", serviceData);
 
   if (!servicesDetails || servicesDetails.length === 0) {
     notFound();
@@ -58,19 +66,14 @@ const page = async ({ params }) => {
       <style>{css}</style>
 
       <section className="bg-white">
-<<<<<<< HEAD:app/services/[link]/page.tsx
         <div className="main-container py-10 md:pb-20">
           {servicesDetails?.map((services: any, index) => (
-=======
-        <div className="container py-10 md:py-20">
-          {/* {servicesDetails?.map((services, index) => (
->>>>>>> parent of 83d9ef8 (fix parse error in service page):app/services/[link]/page.jsx
             <div key={index} className="">
               <div className="mt-5 text-base">
                 {parse(services?.description)}
               </div>
             </div>
-          ))} */}
+          ))}
           {/* Service 1 */}
           <div></div>
         </div>
@@ -79,4 +82,4 @@ const page = async ({ params }) => {
   );
 };
 
-export default page;
+export default ServiceDetailsPage;
