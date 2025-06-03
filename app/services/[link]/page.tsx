@@ -38,10 +38,18 @@ nav{
 
 `;
 
-const page = async ({ params }) => {
+const ServiceDetailsPage = async ({
+  params,
+}: {
+  params: Promise<{ link: string }>;
+}) => {
+  const { link } = await params;
+
   const servicesDetails = serviceData?.filter(
-    (service) => service.slug === params.slug
+    (service: any) => service.link === link
   );
+
+  // console.log("serviceData", serviceData);
 
   if (!servicesDetails || servicesDetails.length === 0) {
     notFound();
@@ -59,13 +67,13 @@ const page = async ({ params }) => {
 
       <section className="bg-white">
         <div className="container py-10 md:py-20">
-          {/* {servicesDetails?.map((services, index) => (
+          {servicesDetails?.map((services: any, index) => (
             <div key={index} className="">
               <div className="mt-5 text-base">
                 {parse(services?.description)}
               </div>
             </div>
-          ))} */}
+          ))}
           {/* Service 1 */}
           <div></div>
         </div>
@@ -74,4 +82,4 @@ const page = async ({ params }) => {
   );
 };
 
-export default page;
+export default ServiceDetailsPage;
