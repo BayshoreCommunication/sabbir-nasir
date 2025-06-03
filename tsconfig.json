@@ -21,6 +21,10 @@
       "@/*": ["./*"]
     }
   },
+<<<<<<< HEAD
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", ".next/types/app/services/[link]/page.tsx", "app/services/[link]/page.tsx", "app/services/page.tsx"],
+=======
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", ".next/types/app/services/[link]/page.tsx", "app/services/[link]/page.jsx", "app/services/page.jsx"],
+>>>>>>> parent of 83d9ef8 (fix parse error in service page)
   "exclude": ["node_modules"]
 }
