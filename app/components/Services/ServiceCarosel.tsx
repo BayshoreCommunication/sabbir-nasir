@@ -58,7 +58,7 @@ const ServiceCarosel = () => {
                   className="w-16 h-16"
                 />
               </div>
-              <h2 className="text-xl font-semibold">VISION FRAMING</h2>
+              <h2 className="text-sm font-semibold">VISION FRAMING</h2>
             </div>
           </div>
 
@@ -73,7 +73,7 @@ const ServiceCarosel = () => {
                   className="w-16 h-16"
                 />
               </div>
-              <h2 className="text-xl font-semibold "> STRATEGIC ROADMAPPING</h2>
+              <h2 className="text-sm font-semibold "> STRATEGIC ROADMAPPING</h2>
             </div>
           </div>
 
@@ -88,7 +88,7 @@ const ServiceCarosel = () => {
                   className="w-16 h-16"
                 />
               </div>
-              <h2 className="text-xl font-semibold"> CULTURAL REDESIGN</h2>
+              <h2 className="text-sm font-semibold"> CULTURAL REDESIGN</h2>
             </div>
           </div>
           <div>
@@ -102,7 +102,7 @@ const ServiceCarosel = () => {
                   className="w-16 h-16"
                 />
               </div>
-              <h2 className="text-xl font-semibold">
+              <h2 className="text-sm font-semibold">
                 STRUCTURAL RE-ENGINEERING
               </h2>
             </div>
@@ -118,7 +118,7 @@ const ServiceCarosel = () => {
                   className="w-16 h-16"
                 />
               </div>
-              <h2 className="text-xl font-semibold">EXECUTION SYSTEMS</h2>
+              <h2 className="text-sm font-semibold">EXECUTION SYSTEMS</h2>
             </div>
           </div>
           <div>
@@ -132,7 +132,7 @@ const ServiceCarosel = () => {
                   className="w-16 h-16"
                 />
               </div>
-              <h2 className="text-xl font-semibold">EXPANSION</h2>
+              <h2 className="text-sm font-semibold">EXPANSION</h2>
             </div>
           </div>
         </Slider>

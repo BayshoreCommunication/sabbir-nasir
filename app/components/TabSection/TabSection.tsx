@@ -371,9 +371,7 @@ export default function TabSection() {
                       },
                     }}
                   >
-                    <Link href="">
-                      <OutlineButton title="OUR STORY" />
-                    </Link>
+                    <OutlineButton title="OUR STORY" />
                   </MotionDiv>
                 </div>
                 <div className="flex-1">
