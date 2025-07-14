@@ -5,7 +5,7 @@ import { MotionDiv, MotionP, MotionSpan } from "../Motion/Motion";
 import Link from "next/link";
 
 const HeroSection = () => {
-  const titleArray = ["Success", "Doesn't", "Happen", "Without", "Strategy"];
+  const titleArray = ["Transform. ", "Scale. ", "Soar."];
 
   return (
     <div className="bg-[url('/images/homepage/hero-background.png')] bg-fixed bg-cover text-center lg:text-start">
@@ -50,7 +50,9 @@ const HeroSection = () => {
             }}
             className="font-semibold my-6"
           >
-            Finding your trusted partner is as simple as one, two, three.
+            We help founder-led companies overcome stagnation, find clarity, and{" "}
+            <br />
+            execute strategies that spark change and fuel growth.
           </MotionP>
         </div>
         <MotionDiv
@@ -68,7 +70,7 @@ const HeroSection = () => {
             <PrimaryButton>READ MORE</PrimaryButton>
           </Link>
           <Link href="/contact-us">
-            <SecondaryButton>CONTACT US</SecondaryButton>
+            <SecondaryButton>START BREAKING THROUGH</SecondaryButton>
           </Link>
         </MotionDiv>
       </div>

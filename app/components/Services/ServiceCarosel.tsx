@@ -3,9 +3,6 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Image from "next/image";
-import advisorImg from "../../../public/images/homepage/services/carosel/advisor-icon.svg";
-import consultingImg from "../../../public/images/homepage/services/carosel/consulting-icon.svg";
-import outsourceImg from "../../../public/images/homepage/services/carosel/outsource-icon.svg";
 import { MotionDiv } from "../Motion/Motion";
 
 const ServiceCarosel = () => {
@@ -52,45 +49,90 @@ const ServiceCarosel = () => {
         <Slider {...settings}>
           <div>
             <div className="bg-secondary-color shadow-md flex flex-col items-center p-8 gap-y-2 mx-1 lg:mx-3">
-              <Image src={advisorImg} alt="advisor image" />
-              <h2 className="text-xl font-semibold">Advisor</h2>
-              <p className="text-center">
-                Providing expert guidance to support your strategic decisions
-                and growth.
-              </p>
+              <div>
+                <Image
+                  src="/images/homepage/services/carosel/VISION_FRAMING.png"
+                  alt="Vision Framing"
+                  height={64}
+                  width={64}
+                  className="w-16 h-16"
+                />
+              </div>
+              <h2 className="text-xl font-semibold">VISION FRAMING</h2>
             </div>
           </div>
 
           <div>
             <div className="bg-secondary-color shadow-md flex flex-col items-center p-8 gap-y-2 mx-1 lg:mx-3">
-              <Image src={consultingImg} alt="advisor image" />
-              <h2 className="text-xl font-semibold">Consulting</h2>
-              <p className="text-center">
-                Tailored solutions to address your unique business challenges
-                and opportunities.
-              </p>
+              <div>
+                <Image
+                  src="/images/homepage/services/carosel/STRATEGIC_ROADMAPPING.png"
+                  alt="Strategic Roadmapping"
+                  height={64}
+                  width={64}
+                  className="w-16 h-16"
+                />
+              </div>
+              <h2 className="text-xl font-semibold "> STRATEGIC ROADMAPPING</h2>
             </div>
           </div>
 
           <div>
             <div className="bg-secondary-color shadow-md flex flex-col items-center p-8 gap-y-2 mx-1 lg:mx-3">
-              <Image src={outsourceImg} alt="advisor image" />
-              <h2 className="text-xl font-semibold ">Outsource CEO</h2>
-              <p className="text-center line-clamp-2">
-                Offering experienced leadership on demand to steer your
-                organization effectively without a full-time hire.
-              </p>
+              <div>
+                <Image
+                  src="/images/homepage/services/carosel/CULTURAL_REDESIGN.png"
+                  alt="Cultural Redesign"
+                  height={64}
+                  width={64}
+                  className="w-16 h-16"
+                />
+              </div>
+              <h2 className="text-xl font-semibold"> CULTURAL REDESIGN</h2>
             </div>
           </div>
-
           <div>
             <div className="bg-secondary-color shadow-md flex flex-col items-center p-8 gap-y-2 mx-1 lg:mx-3">
-              <Image src={consultingImg} alt="advisor image" />
-              <h2 className="text-xl font-semibold">Consult CEO</h2>
-              <p className="text-center">
-                Strategic CEO-level consulting to optimize leadership,
-                operations, and long-term vision.
-              </p>
+              <div>
+                <Image
+                  src="/images/homepage/services/carosel/STRUCTURAL_RE_ENGINEERING.png"
+                  alt="Structural Re-Engineering"
+                  height={64}
+                  width={64}
+                  className="w-16 h-16"
+                />
+              </div>
+              <h2 className="text-xl font-semibold">
+                STRUCTURAL RE-ENGINEERING
+              </h2>
+            </div>
+          </div>
+          <div>
+            <div className="bg-secondary-color shadow-md flex flex-col items-center p-8 gap-y-2 mx-1 lg:mx-3">
+              <div>
+                <Image
+                  src="/images/homepage/services/carosel/EXECUTION_SYSTEMS.png"
+                  alt="Execution Systems"
+                  height={64}
+                  width={64}
+                  className="w-16 h-16"
+                />
+              </div>
+              <h2 className="text-xl font-semibold">EXECUTION SYSTEMS</h2>
+            </div>
+          </div>
+          <div>
+            <div className="bg-secondary-color shadow-md flex flex-col items-center p-8 gap-y-2 mx-1 lg:mx-3">
+              <div>
+                <Image
+                  src="/images/homepage/services/carosel/EXPANSION.png"
+                  alt="Expansion"
+                  height={64}
+                  width={64}
+                  className="w-16 h-16"
+                />
+              </div>
+              <h2 className="text-xl font-semibold">EXPANSION</h2>
             </div>
           </div>
         </Slider>

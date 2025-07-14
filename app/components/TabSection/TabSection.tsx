@@ -1,6 +1,6 @@
 "use client";
 import React, { useState } from "react";
-import { Tabs, Tab, Card, CardBody } from "@nextui-org/react";
+import { Tabs, Tab, Card, CardBody, Link } from "@nextui-org/react";
 import OutlineButton from "../Button/OutlineButton";
 import Image from "next/image";
 import videoThumb from "../../../public/images/homepage/video-thumb.jpg.png";
@@ -43,10 +43,7 @@ export default function TabSection() {
                   1
                 </span>
                 <div className="text-start">
-                  <p>Vision & Strategy</p>
-                  <small className="font-normal">
-                    Finding Your Next Consultant with Confidence
-                  </small>
+                  <p>Business Transformation Consulting</p>
                 </div>
               </div>
               <div
@@ -87,7 +84,7 @@ export default function TabSection() {
                     }}
                     className="text-2xl font-bold"
                   >
-                    Who We Are
+                    Business Transformation Consulting
                   </MotionH3>
                   <MotionP
                     initial={{ opacity: 0, y: "30px" }}
@@ -100,10 +97,11 @@ export default function TabSection() {
                       },
                     }}
                   >
-                    We have over 20 years of experience in strategic consulting,
-                    emotional intelligence coaching, and leadership development.
-                    Our team helps individuals and organizations find clear,
-                    practical solutions to reach their goals.
+                    You’ve hit a wall. Your passion, talent, and energy drove
+                    your company’s early success, but you’re caught in what we
+                    call the Holy Trap – “holy” because of the positive traits
+                    that got you here, but “trapped” by a lack of clarity in
+                    vision, culture, structure, and data.
                   </MotionP>
                   <MotionP
                     initial={{ opacity: 0, y: "50px" }}
@@ -116,11 +114,32 @@ export default function TabSection() {
                       },
                     }}
                   >
-                    We focus on combining real-world knowledge with a thoughtful
-                    approach to long lasting success.
+                    The business isn’t broken. But{" "}
+                    <strong>you’re stuck and can’t figure out why.</strong>
+                  </MotionP>
+                  <MotionP
+                    initial={{ opacity: 0, y: "50px" }}
+                    whileInView={{
+                      opacity: 1,
+                      y: 0,
+                      transition: {
+                        delay: 0.4,
+                        duration: 0.8,
+                      },
+                    }}
+                  >
+                    Let us guide you through the Sabbir Nasir Transformation
+                    Framework, a highly structured process designed to turn
+                    confusion into clarity, data into insight, and potential
+                    into performance. That’s how you{" "}
+                    <strong>
+                      break through that wall, realize your vision, and scale
+                      from $10 million to $100 million and beyond.
+                    </strong>
                   </MotionP>
                   <MotionDiv
                     initial={{ opacity: 0, y: "50px" }}
+                    className="mt-3 ms-1"
                     whileInView={{
                       opacity: 1,
                       y: 0,
@@ -131,7 +150,6 @@ export default function TabSection() {
                         duration: 1.2,
                       },
                     }}
-                    className="ml-1"
                   >
                     <OutlineButton title="READ MORE" />
                   </MotionDiv>
@@ -148,14 +166,14 @@ export default function TabSection() {
           title={
             <>
               <div
-                className={`hidden lg:flex items-center space-x-3 font-semibold ${
+                className={`hidden lg:flex items-center space-x-3 py-3  h-full font-semibold ${
                   selected === "assistance"
                     ? "text-white"
                     : "text-primary-color"
                 }`}
               >
                 <span
-                  className={`w-6 h-6 flex items-center justify-center rounded-full font-bold ${
+                  className={`w-6 h-6 flex items-center  justify-center rounded-full font-bold ${
                     selected === "assistance"
                       ? "bg-white text-primary-color"
                       : "bg-primary-color text-white"
@@ -164,10 +182,7 @@ export default function TabSection() {
                   2
                 </span>
                 <div className="text-start">
-                  <p>Personalized Guidance</p>
-                  <small className="font-normal">
-                    Expert Coaching for Your Unique Challenges
-                  </small>
+                  <p>From Stagnation to Scale</p>
                 </div>
               </div>
               <div
@@ -207,7 +222,7 @@ export default function TabSection() {
                     }}
                     className="text-2xl font-bold"
                   >
-                    Who We Are
+                    From Stagnation to Scale
                   </MotionH3>
                   <MotionP
                     initial={{ opacity: 0, y: "30px" }}
@@ -220,27 +235,20 @@ export default function TabSection() {
                       },
                     }}
                   >
-                    We have over 15 years of experience Lorem ipsum dolor sit
-                    amet, consectetur adipiscing elit. Aenean Lorem ipsm dolor
-                    sit the power of consectetur adi pisi cing elit, sed do
-                    eiusmod tempor exercitationemut labore.
+                    We partner with founders, senior executives, and investors
+                    whose successful companies have plateaued and require
+                    <strong>transformation to scale and thrive. </strong> While
+                    Sabbir Nassir has significant experience transforming
+                    businesses in retail, manufacturing, and private equity, the
+                    SabbirNasir Transformation Framework can be applied to
+                    organizations in virtually any industry, anywhere in the
+                    world to{" "}
+                    <strong>maximize performance and profitability. </strong>
                   </MotionP>
-                  <MotionP
-                    initial={{ opacity: 0, y: "50px" }}
-                    whileInView={{
-                      opacity: 1,
-                      y: 0,
-                      transition: {
-                        delay: 0.4,
-                        duration: 0.8,
-                      },
-                    }}
-                  >
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Aenean bibendum nec risus et suscipit Curabitur metus ipsum.
-                  </MotionP>
+
                   <MotionDiv
                     initial={{ opacity: 0, y: "50px" }}
+                    className="mt-3 ms-1"
                     whileInView={{
                       opacity: 1,
                       y: 0,
@@ -251,9 +259,10 @@ export default function TabSection() {
                         duration: 1.2,
                       },
                     }}
-                    className="ml-1"
                   >
-                    <OutlineButton title="READ MORE" />
+                    <Link href="/who-we-serve">
+                      <OutlineButton title="WHO WE SERVE" />
+                    </Link>
                   </MotionDiv>
                 </div>
                 <div className="flex-1">
@@ -268,7 +277,7 @@ export default function TabSection() {
           title={
             <>
               <div
-                className={`hidden lg:flex items-center space-x-3 font-semibold ${
+                className={`hidden lg:flex items-center space-x-3 py-3 font-semibold ${
                   selected === "experience"
                     ? "text-white"
                     : "text-primary-color"
@@ -284,10 +293,7 @@ export default function TabSection() {
                   3
                 </span>
                 <div className="text-start">
-                  <p>Proven Expertise</p>
-                  <small className="font-normal">
-                    Backed by Over 20 Years of Leadership Experience
-                  </small>
+                  <p>Who We Are</p>
                 </div>
               </div>
               <div
@@ -340,27 +346,20 @@ export default function TabSection() {
                       },
                     }}
                   >
-                    We have over 15 years of experience Lorem ipsum dolor sit
-                    amet, consectetur adipiscing elit. Aenean Lorem ipsm dolor
-                    sit the power of consectetur adi pisi cing elit, sed do
-                    eiusmod tempor exercitationemut labore.
-                  </MotionP>
-                  <MotionP
-                    initial={{ opacity: 0, y: "50px" }}
-                    whileInView={{
-                      opacity: 1,
-                      y: 0,
-                      transition: {
-                        delay: 0.4,
-                        duration: 0.8,
-                      },
-                    }}
-                  >
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Aenean bibendum nec risus et suscipit Curabitur metus ipsum.
+                    Sabbir Nasir has spent nearly three decades leading the
+                    transformations of multinational and private companies –
+                    <strong>
+                      not by simply advising, but by understanding and doing.
+                    </strong>{" "}
+                    His approach is heavily influenced by his own spiritual
+                    journey that taught him invaluable lessons about presence
+                    and self-awareness. With Sabbir’s guidance, you’ll move
+                    forward with clarity, scale with confidence, and{" "}
+                    <strong>achieve sustainable growth and success.</strong>
                   </MotionP>
                   <MotionDiv
                     initial={{ opacity: 0, y: "50px" }}
+                    className="mt-3 ms-1"
                     whileInView={{
                       opacity: 1,
                       y: 0,
@@ -371,9 +370,10 @@ export default function TabSection() {
                         duration: 1.2,
                       },
                     }}
-                    className="ml-1"
                   >
-                    <OutlineButton title="READ MORE" />
+                    <Link href="">
+                      <OutlineButton title="OUR STORY" />
+                    </Link>
                   </MotionDiv>
                 </div>
                 <div className="flex-1">
@@ -383,7 +383,7 @@ export default function TabSection() {
             </CardBody>
           </Card>
         </Tab>
-        <Tab
+        {/* <Tab
           key="investment"
           title={
             <>
@@ -502,7 +502,7 @@ export default function TabSection() {
               </MotionDiv>
             </CardBody>
           </Card>
-        </Tab>
+        </Tab> */}
       </Tabs>
     </div>
   );
