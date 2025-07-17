@@ -5,7 +5,13 @@ import VideoPlayer from "../components/WhoWeServe/WhoWeServePageComponent/VideoP
 import Image from "next/image";
 import whoWeServeImg from "../../public/images/who-we-serve/who-we-serve.png";
 import CustomerFeedback from "../components/CustomerFeedback/CustomerFeedback";
-import { MotionDiv, MotionSection } from "../components/Motion/Motion";
+import {
+  MotionButton,
+  MotionDiv,
+  MotionSection,
+} from "../components/Motion/Motion";
+import Link from "next/link";
+import { BsFillGridFill } from "react-icons/bs";
 
 const WhoWeServe = () => {
   return (
@@ -47,126 +53,120 @@ const WhoWeServe = () => {
           }}
           className="flex-[1.5] flex flex-col gap-5"
         >
-          <div className="lg:pt-2 pb-10 lg:pb-20">
-            <p className="mb-8 text-lg">
-              At <span className="font-bold">Team Sabbir Nasir</span>, we
-              partner with individuals, teams, and organizations who are ready
-              to challenge the status quo, embrace meaningful growth, and
-              operate with clarity and purpose. Our services are designed to
-              meet the needs of a diverse range of clients:
-            </p>
+          <div className="space-y-4 pb-6 lg:pb-10">
+            <div>
+              <h2 className="text-3xl font-bold text-start text-gray-800">
+                Is Your Organization Stuck in the Holy Trap?
+              </h2>
 
-            <div className="space-y-8">
-              <div>
-                <h3 className="text-2xl font-bold mb-4">
-                  Corporate Leaders & Executives
-                </h3>
-                <p className="text-gray-700">
-                  For decision-makers navigating high-stakes environments, we
-                  offer strategic insight, leadership development, and emotional
-                  intelligence coaching to drive sustainable success with
-                  authenticity and vision.
-                </p>
-              </div>
+              <p className="text-gray-700 mt-4">
+                We’ve found that businesses often find early success due to the
+                founder’s passion, purpose, and determination, not a structured,
+                carefully crafted business plan. Revenue reaches $5-$10 million
+                and their small team grows to 500-1,000 employees.
+              </p>
+              <p className="text-gray-700 mt-4">
+                Then the company hits a wall that we call the Holy Trap.{" "}
+                <strong>
+                  The sacred spark and positive energy that produced genuine
+                  success aren’t enough to scale.
+                </strong>{" "}
+                The company tries to expand, but confusion remains. Closer
+                examination typically reveals:
+              </p>
 
-              <div>
-                <h3 className="text-2xl font-bold mb-4">
-                  Entrepreneurs & Startups
-                </h3>
-                <p className="text-gray-700">
-                  {`Whether you're launching or scaling, we provide branding,
-                  strategic planning, and problem-solving consultancy to help
-                  founders align their vision with execution and thrive in
-                  competitive markets.`}
-                </p>
-              </div>
+              <ul className="list-disc list-inside text-gray-700 space-y-1 mt-4">
+                <li>Cluttered vision</li>
+                <li>Undefined values</li>
+                <li>Fragmented data</li>
+                <li>Reactive strategy</li>
+                <li>Overwhelmed leadership</li>
+              </ul>
 
-              <div>
-                <h3 className="text-2xl font-bold mb-4">
-                  Organizations Seeking Transformation
-                </h3>
-                <p className="text-gray-700">
-                  From culture change to long-term strategic planning, we
-                  support businesses, NGOs, and institutions undergoing
-                  transformation—offering frameworks to evolve with agility,
-                  purpose, and measurable impact.
-                </p>
-              </div>
-
-              <div>
-                <h3 className="text-2xl font-bold mb-4">
-                  Creative Professionals & Thought Leaders
-                </h3>
-                <p className="text-gray-700">
-                  Artists, educators, writers, and innovators benefit from our
-                  10-year planning and personal branding consultancy—helping
-                  them build meaningful legacies with intention and strategic
-                  clarity.
-                </p>
-              </div>
-
-              <div>
-                <h3 className="text-2xl font-bold mb-4">
-                  Individuals on a Journey of Self-Discovery
-                </h3>
-                <p className="text-gray-700">
-                  {` For those seeking deeper purpose, clarity, and connection, our
-                  "Exploring Your Higher Self" and emotional intelligence
-                  programs offer tools to live and lead from the inside out.`}
-                </p>
-              </div>
-
-              <div>
-                <h3 className="text-2xl font-bold mb-4">Teams in Transition</h3>
-                <p className="text-gray-700">
-                  We help teams align around shared goals, develop emotional
-                  intelligence, and create actionable plans for performance,
-                  cohesion, and cultural transformation.
-                </p>
-              </div>
+              <p className="text-gray-700 mt-4">
+                These are the types of organizations that Sabbir Nasir and his
+                associates can help{" "}
+                <strong>transform and scale to $100 million and beyond.</strong>
+                .
+              </p>
             </div>
 
-            <p className="mt-12 text-lg">
-              Whether you are seeking professional breakthroughs, personal
-              alignment, or organizational reinvention,{" "}
-              <span className="font-bold">Team Sabbir Nasir</span> is here to
-              guide, support, and empower your journey.
-            </p>
-          </div>
+            <div>
+              <h3 className="text-2xl font-bold text-gray-800 pt-4">
+                A Universal Model for Transformation
+              </h3>
 
-          {/* <p>
-            {`At Team Sabbir Nasir, we partner with individuals, teams, and organizations who are ready to challenge the status quo, embrace meaningful growth, and operate with clarity and purpose. Our services are designed to meet the needs of a diverse range of clients:
-`}
-          </p>
-          <p>
-            {` At DXG, our approach is to intimately understand your event's
-            objectives and forge a connection between your content and your
-            audience. Whether through immersive experiences, captivating
-            visuals, or interactive elements, we ensure that every aspect of
-            your event resonates with attendees.
-          `}
-          </p>
-          <p>
-            We stay at the forefront of technology, harnessing innovative
-            solutions to enhance engagement and streamline production. Our
-            outcome-focused strategy is designed to deliver measurable results,
-            turning your vision into a dynamic reality that leaves a lasting
-            impression.
-          </p> */}
+              <p className="text-gray-700">
+                We understand the work because we’ve already done the work.
+                Sabbir Nasir has led the transformation of a grocery chain
+                (Shwapno) and a furniture manufacturer and retailer (Otobi) from
+                the brink of failure and stagnancy respectively to become the
+                largest and most successful organizations in Bangladesh in their
+                respective business categories.
+              </p>
+              <p className="text-gray-700">
+                The Sabbir Nasir Transformation Framework has produced
+                remarkable growth in the retail and manufacturing sectors and is
+                ideal for private equity firms seeking to buy, transform and
+                sell companies for profit. However, this approach to
+                transformation is industry-agnostic and can be applied to
+                virtually any company in the world that is stuck in the Holy
+                Trap.
+              </p>
+            </div>
+            <div>
+              <h3 className="text-2xl font-bold text-gray-800 ">
+                Break Through the Wall
+              </h3>
+              <p className="text-gray-700 text-start !mt-3">
+                <strong>
+                  We want to hear from you if your company is stuck and needs a
+                  turnaround.
+                </strong>{" "}
+                An overhaul. A fresh perspective. A clear path forward. A
+                sustainable strategy. Not just a change in function, but a
+                change in thinking and culture. And a transformational architect
+                to guide you through the process.
+              </p>
+              <p className="text-gray-700 text-start">
+                Sabbir and his associates will examine every area of your
+                business to identify and address issues that are holding you
+                back. Vision, values, and culture. Processes, financials, and
+                data. Value proposition, brand positioning, and strategic
+                planning. Then the transformation begins and blossoms.
+              </p>
+            </div>
+            <div>
+              <h3 className="text-2xl font-bold text-start text-gray-800 ">
+                Take the First Step
+              </h3>
+              <p className="text-gray-700 text-start !mt-3">
+                Schedule a complimentary 30-minute discovery call with Sabbir
+                Nasir. You’ll begin to{" "}
+                <strong>
+                  see what is holding you back, and what is possible through
+                  transformation.
+                </strong>{" "}
+                Let’s start this journey together.
+              </p>
+            </div>
+
+            <div className="mt-2 ">
+              <Link href={"/contact-us"}>
+                <MotionButton
+                  initial={{ opacity: 0, scale: 0 }}
+                  whileTap={{ scale: 0.9 }}
+                  animate={{ opacity: 1, scale: 1 }}
+                  className="rounded-full px-4 h-10 text-white text-sm flex items-center justify-center gap-2 hover:text-white bg-primary-color hover:bg-gradient-to-tr from-black via-primary-color to-sky-200"
+                >
+                  <BsFillGridFill />
+                  <div className="border-r-2 h-full border-gray-500"></div>
+                  SCHEDULE A CALL
+                </MotionButton>
+              </Link>
+            </div>
+          </div>
         </MotionDiv>
-        {/* <MotionDiv
-          initial={{ opacity: 0, x: "50px" }}
-          whileInView={{
-            opacity: 1,
-            x: 0,
-            transition: {
-              duration: 1,
-            },
-          }}
-          className="flex-1"
-        >
-          <Image src={whoWeServeImg} alt="who-we-serve-image" />
-        </MotionDiv> */}
       </section>
       <section>
         <CustomerFeedback />
