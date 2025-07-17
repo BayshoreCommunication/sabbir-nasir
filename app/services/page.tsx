@@ -13,7 +13,7 @@ import { BsFillGridFill } from "react-icons/bs";
 const ServicesPage = () => {
   return (
     <div className="overflow-hidden">
-      <Topbar mainPage="Sabbir Nasir Transformation Framework" />
+      <Topbar mainPage="Transformation Framework" />
       <section className="main-container spacer">
         <div className="text-center mb-4 lg:mb-9">
           <MotionH1
