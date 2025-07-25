@@ -10,6 +10,9 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        'lumios-marker': ['"Lumios Marker"', 'cursive'],
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
@@ -33,7 +36,7 @@ const config: Config = {
             //   foreground: "#132841",
             //   DEFAULT: "#006FEE",
             // },
-            primary: "#132841",
+            primary: "#141212",
             secondary: "#ffffff",
           },
         },

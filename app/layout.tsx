@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter, Montserrat, Open_Sans } from "next/font/google";
+import { Inter, Montserrat, Open_Sans, Petrona } from "next/font/google";
 import "./globals.css";
 import { Providers } from "./providers";
 import Navbar from "./components/Navbar";
@@ -12,9 +12,15 @@ export const inter = Inter({
   display: "swap",
 });
 
+// Import the new fonts
+export const petrona = Petrona({ 
+  subsets: ["latin"],
+  display: "swap",
+});
+
 export const metadata: Metadata = {
   title: "Sabbir Nasir",
-  description: "Success Doesn’t Happen Without Strategy",
+  description: "Success Doesn't Happen Without Strategy",
   metadataBase: new URL("https://sabbir-nasir.vercel.app"),
   alternates: {
     canonical: "/",

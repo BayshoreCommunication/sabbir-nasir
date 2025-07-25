@@ -1,5 +1,5 @@
-"use client";
-import React, { useState } from "react";
+"use client"
+import { useState } from "react"
 import {
   Navbar,
   NavbarBrand,
@@ -8,18 +8,18 @@ import {
   NavbarMenuToggle,
   NavbarMenu,
   NavbarMenuItem,
-} from "@nextui-org/react";
+  Button,
+} from "@nextui-org/react"
+import { MdOutlineSearch } from "react-icons/md"
+import Link from "next/link"
+import { usePathname } from "next/navigation"
 import logo from "../../public/images/logo/sabbir-nasir-svg-logo.svg";
 import Image from "next/image";
-import { MdOutlineSearch } from "react-icons/md";
-import Link from "next/link";
-import { usePathname } from "next/navigation";
+import ScheduleButton from "./Button/ScheduleButton";
 
 export default function NavContent() {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const pathname = usePathname();
-
-  // console.log("is menu open", isMenuOpen);
+  const [isMenuOpen, setIsMenuOpen] = useState(false)
+  const pathname = usePathname()
 
   const navItems = [
     {
@@ -31,8 +31,8 @@ export default function NavContent() {
       link: "/about-us",
     },
     {
-      title: "SERVICES",
-      link: "/services",
+      title: "OUR FRAMEWORK",
+      link: "/our-framework",
     },
     {
       title: "WHO WE SERVE",
@@ -40,31 +40,18 @@ export default function NavContent() {
     },
     {
       title: "NEWS",
-      link: "#",
+      link: "/news",
     },
     {
-      title: "CONTACT US",
-      link: "/contact-us",
+      title: "INSIGHTS",
+      link: "/insights",
     },
-  ];
+  ]
 
   return (
-    <main className="w-full bg-white relative z-50">
+    <main className="w-full bg-white relative z-50 border-b border-gray-100">
       <div className="main-container">
-        <div className="hidden lg:flex bg-[url('/images/logo/navbar-frame.png')] w-full h-[2.2rem] bg-cover justify-between items-center text-white px-16 text-sm font-normal">
-          <small>We have over 20 years of experience.</small>
-          <small>01973-062749</small>
-          <small>
-            House 21, Road 1, Block A, Aftab Nagar, Dhaka, Bangladesh
-          </small>
-          <small>Sun to Thu 08:00 - 16:30</small>
-        </div>
-        <Navbar
-          maxWidth="full"
-          className="py-2 lg:py-2"
-          isMenuOpen={isMenuOpen}
-          onMenuOpenChange={setIsMenuOpen}
-        >
+        <Navbar maxWidth="full" className="py-3 lg:py-4" isMenuOpen={isMenuOpen} onMenuOpenChange={setIsMenuOpen}>
           <NavbarContent>
             <NavbarBrand className="justify-start">
               <Link href={"/"}>
@@ -84,13 +71,12 @@ export default function NavContent() {
             />
           </NavbarContent>
 
-          <NavbarContent className="hidden lg:flex gap-5" justify="end">
+          <NavbarContent className="hidden lg:flex gap-8" justify="center">
             {navItems.map((item, index) => (
               <NavbarItem key={index}>
                 <Link
-                  className={`hover:text-primary-color font-medium text-black ${
-                    pathname === item.link &&
-                    "text-primary-color underline underline-offset-4"
+                  className={`hover:text-[#00bcd4] font-medium text-gray-700 transition-colors ${
+                    pathname === item.link && "text-[#00bcd4] font-semibold"
                   }`}
                   href={item.link}
                 >
@@ -98,22 +84,24 @@ export default function NavContent() {
                 </Link>
               </NavbarItem>
             ))}
-            <NavbarItem>|</NavbarItem>
+          </NavbarContent>
 
+          <NavbarContent className="hidden lg:flex gap-4" justify="end">
+            
             <NavbarItem>
-              <MdOutlineSearch size={24} className="mt-1" />
+              <ScheduleButton>
+                <Link href="/schedule-call">SCHEDULE A CALL</Link>
+              </ScheduleButton>
             </NavbarItem>
           </NavbarContent>
 
-          <NavbarMenu className="h-[3rem] pt-8">
+          <NavbarMenu className="pt-8">
             {navItems.map((item, index) => (
-              <NavbarMenuItem key={index} className="pt-1">
+              <NavbarMenuItem key={index} className="pt-2">
                 <Link
                   onClick={() => setIsMenuOpen(false)}
-                  // className="w-full text-base"
-                  className={`text-base font-medium text-black ${
-                    pathname === item.link &&
-                    "text-primary-color border-b border-primary-color"
+                  className={`text-base font-medium text-gray-700 ${
+                    pathname === item.link && "text-[#00bcd4] font-semibold"
                   }`}
                   href={item.link}
                 >
@@ -121,9 +109,14 @@ export default function NavContent() {
                 </Link>
               </NavbarMenuItem>
             ))}
+            <NavbarMenuItem className="pt-4">
+              <ScheduleButton>
+                <Link href="/schedule-call">SCHEDULE A CALL</Link>
+              </ScheduleButton>
+            </NavbarMenuItem>
           </NavbarMenu>
         </Navbar>
       </div>
     </main>
-  );
+  )
 }

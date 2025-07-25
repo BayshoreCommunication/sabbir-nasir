@@ -1,183 +1,163 @@
-import React from "react";
-import logo from "../../public/images/logo/sabbir-nasir-svg-footer-logo.svg";
-import Image from "next/image";
-import { Button } from "@nextui-org/react";
+
 import {
-  FaFacebook,
-  FaFacebookF,
-  FaInstagram,
-  FaLinkedin,
-  FaYoutube,
-} from "react-icons/fa";
+    FaFacebook,
+    FaFacebookF,
+    FaInstagram,
+    FaLinkedin,
+    FaYoutube,
+  } from "react-icons/fa";
+import { Button } from "@nextui-org/react";
+import logo from "../../public/images/logo/sabbir-nasir-svg-logo.svg";
+import Image from "next/image";
 
 const Footer = () => {
   return (
-    <main className="bg-primary-color text-white ">
-      <div className="main-container flex flex-col gap-4 py-3 lg:py-10">
-        <div className="flex flex-col lg:flex-row lg:items-center gap-4 lg:gap-6">
-          <Image
+    <footer className="bg-white text-gray-800">
+      {/* Top section with logo and description */}
+      <div className="main-container mx-auto px-4 py-8">
+        <div className="flex flex-col lg:flex-row lg:items-start gap-6 mb-8">
+        <Image
             src={logo}
             alt="sabbir-nasir-logo"
             className="h-[3.5rem] w-auto"
           />
-          <p className="text-sm">
-            Need expert guidance? Get in touch with our team today or call
-            01973-062749 for personalized support and consulting services.
+          <div className="hidden lg:block w-px h-12 bg-gray-700 mx-4"></div>
+          <p className="text-sm text-primary-color max-w-3xl">
+            Need expert guidance? Get in touch with our team today or call 01973-062749 for personalized support and
+            consulting services.
           </p>
         </div>
 
-        <div className="flex flex-col lg:flex-row gap-y-4">
-          <div className="flex-[3] flex flex-col gap-4">
-            <div className="bg-[#0F2136] flex flex-col lg:flex-row gap-y-4 justify-around py-2 px-2 lg:px-0">
-              <div>
-                <p>+88 01973-062749</p>
-                <small>sabbir@teamsabbirnasir.com</small>
-              </div>
-              <div>
-                <p>House 21, Road 1, Block A,</p>
-                <small>Aftab Nagar, Dhaka, Bangladesh</small>
+        {/* Main content grid */}
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+          {/* First column - Useful Links and Twitter Feeds (2/3 width) */}
+          <div className="lg:col-span-2">
+            {/* Contact information */}
+            <div className="bg-white p-4 mb-8 rounded-lg shadow-md w-fit">
+              <div className="flex flex-col md:flex-row justify-between gap-6">
+                <div className="px-4 py-2">
+                  <p className="font-semibold">+88 01973-062749</p>
+                  <p className="text-sm text-gray-600">sabbir@teamsabbirnasir.com</p>
+                </div>
+                <div className="px-4 py-2">
+                  <p className="font-semibold">Manhattan Hall,</p>
+                  <p className="text-sm text-gray-600">Advisor Ltd 1258, Melbourne, australia</p>
+                </div>
               </div>
             </div>
-            <div className="flex flex-col lg:flex-row gap-y-4 lg:gap-y-0 lg:gap-x-10">
-              {/* useful links */}
-              <div className="flex-1 flex flex-col gap-y-3">
-                <h4>Useful Links</h4>
-                <div className="flex gap-16 font-thin text-sm">
-                  <ul className="list-disc flex flex-col gap-1 list-inside">
-                    <li>Home</li>
-                    <li>About Us</li>
-                    <li>Services</li>
-                    <li>Projects</li>
-                    <li>News</li>
-                    <li>Contact Us</li>
-                  </ul>
-                  {/* <ul className="list-disc flex flex-col gap-1 list-inside">
-                    <li>Bonds</li>
-                    <li>Commodities</li>
-                    <li>Investments</li>
-                    <li>Retirement</li>
-                  </ul> */}
-                </div>
-              </div>
-              {/* Twitter feeds */}
-              <div className="flex-1 flex flex-col gap-y-3">
-                <h4>Useful Links</h4>
-                <div className="flex gap-16 font-thin text-sm">
-                  {/* <ul className="list-disc flex flex-col gap-1 list-inside">
-                    <li>Home</li>
-                    <li>About Us</li>
-                    <li>Services</li>
-                    <li>Projects</li>
-                    <li>News</li>
-                    <li>Contact Us</li>
-                  </ul> */}
-                  <ul className="list-disc flex flex-col gap-1 list-inside">
-                    <li>Bonds</li>
-                    <li>Commodities</li>
-                    <li>Investments</li>
-                    <li>Retirement</li>
-                  </ul>
-                </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+              {/* Useful Links */}
+              <div>
+                <h3 className="font-semibold mb-4 text-lg text-gray-800">Useful Links</h3>
+                <ul className="space-y-2 text-sm">
+                  <li className="flex items-center">
+                    <span className="w-2 h-2 bg-gray-400 rounded-full mr-3"></span>
+                    <a href="/" className="hover:text-gray-600 transition-colors">Home</a>
+                  </li>
+                  <li className="flex items-center">
+                    <span className="w-2 h-2 bg-gray-400 rounded-full mr-3"></span>
+                    <a href="/about-us" className="hover:text-gray-600 transition-colors">About Us</a>
+                  </li>
+                  <li className="flex items-center">
+                    <span className="w-2 h-2 bg-gray-400 rounded-full mr-3"></span>
+                    <a href="/services" className="hover:text-gray-600 transition-colors">Services</a>
+                  </li>
+                  <li className="flex items-center">
+                    <span className="w-2 h-2 bg-gray-400 rounded-full mr-3"></span>
+                    <a href="/who-we-serve" className="hover:text-gray-600 transition-colors">Who We Serve</a>
+                  </li>
+                  <li className="flex items-center">
+                    <span className="w-2 h-2 bg-gray-400 rounded-full mr-3"></span>
+                    <a href="/contact-us" className="hover:text-gray-600 transition-colors">Contact Us</a>
+                  </li>
+                </ul>
               </div>
 
-              {/* <div className="flex-1 flex flex-col gap-y-3">
-                <h4>Twitter Feeds</h4>
-                <div className="flex flex-col gap-5">
-                  <div className="flex flex-col gap-2">
-                    <div className="text-sm">
-                      <p>@Rotography Please kindly use our</p>
-                      <p>Support Forum: pixelatic.co.uk.</p>
-                    </div>
-                    <small>about a month ago</small>
-                  </div>
-                  <div className="flex flex-col gap-2">
-                    <div className="text-sm">
-                      <p>@Rotography Please kindly use our</p>
-                      <p>Support Forum: pixelatic.co.uk.</p>
-                    </div>
-                    <small>about a month ago</small>
-                  </div>
-                </div>
-              </div> */}
+              {/* Twitter Feeds */}
+              <div>
+                <h3 className="font-semibold mb-4 text-lg text-gray-800">Twitter Feeds</h3>
+                <ul className="space-y-2 text-sm">
+                  <li className="flex items-center">
+                    <span className="w-2 h-2 bg-gray-400 rounded-full mr-3"></span>
+                    Bonds
+                  </li>
+                  <li className="flex items-center">
+                    <span className="w-2 h-2 bg-gray-400 rounded-full mr-3"></span>
+                    Commodities
+                  </li>
+                  <li className="flex items-center">
+                    <span className="w-2 h-2 bg-gray-400 rounded-full mr-3"></span>
+                    Investments
+                  </li>
+                  <li className="flex items-center">
+                    <span className="w-2 h-2 bg-gray-400 rounded-full mr-3"></span>
+                    Retirement
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
-          {/* newslatter  */}
-          <div className="flex-1">
-            <div className="bg-[#0C1929] p-3 lg:p-6 flex flex-col gap-3">
-              <h4 className="text-lg">Our Newsletter</h4>
-              <p className="text-sm">
-                Stay informed with the latest insights, strategies, updates and
-                receive expert tips from Team Sabbir Nasir to your inbox.
+
+          {/* Second column - Newsletter (1/3 width) */}
+          <div className="lg:col-span-1">
+            <div className="bg-white  p-6 rounded-md shadow-md">
+              <h3 className="font-semibold mb-3 text-lg text-gray-800">Our Newsletter</h3>
+              <p className="text-sm text-gray-600 mb-4">
+                Stay informed with the latest insights, strategies, updates and receive expert tips from Team Sabbir
+                Nasir to your inbox.
               </p>
-              <form action="#" className="flex flex-col gap-2">
+              <form className="space-y-3">
                 <input
-                  className="rounded-full w-full py-2 px-3 text-gray-700 outline-none text-sm"
+                  type="text"
                   placeholder="Your Name"
+                  className="bg-gray-50 text-gray-800 border border-gray-200 rounded-full w-full px-4 py-2"
                 />
                 <input
-                  className="rounded-full w-full py-2 px-3 text-gray-700 outline-none text-sm"
-                  placeholder="Your Email Address"
+                  type="email"
+                  placeholder="Email Address"
+                  className="bg-gray-50 text-gray-800 border border-gray-200 rounded-full w-full px-4 py-2"
                 />
-                <Button
-                  radius="full"
-                  className="border border-white bg-primary-color hover:bg-gradient-to-tr from-black via-primary-color to-sky-200 text-white shadow-lg w-max"
-                >
+                <Button type="submit" className="bg-gray-800 text-white hover:bg-gray-700 rounded-full px-6 w-full">
                   SUBSCRIBE
                 </Button>
               </form>
-            </div>
-            <div className="flex justify-center py-3 bg-[#0F2136]">
-              <div className="flex gap-2">
-                <a
-                  href="https://www.facebook.com/sabbirnasirassociates"
-                  target="_blank"
-                  className="bg-white w-8 h-8 rounded-full flex items-center justify-center text-primary-color hover:text-white hover:bg-primary-color hover:border border-white"
-                >
-                  <FaFacebookF />
+
+              {/* Social Media Icons */}
+              <div className="flex gap-3 mt-6 justify-center">
+                <a href="https://www.facebook.com/sabbirnasirassociates"
+                  target="_blank" className="bg-gray-800 text-white p-2 rounded-full hover:bg-gray-700 transition-colors">
+                  <FaFacebook size={16} />
                 </a>
-                <a
-                  href="https://www.youtube.com/channel/UCBCJ4RGRj0DmknwSe1Rjqcg"
-                  target="_blank"
-                  className="bg-white w-8 h-8 rounded-full flex items-center justify-center text-primary-color hover:text-white hover:bg-primary-color hover:border border-white"
-                >
-                  <FaYoutube />
+                <a href="https://www.instagram.com/associatessabbirnasir/"
+                  target="_blank" className="bg-gray-800 text-white p-2 rounded-full hover:bg-gray-700 transition-colors">
+                  <FaInstagram size={16} />
                 </a>
-                <a
-                  href="https://www.instagram.com/associatessabbirnasir/"
-                  target="_blank"
-                  className="bg-white w-8 h-8 rounded-full flex items-center justify-center text-primary-color hover:text-white hover:bg-primary-color hover:border border-white"
-                >
-                  <FaInstagram />
+                <a href="https://www.youtube.com/channel/UCBCJ4RGRj0DmknwSe1Rjqcg"
+                  target="_blank" className="bg-gray-800 text-white p-2 rounded-full hover:bg-gray-700 transition-colors">
+                  <FaYoutube size={16} />
                 </a>
-                <a
-                  href="https://www.linkedin.com/company/sabbir-nasir-associates/"
-                  target="_blank"
-                  className="bg-white w-8 h-8 rounded-full flex items-center justify-center text-primary-color hover:text-white hover:bg-primary-color hover:border border-white"
-                >
-                  <FaLinkedin />
+                <a href="https://www.linkedin.com/company/sabbir-nasir-associates/"
+                  target="_blank" className="bg-gray-800 text-white p-2 rounded-full hover:bg-gray-700 transition-colors">
+                  <FaLinkedin size={16} />
                 </a>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div className="bg-white py-3 text-sm text-center">
-        <div className="flex flex-col lg:flex-row gap-1 justify-between text-black main-container">
-          <p>Copyright © 2025 Sabbir Nasir. All rights reserved.</p>
-          <p>
-            Designed & Developed By{" "}
-            <a
-              className="hover:underline underline-offset-2"
-              target="_blank"
-              href={`https://www.bayshorecommunication.com/`}
-            >
-              Bayshore Communication
-            </a>
-          </p>
+
+      {/* Bottom copyright section */}
+      <div className="bg-white border-t">
+        <div className="container mx-auto px-4 py-4">
+          <div className="flex flex-col md:flex-row justify-between items-center text-sm text-gray-600">
+            <p>Copyright © 2025 Advisor. All rights reserved.</p>
+            <p>Designed By <a href="https://www.bayshorecommunication.com/" target="_blank" className="hover:text-gray-600 transition-colors">Bayshore Communication</a></p>
+          </div>
         </div>
       </div>
-    </main>
-  );
-};
+    </footer>
+  )
+}
 
-export default Footer;
+export default Footer

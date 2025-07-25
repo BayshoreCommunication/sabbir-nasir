@@ -1,81 +1,97 @@
-import React, { Fragment } from "react";
-import PrimaryButton from "../Button/PrimaryButton";
-import SecondaryButton from "../Button/SecondaryButton";
-import { MotionDiv, MotionP, MotionSpan } from "../Motion/Motion";
-import Link from "next/link";
+"use client"
+
+import { Fragment } from "react"
+import Link from "next/link"
+import Image from "next/image"
+import { motion } from "framer-motion"
+import { IoArrowForward } from "react-icons/io5"
 
 const HeroSection = () => {
-  const titleArray = ["Transform. ", "Scale. ", "Soar."];
+  const titleArray = ["TRANSFORM. SCALE.", "SOAR."]
 
   return (
-    <div className="bg-[url('/images/homepage/hero-background.png')] bg-fixed bg-cover text-center lg:text-start">
-      <div className="main-container py-12 lg:py-[13.5rem]">
-        <div>
-          <div className={``}>
-            {titleArray.map((title, index) => (
-              <Fragment key={index}>
-                <MotionSpan
-                  initial={{ opacity: 0 }}
-                  animate={{ opacity: 1 }}
-                  transition={{
-                    duration: 1.5,
-                    delay: index / 10,
-                  }}
-                  className={`${
-                    index > 1 && "mt-3"
-                  } text-4xl lg:text-7xl font-bold text-primary-color inline-block ${
-                    index > 2 && "text-white"
-                  }`}
-                >
-                  <span
-                    className={`tracking-wider ${
-                      index === 0 && "mr-2 lg:mr-5"
-                    } ${index === 2 && "mr-2 lg:mr-5"} ${
-                      index === 3 && "mr-2 lg:mr-5"
-                    }`}
+    <section className="bg-gray-50">
+      <div className="main-container mx-auto px-4 py-12 lg:py-24">
+        <div className="grid lg:grid-cols-3 gap-8 items-center">
+          {/* Left Content */}
+          <div className="text-center lg:text-left lg:col-span-2">
+            <div className="mb-8">
+              {titleArray.map((title, index) => (
+                <Fragment key={index}>
+                  <motion.span
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{
+                      duration: 0.8,
+                      delay: index * 0.2,
+                      ease: "easeOut",
+                    }}
+                    className="block text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-semibold text-gray-900 tracking-tight"
+                    style={{ fontFamily: 'Petrona, serif', fontSize: '68px' }}
                   >
                     {title}
-                  </span>
-                </MotionSpan>
-                {index === 1 && <br />}
-              </Fragment>
-            ))}
+                  </motion.span>
+                </Fragment>
+              ))}
+            </div>
+
+            <motion.p
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{
+                duration: 0.8,
+                delay: 0.6,
+                ease: "easeOut",
+              }}
+              className="text-lg md:text-xl text-gray-600 mb-8 leading-relaxed max-w-2xl mx-auto lg:mx-0"
+            >
+              We help founder-led companies overcome stagnation, find clarity, and execute strategies that spark change
+              and fuel growth.
+            </motion.p>
+
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{
+                duration: 0.8,
+                delay: 0.8,
+                ease: "easeOut",
+              }}
+              className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start"
+            >
+              <Link href="/contact-us">
+                <button className="inline-flex items-center font-normal italic text-2xl transition-colors duration-300 group font-lumios-marker text-[#19ACC9]">
+                  Start Breaking Through
+                  <IoArrowForward className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
+                </button>
+              </Link>
+            </motion.div>
           </div>
 
-          <MotionP
-            initial={{ opacity: 0, y: "40px" }}
-            animate={{ opacity: 1, y: 0 }}
+          {/* Right Content - Banner Image */}
+          <motion.div
+            initial={{ opacity: 0, scale: 0.8 }}
+            animate={{ opacity: 1, scale: 1 }}
             transition={{
-              duration: 0.7,
+              duration: 1,
+              delay: 1,
+              ease: "easeOut",
             }}
-            className="font-semibold my-6"
+            className="hidden lg:flex justify-end items-center"
           >
-            We help founder-led companies overcome stagnation, find clarity, and{" "}
-            <br />
-            execute strategies that spark change and fuel growth.
-          </MotionP>
+            <div className="relative w-full max-w-lg h-80 lg:h-96 xl:h-[449px] rounded-2xl overflow-hidden shadow-lg">
+              <Image 
+                src="/images/homepage/banner-content.png" 
+                alt="Banner Content" 
+                fill
+                className="object-cover"
+              />
+            </div>
+          </motion.div>
         </div>
-        <MotionDiv
-          initial={{ opacity: 0, y: "30px" }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{
-            type: "spring",
-            bounce: 0.5,
-            delay: 0.4,
-            duration: 1.2,
-          }}
-          className="flex justify-center lg:justify-start gap-2 lg:gap-4"
-        >
-          <Link href="/about-us">
-            <PrimaryButton>READ MORE</PrimaryButton>
-          </Link>
-          <Link href="/contact-us">
-            <SecondaryButton>START BREAKING THROUGH</SecondaryButton>
-          </Link>
-        </MotionDiv>
       </div>
-    </div>
-  );
-};
+    </section>
+  )
+}
 
-export default HeroSection;
+export default HeroSection

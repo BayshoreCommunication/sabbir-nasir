@@ -2,6 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Font family declaration for Lumios Marker */
+@font-face {
+  font-family: "Lumios Marker";
+  src: url("https://db.onlinewebfonts.com/c/88dc1d3425c59009eea0b3f1d47dad4d?family=Lumios+Marker") format("woff2");
+  font-display: swap;
+}
+
 @layer utilities {
   .main-container {
     @apply w-[94%] sm:w-[90%] md:w-[90%] lg:w-[80%] xl:w-[80%] 2xl:w-[74%] mx-auto;
