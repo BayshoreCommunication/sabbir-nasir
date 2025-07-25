@@ -184,7 +184,7 @@ export const serviceData = [
            
             <div className="flex flex-col gap-3">
               <h2 className="">
-                Sabbir Nasir’s Approach to Emotional Intelligence Coaching
+                Sabbir Nasir's Approach to Emotional Intelligence Coaching
               </h2>
               <p>
                 With a rich background in strategic leadership and a deep
@@ -561,7 +561,7 @@ export const serviceData = [
            
             <div className="flex flex-col gap-3">
               <h2 className="">
-                Sabbir Nasir’s Approach to Emotional Intelligence Coaching
+                Sabbir Nasir's Approach to Emotional Intelligence Coaching
               </h2>
               <p>
                 With a rich background in strategic leadership and a deep
@@ -997,7 +997,7 @@ export const serviceData = [
               </h2>
               <p className="mb-2">
                 In an era of rapid change, long-term clarity is more than a
-                competitive advantage—it’s a necessity. Most individuals and
+                competitive advantage—it's a necessity. Most individuals and
                 organizations get caught in short-term cycles of decision-making
                 without a structured vision for the future. At 
                 <b>Team Sabbir Nasir</b>, we help leaders, entrepreneurs,
@@ -1009,7 +1009,7 @@ export const serviceData = [
                 A decade might seem distant, but every powerful legacy—whether
                 in business, art, or leadership—begins with a clear and
                 committed vision. This service is not just strategic planning.
-                It’s life architecture: shaping your personal and professional
+                It's life architecture: shaping your personal and professional
                 existence with deliberate, future-conscious choices.
               </p>
             </div>
@@ -1019,8 +1019,8 @@ export const serviceData = [
                 Our 10 Years Plan Consultancy is rooted in a guiding principle: 
                 <br />
                 <b>
-                  “When the future is imagined with clarity, the present becomes
-                  strategic.”
+                  "When the future is imagined with clarity, the present becomes
+                  strategic."
                 </b>
               </p>
               <p>
@@ -1154,7 +1154,7 @@ export const serviceData = [
                   your personal mission with realistic strategic outcomes.
                 </p>
                 <ul>
-                  <li>Developing your “10-Year North Star”</li>
+                  <li>Developing your "10-Year North Star"</li>
                   <li>
                     Aligning career, family, wellness, spirituality, and
                     financial goals
@@ -1310,7 +1310,7 @@ export const serviceData = [
                   <li>Quarterly Milestone Tracker</li>
                   <li>Integration Checklist for Life Areas</li>
                   <li>Custom Dashboard for Annual Reviews</li>
-                  <li>Sabbir Nasir’s Exclusive Reflective Journal Prompts</li>
+                  <li>Sabbir Nasir's Exclusive Reflective Journal Prompts</li>
                 </ul>
               </div>
             </div>
@@ -1325,7 +1325,7 @@ export const serviceData = [
                     educator, and philosopher
                   </li>
                   <li>
-                    Blending Logic with Intuition—you won’t just plan with your
+                    Blending Logic with Intuition—you won't just plan with your
                     head, but lead with your heart
                   </li>
                   <li>
@@ -1341,14 +1341,14 @@ export const serviceData = [
             </div>
 
             <div className="flex flex-col gap-3">
-              <h2 className="">Let’s Design the Next Decade—Together</h2>
+              <h2 className="">Let's Design the Next Decade—Together</h2>
 
               <div>
                 <p className=" mb-2">
-                  Whether you’re a rising leader or an accomplished veteran
+                  Whether you're a rising leader or an accomplished veteran
                   seeking legacy-level clarity, our 10 Years Plan Consultancy
                   provides the strategic depth and spiritual alignment to help
-                  you become the person—and leader—you’re meant to be.
+                  you become the person—and leader—you're meant to be.
                 </p>
                 <p>
                   <a
@@ -1378,7 +1378,7 @@ export const serviceData = [
                 Transform Vision Into Action With Precision
               </h2>
               <p className="mb-2">
-                In today’s hyper-competitive and rapidly changing world,
+                In today's hyper-competitive and rapidly changing world,
                 organizations and individuals must do more than just react—they
                 must lead with foresight. Strategic planning is not merely a
                 business formality; it is the blueprint of resilience, growth,
@@ -1467,7 +1467,7 @@ export const serviceData = [
             </div>
 
             <div className="flex flex-col gap-3">
-              <h2 className="">What You’ll Achieve</h2>
+              <h2 className="">What You'll Achieve</h2>
               <p>
                 Through this strategic planning process, you will walk away
                 with:
@@ -1522,7 +1522,7 @@ export const serviceData = [
                     Alignment with values, culture, and long-term aspirations
                   </li>
                   <li>
-                    Tools used: PESTLE, Porter’s Five Forces, Internal
+                    Tools used: PESTLE, Porter's Five Forces, Internal
                     Capability Audit
                   </li>
                 </ul>
@@ -1693,7 +1693,7 @@ export const serviceData = [
             </div>
 
             <div className="flex flex-col gap-3">
-              <h2 className="">What You’ll Receive</h2>
+              <h2 className="">What You'll Receive</h2>
 
               <div>
                 <ul>
@@ -1729,7 +1729,7 @@ export const serviceData = [
                   </li>
                   <li>
                     Thoughtful facilitation and guidance from one of
-                    Bangladesh’s most respected mentors
+                    Bangladesh's most respected mentors
                   </li>
                 </ul>
               </div>
@@ -2401,4 +2401,103 @@ export const serviceData = [
 
     `,
   },
+];
+
+export const insightsData = [
+  {
+    id: 1,
+    image: "/images/homepage/new-tech-awareness.png",
+    date: "30 Nov 2021",
+    title: "New technology awareness.",
+    description: "Delightful remarkably mr on announcing themselves entreaties favourable.",
+    readMoreLink: "#"
+  },
+  {
+    id: 2,
+    image: "/images/homepage/client-meeting.png", 
+    date: "01 Dec 2021",
+    title: "Client meeting discussion.",
+    description: "About to in so terms voice at. Equal an would is found seems of. The particular f...",
+    readMoreLink: "#"
+  },
+  {
+    id: 3,
+    image: "/images/homepage/fast-growth-business.png",
+    date: "04 Dec 2021", 
+    title: "Fast growth for business",
+    description: "It more shed went up is roof if loud case. Delay music in lived noise an. Beyond ge...",
+    readMoreLink: "#"
+  },
+  {
+    id: 4,
+    image: "/images/homepage/new-tech-awareness.png",
+    date: "30 Nov 2021",
+    title: "New technology awareness.",
+    description: "Delightful remarkably mr on announcing themselves entreaties favourable.",
+    readMoreLink: "#"
+  },
+  {
+    id: 5,
+    image: "/images/homepage/client-meeting.png", 
+    date: "01 Dec 2021",
+    title: "Client meeting discussion.",
+    description: "About to in so terms voice at. Equal an would is found seems of. The particular f...",
+    readMoreLink: "#"
+  },
+  {
+    id: 6,
+    image: "/images/homepage/fast-growth-business.png",
+    date: "04 Dec 2021", 
+    title: "Fast growth for business",
+    description: "It more shed went up is roof if loud case. Delay music in lived noise an. Beyond ge...",
+    readMoreLink: "#"
+  },
+  {
+    id: 7,
+    image: "/images/homepage/new-tech-awareness.png",
+    date: "30 Nov 2021",
+    title: "New technology awareness.",
+    description: "Delightful remarkably mr on announcing themselves entreaties favourable.",
+    readMoreLink: "#"
+  },
+  {
+    id: 8,
+    image: "/images/homepage/client-meeting.png", 
+    date: "01 Dec 2021",
+    title: "Client meeting discussion.",
+    description: "About to in so terms voice at. Equal an would is found seems of. The particular f...",
+    readMoreLink: "#"
+  },
+  {
+    id: 9,
+    image: "/images/homepage/fast-growth-business.png",
+    date: "04 Dec 2021", 
+    title: "Fast growth for business",
+    description: "It more shed went up is roof if loud case. Delay music in lived noise an. Beyond ge...",
+    readMoreLink: "#"
+  },
+  {
+    id: 10,
+    image: "/images/homepage/new-tech-awareness.png",
+    date: "30 Nov 2021",
+    title: "New technology awareness.",
+    description: "Delightful remarkably mr on announcing themselves entreaties favourable.",
+    readMoreLink: "#"
+  },
+  {
+    id: 11,
+    image: "/images/homepage/client-meeting.png", 
+    date: "01 Dec 2021",
+    title: "Client meeting discussion.",
+    description: "About to in so terms voice at. Equal an would is found seems of. The particular f...",
+    readMoreLink: "#"
+  },
+  {
+    id: 12,
+    image: "/images/homepage/fast-growth-business.png",
+    date: "04 Dec 2021", 
+    title: "Fast growth for business",
+    description: "It more shed went up is roof if loud case. Delay music in lived noise an. Beyond ge...",
+    readMoreLink: "#"
+  }
 ];

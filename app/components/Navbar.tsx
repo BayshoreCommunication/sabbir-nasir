@@ -20,6 +20,7 @@ import ScheduleButton from "./Button/ScheduleButton";
 export default function NavContent() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const pathname = usePathname()
+  console.log('pathname', pathname)
 
   const navItems = [
     {
@@ -75,8 +76,8 @@ export default function NavContent() {
             {navItems.map((item, index) => (
               <NavbarItem key={index}>
                 <Link
-                  className={`hover:text-[#00bcd4] font-medium text-gray-700 transition-colors ${
-                    pathname === item.link && "text-[#00bcd4] font-semibold"
+                  className={`hover:text-[#00bcd4] font-medium  transition-colors duration-200 ${
+                    pathname === item.link ? "text-[#00bcd4] font-semibold" : "text-gray-700"
                   }`}
                   href={item.link}
                 >
@@ -90,7 +91,7 @@ export default function NavContent() {
             
             <NavbarItem>
               <ScheduleButton>
-                <Link href="/schedule-call">SCHEDULE A CALL</Link>
+                <Link href="/contact-us">SCHEDULE A CALL</Link>
               </ScheduleButton>
             </NavbarItem>
           </NavbarContent>
@@ -100,8 +101,8 @@ export default function NavContent() {
               <NavbarMenuItem key={index} className="pt-2">
                 <Link
                   onClick={() => setIsMenuOpen(false)}
-                  className={`text-base font-medium text-gray-700 ${
-                    pathname === item.link && "text-[#00bcd4] font-semibold"
+                  className={`text-base font-medium text-gray-700 transition-colors duration-200 ${
+                    pathname === item.link ? "text-[#00bcd4] font-semibold" : ""
                   }`}
                   href={item.link}
                 >
@@ -111,7 +112,7 @@ export default function NavContent() {
             ))}
             <NavbarMenuItem className="pt-4">
               <ScheduleButton>
-                <Link href="/schedule-call">SCHEDULE A CALL</Link>
+                <Link href="/contact-us">SCHEDULE A CALL</Link>
               </ScheduleButton>
             </NavbarMenuItem>
           </NavbarMenu>
