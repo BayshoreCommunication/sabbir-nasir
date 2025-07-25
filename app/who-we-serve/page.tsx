@@ -1,178 +1,218 @@
-"use client";
 import React from "react";
 import Topbar from "../components/Topbar";
-import VideoPlayer from "../components/WhoWeServe/WhoWeServePageComponent/VideoPlayer";
+import HeroSectionTop from "../components/HeroSectionTop";
+import HeroSection from "../components/HeroSection";
 import Image from "next/image";
-import whoWeServeImg from "../../public/images/who-we-serve/who-we-serve.png";
-import CustomerFeedback from "../components/CustomerFeedback/CustomerFeedback";
-import {
-  MotionButton,
-  MotionDiv,
-  MotionSection,
-} from "../components/Motion/Motion";
-import Link from "next/link";
-import { BsFillGridFill } from "react-icons/bs";
 
-const WhoWeServe = () => {
+const WhoWeServePage = () => {
+  const breadcrumbs = [{ label: "Home", href: "/" }, { label: "About Us" }]
   return (
     <div>
-      <Topbar mainPage="Who We Serve" />
-      <MotionSection
-        initial={{ opacity: 0, y: "-100px" }}
-        whileInView={{
-          opacity: 1,
-          y: 0,
-          transition: {
-            duration: 1,
-          },
-        }}
-        className="main-container spacer flex justify-center"
-      >
-        {/* <VideoPlayer /> */}
-        <iframe
-          width="50%"
-          height="400"
-          src="https://www.youtube.com/embed/_gwtroFSQAo?si=0hKhalHb_W7EAR2x"
-          title="Sabbir Nasir at Live with a Purpose"
-          frameBorder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          referrerPolicy="strict-origin-when-cross-origin"
-          allowFullScreen
-          className="w-full lg:w-1/2"
-        ></iframe>
-      </MotionSection>
-      <section className="main-container flex flex-col lg:flex-row items-center gap-6 lg:gap-12">
-        <MotionDiv
-          initial={{ opacity: 0, x: "-50px" }}
-          whileInView={{
-            opacity: 1,
-            x: 0,
-            transition: {
-              duration: 1,
-            },
-          }}
-          className="flex-[1.5] flex flex-col gap-5"
-        >
-          <div className="space-y-4 pb-6 lg:pb-10">
-            <div>
-              <h2 className="text-3xl font-bold text-start text-gray-800">
-                Is Your Organization Stuck in the Holy Trap?
-              </h2>
+      <HeroSectionTop title="WHO WE ARE" breadcrumbs={breadcrumbs} />
+      <div className="main-container mx-auto px-4 py-12 space-y-16">
+      {/* About Section */}
+      <section className="space-y-8">
+        <h1 className="text-3xl md:text-4xl font-bold text-gray-900 text-center">
+          About Sabbir Nasir Team & Associates
+        </h1>
 
-              <p className="text-gray-700 mt-4">
-                We’ve found that businesses often find early success due to the
-                founder’s passion, purpose, and determination, not a structured,
-                carefully crafted business plan. Revenue reaches $5-$10 million
-                and their small team grows to 500-1,000 employees.
-              </p>
-              <p className="text-gray-700 mt-4">
-                Then the company hits a wall that we call the Holy Trap.{" "}
-                <strong>
-                  The sacred spark and positive energy that produced genuine
-                  success aren’t enough to scale.
-                </strong>{" "}
-                The company tries to expand, but confusion remains. Closer
-                examination typically reveals:
-              </p>
+        {/* Full-width introductory paragraph */}
+        <p className="text-gray-600 leading-relaxed text-center max-w-6xl mx-auto">
+          Sabbir Nassir & Associates is a global business transformation consultancy created to help people and
+          organizations scale to their full potential with clarity and purpose. We partner with founders, senior
+          executives, and investors, working together to apply the Sabbir Nasir Transformation Framework, which combines
+          proven business transformation principles with human presence, responsibility, and soul.
+        </p>
 
-              <ul className="list-disc list-inside text-gray-700 space-y-1 mt-4">
-                <li>Cluttered vision</li>
-                <li>Undefined values</li>
-                <li>Fragmented data</li>
-                <li>Reactive strategy</li>
-                <li>Overwhelmed leadership</li>
-              </ul>
-
-              <p className="text-gray-700 mt-4">
-                These are the types of organizations that Sabbir Nasir and his
-                associates can help{" "}
-                <strong>transform and scale to $100 million and beyond.</strong>
-                .
-              </p>
-            </div>
-
-            <div>
-              <h3 className="text-2xl font-bold text-gray-800 pt-4">
-                A Universal Model for Transformation
-              </h3>
-
-              <p className="text-gray-700">
-                We understand the work because we’ve already done the work.
-                Sabbir Nasir has led the transformation of a grocery chain
-                (Shwapno) and a furniture manufacturer and retailer (Otobi) from
-                the brink of failure and stagnancy respectively to become the
-                largest and most successful organizations in Bangladesh in their
-                respective business categories.
-              </p>
-              <p className="text-gray-700">
-                The Sabbir Nasir Transformation Framework has produced
-                remarkable growth in the retail and manufacturing sectors and is
-                ideal for private equity firms seeking to buy, transform and
-                sell companies for profit. However, this approach to
-                transformation is industry-agnostic and can be applied to
-                virtually any company in the world that is stuck in the Holy
-                Trap.
-              </p>
-            </div>
-            <div>
-              <h3 className="text-2xl font-bold text-gray-800 ">
-                Break Through the Wall
-              </h3>
-              <p className="text-gray-700 text-start !mt-3">
-                <strong>
-                  We want to hear from you if your company is stuck and needs a
-                  turnaround.
-                </strong>{" "}
-                An overhaul. A fresh perspective. A clear path forward. A
-                sustainable strategy. Not just a change in function, but a
-                change in thinking and culture. And a transformational architect
-                to guide you through the process.
-              </p>
-              <p className="text-gray-700 text-start">
-                Sabbir and his associates will examine every area of your
-                business to identify and address issues that are holding you
-                back. Vision, values, and culture. Processes, financials, and
-                data. Value proposition, brand positioning, and strategic
-                planning. Then the transformation begins and blossoms.
-              </p>
-            </div>
-            <div>
-              <h3 className="text-2xl font-bold text-start text-gray-800 ">
-                Take the First Step
-              </h3>
-              <p className="text-gray-700 text-start !mt-3">
-                Schedule a complimentary 30-minute discovery call with Sabbir
-                Nasir. You’ll begin to{" "}
-                <strong>
-                  see what is holding you back, and what is possible through
-                  transformation.
-                </strong>{" "}
-                Let’s start this journey together.
-              </p>
-            </div>
-
-            <div className="mt-2 ">
-              <Link href={"/contact-us"}>
-                <MotionButton
-                  initial={{ opacity: 0, scale: 0 }}
-                  whileTap={{ scale: 0.9 }}
-                  animate={{ opacity: 1, scale: 1 }}
-                  className="rounded-full px-4 h-10 text-white text-sm flex items-center justify-center gap-2 hover:text-white bg-primary-color hover:bg-gradient-to-tr from-black via-primary-color to-sky-200"
-                >
-                  <BsFillGridFill />
-                  <div className="border-r-2 h-full border-gray-500"></div>
-                  SCHEDULE A CALL
-                </MotionButton>
-              </Link>
+        {/* Two-column layout */}
+        <div className="grid md:grid-cols-3 gap-8 items-center max-w-6xl mx-auto relative">
+          {/* Left column - Colored background with icon (smaller, overlapping) */}
+          <div className="bg-purple-50 p-8 rounded-2xl flex items-center justify-center min-h-[320px] -mt-8 -mr-20 relative z-10">
+            <div className="bg-gray-400 p-6 rounded-2xl">
+              <Image
+                src="/placeholder.png?height=60&width=60"
+                alt="Mountain peaks icon"
+                width={60}
+                height={60}
+                className="filter brightness-0 invert"
+              />
             </div>
           </div>
-        </MotionDiv>
+
+          {/* Right column - Card design (wider, being overlapped) */}
+          <div className="md:col-span-2 bg-white rounded-xl shadow-lg p-8 pl-20 border border-gray-100">
+            <div className="space-y-6">
+              <p className="text-gray-600 leading-relaxed">
+                Sabbir Nasir launched his own consultancy because he observed that stagnating companies need more than
+                templated advice, PowerPoint decks, and periodic check-ins with a traditional advisor. Sabbir is{" "}
+                <span className="font-semibold italic">
+                  a true partner and transformational architect who walks the journey with you
+                </span>{" "}
+                – physically, mentally, emotionally, and spiritually. And he&apos;ll stay with you until you can sustain your
+                transformational strategies without him.
+              </p>
+
+              <p className="text-gray-600 leading-relaxed">
+                Sabbir offers not only practical business experience and insights, but also his full presence and a
+                genuine desire to see people and organizations thrive. He&apos;ll help you{" "}
+                <span className="font-semibold italic">see clearly, think strategically, and act decisively</span>, and
+                act decisively. You&apos;ll learn what your business needs, what your soul wants, and how to honor both in a
+                unified vision for business and individual growth.
+              </p>
+
+              <div className="pt-4">
+                <h3 className="font-bold text-xl text-gray-900">Sabbir Nasir</h3>
+                <p className="text-gray-600 font-medium">Owner and Founder</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
-      <section>
-        <CustomerFeedback />
+
+      {/* Transformational Leadership Section */}
+      <section className="text-center space-y-8">
+        <h2 className="text-3xl md:text-4xl font-bold text-gray-900">Transformational Leadership</h2>
+
+        <div className="space-y-6 text-gray-600 leading-relaxed text-left">
+          <p>
+            As Managing Director of ACI Logistics, Sabbir led the transformation of Shwapno from a struggling retailer
+            with low brand equity to the{" "}
+            <span className="font-semibold italic">largest, fastest-growing supermarket chain</span> in Bangladesh.
+            Shwapno achieved record sales, record store-level profitability, and record operating profits across more
+            than 600 stores in 2024.
+          </p>
+
+          <p>
+            Prior to joining ACI Logistics, Sabbir founded Roadmap Limited, a retail consultancy firm specializing in
+            the retail and fast-moving consumer goods (FMCG) sectors. He also served as CEO of Otobi, transforming the
+            medium-sized enterprise into the{" "}
+            <span className="font-semibold italic">largest furniture manufacturer and retailer</span> in Bangladesh –
+            and one of the country&apos;s most admired brands.
+          </p>
+        </div>
       </section>
+
+      {/* Spiritual Journey Section */}
+      <section className="text-center space-y-8">
+        <h2 className="text-3xl md:text-4xl font-bold text-gray-900">A Spiritual Journey</h2>
+
+        <div className="  space-y-6 text-gray-600 leading-relaxed text-left">
+          <p>
+            Soon after taking the reigns as CEO of Otobi, Sabbir felt the full weight of his new role. He was entrusted
+            with the livelihoods and dreams of more than 1,000 employees and their families. When a friend gave Sabbir a
+            book on Sufism, something metaphysical stirred inside him and sparked a profound spiritual transformation.
+          </p>
+
+          <p>
+            Sabbir met <span className="italic">yogis</span> of the Himalayan Shaivite tradition. He traveled to Kenya,
+            Turkey, the land of Shams-e-Tabriz, Rumi, and whirling dervishes. He encountered the Kabbalists in Europe.
+            Returning to Bangladesh, Sabbir met a humble vegetable trader who brought clarity to the Quran, Torah, and
+            Vedas through his embodiment of their teachings.
+          </p>
+
+          <p>
+            These experiences led to an awakening of the soul and spirit that forms the foundation of Sabbir&apos;s approach
+            to business transformation. Clarity before action. Stillness before calling. Alignment before growth.
+          </p>
+
+          <p className="italic font-medium text-gray-700 border-l-4 border-gray-300 pl-6">
+            &quot;People, culture, structure, data, systems, strategy, and process are all parts of the equation. But real
+            transformation begins within.&quot;
+          </p>
+        </div>
+      </section>
+
+      {/* Education Section */}
+      <section className="space-y-8">
+        <h2 className="text-3xl md:text-4xl font-bold text-gray-900 text-center">Education</h2>
+        <div className="bg-white rounded-xl shadow-lg p-6 border border-gray-100 flex items-start space-x-4">
+            {/* MIT Sloan */}
+            <div className="flex-shrink-0">
+              <div className="w-10 h-10 bg-blue-100 rounded-xl flex items-center justify-center">
+                <svg className="w-8 h-8 text-cyan-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="M12 14l9-5-9-5-9 5 9 5z" />
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z" />
+                </svg>
+              </div>
+            </div>
+            <div>
+              <h3 className="font-bold text-gray-900 mb-1">MIT Sloan School of Management</h3>
+              <p className="text-gray-600 text-sm">Advanced Certificate for Executives in Management, Innovation and Technology, Business Administration
+                <br /> and Management, General</p>
+            </div>
+          </div>
+        <div className="grid md:grid-cols-2 gap-6 ">
+
+{/* UC Berkeley */}
+<div className="bg-white rounded-xl shadow-lg p-6 border border-gray-100 flex items-start space-x-4">
+            <div className="flex-shrink-0">
+            <div className="w-10 h-10 bg-blue-100 rounded-xl flex items-center justify-center">
+                <svg className="w-8 h-8 text-cyan-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="M12 14l9-5-9-5-9 5 9 5z" />
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z" />
+                </svg>
+              </div>
+            </div>
+            <div>
+              <h3 className="font-bold text-gray-900 mb-1">Certificate of Excellence, Data Science and Analytics</h3>
+              <p className="text-gray-600 text-sm">University of California, Berkeley, Haas School of Business</p>
+            </div>
+          </div>
+          {/* Harvard Business School */}
+          <div className="bg-white rounded-xl shadow-lg p-6 border border-gray-100 flex items-start space-x-4">
+            <div className="flex-shrink-0">
+            <div className="w-10 h-10 bg-blue-100 rounded-xl flex items-center justify-center">
+                <svg className="w-8 h-8 text-cyan-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="M12 14l9-5-9-5-9 5 9 5z" />
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z" />
+                </svg>
+              </div>
+            </div>
+            <div>
+              <h3 className="font-bold text-gray-900 mb-1">Harvard Business School</h3>
+              <p className="text-gray-600 text-sm">Certificate, Retail Forum for Senior Leaders</p>
+            </div>
+          </div>
+
+          {/* B.Sc Engineering */}
+          <div className="bg-white rounded-xl shadow-lg p-6 border border-gray-100 flex items-start space-x-4">
+            <div className="flex-shrink-0">
+            <div className="w-10 h-10 bg-blue-100 rounded-xl flex items-center justify-center">
+                <svg className="w-8 h-8 text-cyan-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="M12 14l9-5-9-5-9 5 9 5z" />
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z" />
+                </svg>
+              </div>
+            </div>
+            <div>
+              <h3 className="font-bold text-gray-900 mb-1">B.Sc Engineer, Mechanical Engineering</h3>
+              <p className="text-gray-600 text-sm">Bangladesh University of Engineering and Technology</p>
+            </div>
+          </div>
+
+          {/* MBA */}
+          <div className="bg-white rounded-xl shadow-lg p-6 border border-gray-100 flex items-start space-x-4">
+            <div className="flex-shrink-0">
+            <div className="w-10 h-10 bg-blue-100 rounded-xl flex items-center justify-center">
+                <svg className="w-8 h-8 text-cyan-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="M12 14l9-5-9-5-9 5 9 5z" />
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z" />
+                </svg>
+              </div>
+            </div>
+            <div>
+              <h3 className="font-bold text-gray-900 mb-1">MBA, Marketing</h3>
+              <p className="text-gray-600 text-sm">Institute of Business Administration, University of Dhaka</p>
+            </div>
+          </div>
+
+          
+        </div>
+      </section>
+    </div>
+      <HeroSection/>
     </div>
   );
 };
 
-export default WhoWeServe;
+export default WhoWeServePage;
