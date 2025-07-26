@@ -1,5 +1,5 @@
-"use client"
-import { useState } from "react"
+'use client';
+import { useState } from 'react';
 import {
   Navbar,
   NavbarBrand,
@@ -9,53 +9,58 @@ import {
   NavbarMenu,
   NavbarMenuItem,
   Button,
-} from "@nextui-org/react"
-import { MdOutlineSearch } from "react-icons/md"
-import Link from "next/link"
-import { usePathname } from "next/navigation"
-import logo from "../../public/images/logo/sabbir-nasir-svg-logo.svg";
-import Image from "next/image";
-import ScheduleButton from "./Button/ScheduleButton";
+} from '@nextui-org/react';
+import { MdOutlineSearch } from 'react-icons/md';
+import Link from 'next/link';
+import { usePathname } from 'next/navigation';
+import logo from '../../public/images/logo/sabbir-nasir-svg-logo.svg';
+import Image from 'next/image';
+import ScheduleButton from './Button/ScheduleButton';
 
 export default function NavContent() {
-  const [isMenuOpen, setIsMenuOpen] = useState(false)
-  const pathname = usePathname()
-  console.log('pathname', pathname)
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const pathname = usePathname();
+  console.log('pathname', pathname);
 
   const navItems = [
     {
-      title: "HOME",
-      link: "/",
+      title: 'HOME',
+      link: '/',
     },
     {
-      title: "ABOUT US",
-      link: "/about-us",
+      title: 'ABOUT US',
+      link: '/about-us',
     },
     {
-      title: "OUR FRAMEWORK",
-      link: "/our-framework",
+      title: 'OUR FRAMEWORK',
+      link: '/our-framework',
     },
     {
-      title: "WHO WE SERVE",
-      link: "/who-we-serve",
+      title: 'WHO WE SERVE',
+      link: '/who-we-serve',
     },
     {
-      title: "NEWS",
-      link: "/news",
+      title: 'INSIGHTS',
+      link: '/insights',
     },
     {
-      title: "INSIGHTS",
-      link: "/insights",
+      title: 'NEWS',
+      link: '/news',
     },
-  ]
+  ];
 
   return (
     <main className="w-full bg-white relative z-50 border-b border-gray-100">
       <div className="main-container">
-        <Navbar maxWidth="full" className="py-3 lg:py-4" isMenuOpen={isMenuOpen} onMenuOpenChange={setIsMenuOpen}>
+        <Navbar
+          maxWidth="full"
+          className="py-3 lg:py-4"
+          isMenuOpen={isMenuOpen}
+          onMenuOpenChange={setIsMenuOpen}
+        >
           <NavbarContent>
             <NavbarBrand className="justify-start">
-              <Link href={"/"}>
+              <Link href={'/'}>
                 <Image
                   src={logo}
                   alt="sabbir-nasir-logo"
@@ -64,20 +69,29 @@ export default function NavContent() {
               </Link>
             </NavbarBrand>
 
-            <MdOutlineSearch size={24} color="#132841" className="lg:hidden" />
+            <MdOutlineSearch
+              size={24}
+              color="#132841"
+              className="lg:hidden"
+            />
 
             <NavbarMenuToggle
-              aria-label={isMenuOpen ? "Close menu" : "Open menu"}
+              aria-label={isMenuOpen ? 'Close menu' : 'Open menu'}
               className="lg:hidden justify-end text-primary-color"
             />
           </NavbarContent>
 
-          <NavbarContent className="hidden lg:flex gap-8" justify="center">
+          <NavbarContent
+            className="hidden lg:flex gap-8"
+            justify="center"
+          >
             {navItems.map((item, index) => (
               <NavbarItem key={index}>
                 <Link
                   className={`hover:text-[#00bcd4] font-medium  transition-colors duration-200 ${
-                    pathname === item.link ? "text-[#00bcd4] font-semibold" : "text-gray-700"
+                    pathname === item.link
+                      ? 'text-[#00bcd4] font-semibold'
+                      : 'text-gray-700'
                   }`}
                   href={item.link}
                 >
@@ -87,8 +101,10 @@ export default function NavContent() {
             ))}
           </NavbarContent>
 
-          <NavbarContent className="hidden lg:flex gap-4" justify="end">
-            
+          <NavbarContent
+            className="hidden lg:flex gap-4"
+            justify="end"
+          >
             <NavbarItem>
               <ScheduleButton>
                 <Link href="/contact-us">SCHEDULE A CALL</Link>
@@ -102,7 +118,9 @@ export default function NavContent() {
                 <Link
                   onClick={() => setIsMenuOpen(false)}
                   className={`text-base font-medium text-gray-700 transition-colors duration-200 ${
-                    pathname === item.link ? "text-[#00bcd4] font-semibold" : ""
+                    pathname === item.link
+                      ? 'text-[#00bcd4] font-semibold'
+                      : ''
                   }`}
                   href={item.link}
                 >
@@ -119,5 +137,5 @@ export default function NavContent() {
         </Navbar>
       </div>
     </main>
-  )
+  );
 }
