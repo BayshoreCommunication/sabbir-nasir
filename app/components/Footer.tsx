@@ -8,11 +8,11 @@ const Footer = () => {
     <footer className="bg-white text-gray-800">
       {/* Top section with logo and description */}
       <div className="main-container mx-auto px-4 py-8">
-        <div className="flex flex-col lg:flex-row lg:items-start gap-6 mb-8">
+        <div className="flex flex-col lg:flex-row lg:items-start justify-center gap-6 mb-8">
           <Image
             src={logo}
             alt="sabbir-nasir-logo"
-            className="h-[3.5rem] w-auto"
+            className="h-auto w-[300px]"
           />
           <div className="hidden lg:block w-px h-12 bg-gray-700 mx-4"></div>
           <p className="text-sm text-primary-color max-w-3xl">

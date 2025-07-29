@@ -26,8 +26,8 @@ const HeroSection = () => {
                       delay: index * 0.2,
                       ease: "easeOut",
                     }}
-                    className="block text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-semibold text-gray-900 tracking-tight"
-                    style={{ fontFamily: "Petrona, serif", fontSize: "68px" }}
+                    className="block text-4xl md:text-6xl font-semibold text-gray-900 tracking-tight leading-normal"
+                    style={{ fontFamily: "Petrona, serif" }}
                   >
                     {title}
                   </motion.span>

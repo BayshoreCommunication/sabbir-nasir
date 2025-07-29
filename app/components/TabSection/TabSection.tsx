@@ -10,6 +10,7 @@ import structuralReengineering from "../../../public/images/homepage/structural.
 import visionFraming from "../../../public/images/homepage/vision.png";
 import ArrowButton from "../Button/ArrowButton";
 import { MotionDiv, MotionH3, MotionP } from "../Motion/Motion";
+import styles from "./TabSection.module.css";
 
 export default function TabSection() {
   const [selected, setSelected] = useState("money");
@@ -27,7 +28,10 @@ export default function TabSection() {
         selectedKey={selected}
         variant="light"
         onSelectionChange={setSelected as any}
-        className="border-b-2 border-gray-200 bg-white w-full flex justify-center items-center h-[3.5rem] lg:h-[6rem] overflow-hidden test-container"
+        className="border-b-2 border-gray-200 bg-white w-full flex justify-center items-center h-auto lg:h-[6rem] overflow-hidden test-container"
+        classNames={{
+          tabList: styles.tabList,
+        }}
       >
         <Tab
           key="money"
@@ -52,11 +56,11 @@ export default function TabSection() {
                 </div>
               </div>
               <div
-                className={`block py-2 text-lg lg:hidden items-center font-semibold ${
+                className={`block py-2 text-lg lg:hidden items-center font-semibold text-wrap ${
                   selected === "money" ? "text-white" : "text-primary-color"
                 }`}
               >
-                1
+                Business Transformation Consulting
               </div>
             </>
           }
@@ -284,7 +288,7 @@ export default function TabSection() {
                     : "text-primary-color"
                 }`}
               >
-                2
+                From Stagnation to Scale
               </div>
             </>
           }
@@ -385,7 +389,7 @@ export default function TabSection() {
                     : "text-primary-color"
                 }`}
               >
-                3
+                Who We Are
               </div>
             </>
           }

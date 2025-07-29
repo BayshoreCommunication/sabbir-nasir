@@ -28,7 +28,7 @@ const AboutUsPage = () => {
           {/* Two-column layout */}
           <div className="grid md:grid-cols-3 gap-8 items-center max-w-6xl mx-auto relative">
             {/* Left column - Image only with rounded corners */}
-            <div className="flex items-center justify-center min-h-[320px] -mt-8 -mr-20 relative z-10">
+            <div className="flex items-center justify-center min-h-[320px] -mt-8 -mr-0 md:-mr-20 relative z-10">
               <Image
                 src="/images/about-us/sabbir-nasir.jpg"
                 alt="Sabbir Nasir"
