@@ -1,13 +1,13 @@
-"use client"
+"use client";
 
-import { Fragment } from "react"
-import Link from "next/link"
-import Image from "next/image"
-import { motion } from "framer-motion"
-import { IoArrowForward } from "react-icons/io5"
+import { motion } from "framer-motion";
+import Image from "next/image";
+import Link from "next/link";
+import { Fragment } from "react";
+import { IoArrowForward } from "react-icons/io5";
 
 const HeroSection = () => {
-  const titleArray = ["TRANSFORM. SCALE.", "SOAR."]
+  const titleArray = ["TRANSFORM. SCALE.", "SOAR."];
 
   return (
     <section className="bg-gray-50">
@@ -27,7 +27,7 @@ const HeroSection = () => {
                       ease: "easeOut",
                     }}
                     className="block text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-semibold text-gray-900 tracking-tight"
-                    style={{ fontFamily: 'Petrona, serif', fontSize: '68px' }}
+                    style={{ fontFamily: "Petrona, serif", fontSize: "68px" }}
                   >
                     {title}
                   </motion.span>
@@ -45,8 +45,8 @@ const HeroSection = () => {
               }}
               className="text-lg md:text-xl text-gray-600 mb-8 leading-relaxed max-w-2xl mx-auto lg:mx-0"
             >
-              We help founder-led companies overcome stagnation, find clarity, and execute strategies that spark change
-              and fuel growth.
+              We help founder-led companies overcome stagnation, find clarity,
+              and execute strategies that spark change and fuel growth.
             </motion.p>
 
             <motion.div
@@ -80,9 +80,9 @@ const HeroSection = () => {
             className="hidden lg:flex justify-end items-center"
           >
             <div className="relative w-full max-w-lg h-80 lg:h-96 xl:h-[449px] rounded-2xl overflow-hidden shadow-lg">
-              <Image 
-                src="/images/homepage/banner-content.png" 
-                alt="Banner Content" 
+              <Image
+                src="/images/homepage/banner-content.png"
+                alt="Banner Content"
                 fill
                 className="object-cover"
               />
@@ -91,7 +91,7 @@ const HeroSection = () => {
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default HeroSection
+export default HeroSection;

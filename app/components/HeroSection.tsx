@@ -30,7 +30,7 @@ export default function HeroSection({
 
         <p className="text-lg mb-8  max-w-3xl mx-auto">
           Schedule a complimentary 30-minute discovery call with
-          Sabbir Nasir & his team. You&apos;ll begin to see{' '}
+          Sabbir Nasir. You&apos;ll begin to see{' '}
           <em className="italic">
             what is holding you back, and what is possible through
             transformation.

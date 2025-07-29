@@ -1,14 +1,9 @@
-import React from 'react';
-import Topbar from '../components/Topbar';
-import HeroSectionTop from '../components/HeroSectionTop';
-import HeroSection from '../components/HeroSection';
-import Image from 'next/image';
+import Image from "next/image";
+import HeroSection from "../components/HeroSection";
+import HeroSectionTop from "../components/HeroSectionTop";
 
 const AboutUsPage = () => {
-  const breadcrumbs = [
-    { label: 'Home', href: '/' },
-    { label: 'About Us' },
-  ];
+  const breadcrumbs = [{ label: "Home", href: "/" }, { label: "About Us" }];
   return (
     <div>
       <HeroSectionTop title="WHO WE ARE" breadcrumbs={breadcrumbs} />
@@ -16,18 +11,17 @@ const AboutUsPage = () => {
         {/* About Section */}
         <section className="space-y-8">
           <h1 className="text-3xl md:text-4xl font-bold text-gray-900 text-center">
-            About Sabbir Nasir Team & Associates
+            About Sabbir Nasir & Associates
           </h1>
 
           {/* Full-width introductory paragraph */}
           <p className="text-gray-600 leading-relaxed text-center max-w-6xl mx-auto">
-            Sabbir Nassir & Associates is a global business
-            transformation consultancy created to help people and
-            organizations scale to their full potential with clarity
-            and purpose. We partner with founders, senior executives,
-            and investors, working together to apply the Sabbir Nasir
-            Transformation Framework, which combines proven business
-            transformation principles with human presence,
+            Sabbir Nassir & Associates is a global business transformation
+            consultancy created to help people and organizations scale to their
+            full potential with clarity and purpose. We partner with founders,
+            senior executives, and investors, working together to apply the
+            Sabbir Nasir Transformation Framework, which combines proven
+            business transformation principles with human presence,
             responsibility, and soul.
           </p>
 
@@ -48,42 +42,36 @@ const AboutUsPage = () => {
             <div className="md:col-span-2 bg-white rounded-xl shadow-lg p-8 pl-20 border border-gray-100">
               <div className="space-y-6">
                 <p className="text-gray-600 leading-relaxed">
-                  Sabbir Nasir launched his own consultancy because he
-                  observed that stagnating companies need more than
-                  templated advice, PowerPoint decks, and periodic
-                  check-ins with a traditional advisor. Sabbir is{' '}
+                  Sabbir Nasir launched his own consultancy because he observed
+                  that stagnating companies need more than templated advice,
+                  PowerPoint decks, and periodic check-ins with a traditional
+                  advisor. Sabbir is{" "}
                   <span className="font-semibold italic">
-                    a true partner and transformational architect who
-                    walks the journey with you
-                  </span>{' '}
-                  – physically, mentally, emotionally, and
-                  spiritually. And he&apos;ll stay with you until you
-                  can sustain your transformational strategies without
-                  him.
+                    a true partner and transformational architect who walks the
+                    journey with you
+                  </span>{" "}
+                  – physically, mentally, emotionally, and spiritually. And
+                  he&apos;ll stay with you until you can sustain your
+                  transformational strategies without him.
                 </p>
 
                 <p className="text-gray-600 leading-relaxed">
-                  Sabbir offers not only practical business experience
-                  and insights, but also his full presence and a
-                  genuine desire to see people and organizations
-                  thrive. He&apos;ll help you{' '}
+                  Sabbir offers not only practical business experience and
+                  insights, but also his full presence and a genuine desire to
+                  see people and organizations thrive. He&apos;ll help you{" "}
                   <span className="font-semibold italic">
-                    see clearly, think strategically, and act
-                    decisively
+                    see clearly, think strategically, and act decisively
                   </span>
-                  , and act decisively. You&apos;ll learn what your
-                  business needs, what your soul wants, and how to
-                  honor both in a unified vision for business and
-                  individual growth.
+                  , and act decisively. You&apos;ll learn what your business
+                  needs, what your soul wants, and how to honor both in a
+                  unified vision for business and individual growth.
                 </p>
 
                 <div className="pt-4">
                   <h3 className="font-bold text-xl text-gray-900">
                     Sabbir Nasir
                   </h3>
-                  <p className="text-gray-600 font-medium">
-                    Owner and Founder
-                  </p>
+                  <p className="text-gray-600 font-medium">Owner and Founder</p>
                 </div>
               </div>
             </div>
@@ -99,27 +87,25 @@ const AboutUsPage = () => {
           <div className="space-y-6 text-gray-600 leading-relaxed text-left">
             <p>
               As Managing Director of ACI Logistics, Sabbir led the
-              transformation of Shwapno from a struggling retailer
-              with low brand equity to the{' '}
+              transformation of Shwapno from a struggling retailer with low
+              brand equity to the{" "}
               <span className="font-semibold italic">
                 largest, fastest-growing supermarket chain
-              </span>{' '}
-              in Bangladesh. Shwapno achieved record sales, record
-              store-level profitability, and record operating profits
-              across more than 600 stores in 2024.
+              </span>{" "}
+              in Bangladesh. Shwapno achieved record sales, record store-level
+              profitability, and record operating profits across more than 600
+              stores in 2024.
             </p>
 
             <p>
-              Prior to joining ACI Logistics, Sabbir founded Roadmap
-              Limited, a retail consultancy firm specializing in the
-              retail and fast-moving consumer goods (FMCG) sectors. He
-              also served as CEO of Otobi, transforming the
-              medium-sized enterprise into the{' '}
+              Prior to joining ACI Logistics, Sabbir founded Roadmap Limited, a
+              retail consultancy firm specializing in the retail and fast-moving
+              consumer goods (FMCG) sectors. He also served as CEO of Otobi,
+              transforming the medium-sized enterprise into the{" "}
               <span className="font-semibold italic">
                 largest furniture manufacturer and retailer
-              </span>{' '}
-              in Bangladesh – and one of the country&apos;s most
-              admired brands.
+              </span>{" "}
+              in Bangladesh – and one of the country&apos;s most admired brands.
             </p>
           </div>
         </section>
@@ -132,36 +118,34 @@ const AboutUsPage = () => {
 
           <div className="  space-y-6 text-gray-600 leading-relaxed text-left">
             <p>
-              Soon after taking the reigns as CEO of Otobi, Sabbir
-              felt the full weight of his new role. He was entrusted
-              with the livelihoods and dreams of more than 1,000
-              employees and their families. When a friend gave Sabbir
-              a book on Sufism, something metaphysical stirred inside
-              him and sparked a profound spiritual transformation.
+              Soon after taking the reigns as CEO of Otobi, Sabbir felt the full
+              weight of his new role. He was entrusted with the livelihoods and
+              dreams of more than 1,000 employees and their families. When a
+              friend gave Sabbir a book on Sufism, something metaphysical
+              stirred inside him and sparked a profound spiritual
+              transformation.
             </p>
 
             <p>
-              Sabbir met <span className="italic">yogis</span> of the
-              Himalayan Shaivite tradition. He traveled to Kenya,
-              Turkey, the land of Shams-e-Tabriz, Rumi, and whirling
-              dervishes. He encountered the Kabbalists in Europe.
-              Returning to Bangladesh, Sabbir met a humble vegetable
-              trader who brought clarity to the Quran, Torah, and
+              Sabbir met <span className="italic">yogis</span> of the Himalayan
+              Shaivite tradition. He traveled to Kenya, Turkey, the land of
+              Shams-e-Tabriz, Rumi, and whirling dervishes. He encountered the
+              Kabbalists in Europe. Returning to Bangladesh, Sabbir met a humble
+              vegetable trader who brought clarity to the Quran, Torah, and
               Vedas through his embodiment of their teachings.
             </p>
 
             <p>
-              These experiences led to an awakening of the soul and
-              spirit that forms the foundation of Sabbir&apos;s
-              approach to business transformation. Clarity before
-              action. Stillness before calling. Alignment before
-              growth.
+              These experiences led to an awakening of the soul and spirit that
+              forms the foundation of Sabbir&apos;s approach to business
+              transformation. Clarity before action. Stillness before calling.
+              Alignment before growth.
             </p>
 
             <p className="italic font-medium text-gray-700 border-l-4 border-gray-300 pl-6">
-              &quot;People, culture, structure, data, systems,
-              strategy, and process are all parts of the equation. But
-              real transformation begins within.&quot;
+              &quot;People, culture, structure, data, systems, strategy, and
+              process are all parts of the equation. But real transformation
+              begins within.&quot;
             </p>
           </div>
         </section>
@@ -201,8 +185,8 @@ const AboutUsPage = () => {
                 MIT Sloan School of Management
               </h3>
               <p className="text-gray-600 text-sm">
-                Advanced Certificate for Executives in Management,
-                Innovation and Technology, Business Administration
+                Advanced Certificate for Executives in Management, Innovation
+                and Technology, Business Administration
                 <br /> and Management, General
               </p>
             </div>
@@ -235,12 +219,10 @@ const AboutUsPage = () => {
               </div>
               <div>
                 <h3 className="font-bold text-gray-900 mb-1">
-                  Certificate of Excellence, Data Science and
-                  Analytics
+                  Certificate of Excellence, Data Science and Analytics
                 </h3>
                 <p className="text-gray-600 text-sm">
-                  University of California, Berkeley, Haas School of
-                  Business
+                  University of California, Berkeley, Haas School of Business
                 </p>
               </div>
             </div>
@@ -340,12 +322,9 @@ const AboutUsPage = () => {
                 </div>
               </div>
               <div>
-                <h3 className="font-bold text-gray-900 mb-1">
-                  MBA, Marketing
-                </h3>
+                <h3 className="font-bold text-gray-900 mb-1">MBA, Marketing</h3>
                 <p className="text-gray-600 text-sm">
-                  Institute of Business Administration, University of
-                  Dhaka
+                  Institute of Business Administration, University of Dhaka
                 </p>
               </div>
             </div>
