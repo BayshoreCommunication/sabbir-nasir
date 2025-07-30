@@ -1,6 +1,6 @@
 import { Button } from "@nextui-org/react";
 import Image from "next/image";
-import { FaFacebook, FaInstagram, FaLinkedin, FaYoutube } from "react-icons/fa";
+import { FaFacebook, FaInstagram } from "react-icons/fa";
 import logo from "../../public/images/logo/sabbir-nasir-png-logo.png";
 
 const Footer = () => {
@@ -153,20 +153,20 @@ const Footer = () => {
               {/* Social Media Icons */}
               <div className="flex gap-3 mt-6 justify-center">
                 <a
-                  href="https://www.facebook.com/sabbirnasirassociates"
+                  href="https://www.facebook.com/TeamSabbirNasir"
                   target="_blank"
                   className="bg-gray-800 text-white p-2 rounded-full hover:bg-gray-700 transition-colors"
                 >
                   <FaFacebook size={16} />
                 </a>
                 <a
-                  href="https://www.instagram.com/associatessabbirnasir/"
+                  href="https://www.instagram.com/teamsabbirnasir"
                   target="_blank"
                   className="bg-gray-800 text-white p-2 rounded-full hover:bg-gray-700 transition-colors"
                 >
                   <FaInstagram size={16} />
                 </a>
-                <a
+                {/* <a
                   href="https://www.youtube.com/channel/UCBCJ4RGRj0DmknwSe1Rjqcg"
                   target="_blank"
                   className="bg-gray-800 text-white p-2 rounded-full hover:bg-gray-700 transition-colors"
@@ -179,7 +179,7 @@ const Footer = () => {
                   className="bg-gray-800 text-white p-2 rounded-full hover:bg-gray-700 transition-colors"
                 >
                   <FaLinkedin size={16} />
-                </a>
+                </a> */}
               </div>
             </div>
           </div>
