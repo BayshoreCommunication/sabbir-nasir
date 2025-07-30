@@ -1,20 +1,20 @@
-import HeroSection from "../components/HeroSection";
-import HeroSectionTop from "../components/HeroSectionTop";
-import InsightsGrid from "../components/InsightsGrid";
+import GlobalHeroSection from "@/components/GlobalHeroSection";
+import TaketheFirstStep from "@/components/Homepage/TaketheFirstStep";
+import InsightsGrid from "@/components/InsightsGrid";
 
-const InsightsPage = () => {
-  const breadcrumbs = [{ label: "Home", href: "/" }, { label: "Blogs" }];
+const page = () => {
   return (
-    <div>
-      <HeroSectionTop title="NEWS" breadcrumbs={breadcrumbs} />
-      <div className="main-container mx-auto px-4 py-12 space-y-16">
-        <div className="max-w-7xl mx-auto">
-          <InsightsGrid />
-        </div>
-      </div>
-      <HeroSection />
+    <div className="overflow-hidden mt-[62px] md:mt-[100px]">
+      <GlobalHeroSection
+        titleH1={`Blogs`}
+        titleH2={"Blog"}
+        slug={"blogs"}
+        image="/images/about-us/blog.jpg"
+      />
+      <InsightsGrid />
+      <TaketheFirstStep title="Take the First Step" />
     </div>
   );
 };
 
-export default InsightsPage;
+export default page;

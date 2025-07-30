@@ -2,44 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Font family declaration for Lumios Marker */
-@font-face {
-  font-family: "Lumios Marker";
-  src: url("https://db.onlinewebfonts.com/c/88dc1d3425c59009eea0b3f1d47dad4d?family=Lumios+Marker") format("woff2");
-  font-display: swap;
+p {
+  @apply text-[15px] md:text-[20px] text-[#1F1F1F] font-normal font-acumin leading-relaxed;
 }
 
-@layer utilities {
-  .main-container {
-    @apply w-[94%] sm:w-[90%] md:w-[90%] lg:w-[80%] xl:w-[80%] 2xl:w-[74%] mx-auto;
-  }
-  .test-container {
-    @apply px-[16%] sm:px-[5%] md:px-[5%] lg:px-[10%] xl:px-[10%] 2xl:px-[13%];
-  }
-  .spacer {
-    @apply py-6 lg:py-12;
-  }
+h1 {
+  @apply text-[32px] md:text-[40px] xl:text-[45px] 2xl:text-[55px] font-bold font-baskervville  leading-tight text-[#1F1F1F];
 }
 
-.hola-test > div > div > button {
-  border: 1px solid rgb(235, 235, 235);
+h2 {
+  @apply text-[24px] md:text-[35px] text-[#1F1F1F] font-semibold font-baskervville;
 }
 
-/* .hola-test > div:first-child {
-  background-color: white;
-  border-bottom: 2px solid red;
-} */
-
-.hola-test > div > div {
-  gap: 0;
-  padding: 0;
-}
-
-.hola-test > div > div > div {
-  padding: 0;
-}
-/* slick  */
-.slick-prev:before,
-.slick-next:before {
-  color: #132841 !important;
+h3 {
+  @apply text-[20px] md:text-[24px] text-[#1F1F1F] font-medium font-baskervville;
 }

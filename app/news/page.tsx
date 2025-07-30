@@ -1,20 +1,36 @@
-import React from "react";
-import Topbar from "../components/Topbar";
-import HeroSectionTop from "../components/HeroSectionTop";
-import HeroSection from "../components/HeroSection";
-import Image from "next/image";
+import GlobalHeroSection from "@/components/GlobalHeroSection";
+import TaketheFirstStep from "@/components/Homepage/TaketheFirstStep";
+import NewsGrid from "@/components/NewsGrid";
+import NewsSidebar from "@/components/NewsSidebar";
 
-const NewsPage = () => {
-  const breadcrumbs = [{ label: "Home", href: "/" }, { label: "News" }]
+const page = () => {
   return (
-    <div>
-      <HeroSectionTop title="News" breadcrumbs={breadcrumbs} />
-      <div className="main-container mx-auto px-4 py-12 space-y-16">
-      <div className="min-h-[500px]"></div>
-    </div>
-      <HeroSection/>
+    <div className="overflow-hidden mt-[62px] md:mt-[100px]">
+      <GlobalHeroSection
+        titleH1={`News`}
+        titleH2={"News"}
+        slug={"news"}
+        image="/images/about-us/news.jpg"
+      />
+
+      {/* Two Column Layout */}
+      <div className="container my-10 md:my-20">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+          {/* Main Content - News Grid */}
+          <div className="lg:col-span-2">
+            <NewsGrid />
+          </div>
+
+          {/* Sidebar */}
+          <div className="lg:col-span-1">
+            <NewsSidebar />
+          </div>
+        </div>
+      </div>
+
+      <TaketheFirstStep title="Take the First Step" />
     </div>
   );
 };
 
-export default NewsPage;
+export default page;

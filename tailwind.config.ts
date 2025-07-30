@@ -1,5 +1,5 @@
-import type { Config } from "tailwindcss";
 import { nextui } from "@nextui-org/react";
+import type { Config } from "tailwindcss";
 
 const config: Config = {
   content: [
@@ -11,17 +11,38 @@ const config: Config = {
   theme: {
     extend: {
       fontFamily: {
-        'lumios-marker': ['"Lumios Marker"', 'cursive'],
+        baskervville: ["var(--font-baskervville)", "serif"],
+        acumin: ["var(--font-acumin)", "sans-serif"],
+        lumios: ["var(--font-lumios)", "cursive"],
       },
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+      fontSize: {
+        h1: ["48px", { lineHeight: "1.2", fontWeight: "700" }], // Bold
+        h2: ["36px", { lineHeight: "1.3", fontWeight: "600" }], // Semi-Bold
+        h3: ["28px", { lineHeight: "1.3", fontWeight: "500" }], // Semi-Bold
+        body: ["16px", { lineHeight: "1.75", fontWeight: "400" }], // Regular
+        caption: ["14px", { lineHeight: "1.5", fontWeight: "400" }], // Regular
       },
-      colors: {
-        "primary-color": "#132841",
-        "secondary-color": "#F3F5FA",
+      container: {
+        center: true,
+        padding: "1rem",
+        screens: {
+          sm: "640px",
+          md: "768px",
+          lg: "1024px",
+          xl: "1280px",
+          "2xl": "1536px",
+        },
       },
+      // colors: {
+      //   "deep-indigo": "#2C3E50",
+      //   "charcoal-black": "#2E2E2E",
+      //   "charcoal-black-60": "rgba(46, 46, 46, 0.6)",
+      // },
+      // backgroundImage: {
+      //   "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
+      //   "gradient-conic":
+      //     "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+      // },
     },
   },
   plugins: [
@@ -29,15 +50,10 @@ const config: Config = {
       themes: {
         light: {
           colors: {
-            // background: "#FFFFFF", // or DEFAULT
-            // foreground: "#11181C", // or 50 to 900 DEFAULT
-            // primary: {
-            //   //... 50 to 900
-            //   foreground: "#132841",
-            //   DEFAULT: "#006FEE",
-            // },
-            primary: "#141212",
-            secondary: "#ffffff",
+            primary: "#FA8072", // primary-one
+            secondary: "#BBD8DB", // primary-two
+            background: "#FFFFFF", // secondary-one
+            foreground: "#FFF4ED", // secondary-two
           },
         },
       },

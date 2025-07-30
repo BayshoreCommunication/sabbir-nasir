@@ -1,27 +1,39 @@
+import Footer from "@/components/Footer";
+import Navbar from "@/components/Navbar";
 import type { Metadata } from "next";
-import { Inter, Montserrat, Open_Sans, Petrona } from "next/font/google";
+import { Libre_Baskerville } from "next/font/google";
+import localFont from "next/font/local";
 import "./globals.css";
 import { Providers } from "./providers";
-import Navbar from "./components/Navbar";
-import Footer from "./components/Footer";
 
-const openSans = Open_Sans({ subsets: ["latin"] });
-export const montserrat = Montserrat({ subsets: ["latin"] });
-export const inter = Inter({
+// ✅ Headings (H1, H2)
+export const baskervville = Libre_Baskerville({
   subsets: ["latin"],
+  weight: ["400", "700"],
   display: "swap",
+  variable: "--font-baskervville",
 });
 
-// Import the new fonts
-export const petrona = Petrona({ 
-  subsets: ["latin"],
-  display: "swap",
+// ✅ Body font
+const acumin = localFont({
+  src: "./fonts/Acumin-RPro.otf",
+  weight: "400",
+  style: "normal",
+  variable: "--font-acumin",
+});
+
+// ✅ Special lines
+const lumiosMarker = localFont({
+  src: "./fonts/Lumios Marker.otf",
+  weight: "400",
+  style: "normal",
+  variable: "--font-lumios",
 });
 
 export const metadata: Metadata = {
-  title: "Sabbir Nasir",
+  title: "Sabbir Nasir & Associates",
   description: "Success Doesn't Happen Without Strategy",
-  metadataBase: new URL("https://sabbir-nasir.vercel.app"),
+  metadataBase: new URL("https://www.teamsabbirnasir.com"),
   alternates: {
     canonical: "/",
     languages: {
@@ -39,8 +51,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={openSans.className}>
+    <html
+      lang="en"
+      className={`${baskervville.variable} ${acumin.variable} ${lumiosMarker.variable}`}
+    >
+      <body className="font-acumin">
         <Providers>
           <Navbar />
           <main className="overflow-x-hidden">{children}</main>

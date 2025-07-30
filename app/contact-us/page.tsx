@@ -1,47 +1,28 @@
-"use client";
-import React, { useEffect } from "react";
-import Topbar from "../components/Topbar";
-import HeroSectionTop from "../components/HeroSectionTop";
-import HeroSection from "../components/HeroSection";
-import Image from "next/image";
+import CalendlyInfoShow from "@/components/Contact/CalendlyInfoShow";
+import ContactForm from "@/components/Contact/ContactForm";
+import GlobalHeroSection from "@/components/GlobalHeroSection";
 
-const ContactUsPage = () => {
-  const breadcrumbs = [{ label: "Home", href: "/" }, { label: "Contact Us" }]
-  
-  useEffect(() => {
-    // Load Calendly script
-    const script = document.createElement('script');
-    script.src = 'https://assets.calendly.com/assets/external/widget.js';
-    script.async = true;
-    document.body.appendChild(script);
-
-    return () => {
-      // Cleanup script when component unmounts
-      if (document.body.contains(script)) {
-        document.body.removeChild(script);
-      }
-    };
-  }, []);
-
+const page = () => {
   return (
-    <div>
-      <HeroSectionTop title="Contact Us" breadcrumbs={breadcrumbs} />
-      <div className="main-container mx-auto px-4 py-12 space-y-16">
-        
-        {/* Calendly inline widget */}
-        <div className="max-w-4xl mx-auto">
-          <div className="bg-white rounded-lg shadow-lg p-6">
-            <div 
-              className="calendly-inline-widget" 
-              data-url="https://calendly.com/irakibul/30min" 
-              style={{ minWidth: '320px', height: '700px' }}
-            />
+    <div className="overflow-hidden mt-[62px] md:mt-[100px]">
+      <GlobalHeroSection
+        titleH1={`Contact Us`}
+        titleH2={"Contact Us"}
+        slug={"contact-us"}
+        image="/images/about-us/contact-us.jpg"
+      />
+      <div className="container mx-auto mt-14">
+        <div className="flex flex-col md:flex-row gap-10 md:gap-16 justify-between items-start">
+          <div className="w-full md:w-1/2">
+            <ContactForm />
+          </div>
+          <div className="w-full md:w-1/2">
+            <CalendlyInfoShow />
           </div>
         </div>
-
       </div>
     </div>
   );
 };
 
-export default ContactUsPage;
+export default page;
