@@ -34,30 +34,12 @@ export const SITECONFIG = {
       },
     ],
     quick_links: [
-      {
-        title: "Home",
-        slug: "/",
-      },
-      {
-        title: "About us",
-        slug: "/about-us",
-      },
-      {
-        title: "Services",
-        slug: "/services",
-      },
-      {
-        title: "Projects",
-        slug: "/projects",
-      },
-      {
-        title: "News",
-        slug: "/news",
-      },
-      {
-        title: "Contact us",
-        slug: "/contact-us",
-      },
+      { title: "Home", slug: "/" },
+      { title: "About Us", slug: "/about-us" },
+      { title: "Our Framework", slug: "/our-framework" },
+      { title: "Who We Serve", slug: "/who-we-serve" },
+      { title: "Blogs", slug: "/blogs" },
+      { title: "News", slug: "/news" },
     ],
   },
   socialLinks: [

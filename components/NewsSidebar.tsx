@@ -82,7 +82,7 @@ const NewsSidebar = () => {
           transition={{ duration: 0.5, delay: 0.6 }}
           viewport={{ once: true }}
         >
-          <Link href="/about" className="">
+          <Link href="/about-us" className="">
             <p className="text-primary hover:text-primary/80 hover:underline">
               More About Me
             </p>
