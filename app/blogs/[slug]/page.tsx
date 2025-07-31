@@ -149,18 +149,14 @@ const page = async ({ params }: PageProps) => {
             <div className="mb-10">
               <BlogDetailsSidebar />
             </div>
-            <div className="bg-white rounded-lg p-6 h-fit sticky top-8">
+            <div className="bg-white border border-gray-200 rounded-lg p-6 h-fit sticky top-8">
               <h2 className="text-2xl font-semibold text-[#1F1F1F] mb-6 pb-4 border-b-2 border-primary">
-                Latest News
+                Latest Blogs
               </h2>
 
               <div className="space-y-4 max-h-[600px] overflow-y-auto">
                 {blogPostData?.data
-                  ?.filter(
-                    (blog) =>
-                      blog.published === true && blog.slug !== params.slug
-                  )
-                  ?.slice(0, 5)
+                  ?.filter((blog) => blog.published === true)
                   ?.map((blog, index) => (
                     <Link
                       key={blog.id}

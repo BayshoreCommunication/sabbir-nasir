@@ -130,14 +130,24 @@ export default function Insights({ blogPostData }: InsightsProps) {
 
                   {/* Read More Link */}
                   <Link href={`/blogs/${insight.slug}`}>
-                    <div className="flex items-center space-x-1 text-primary cursor-pointer group">
-                      <span className="text-primary font-semibold group-hover:text-primary/80 transition-colors duration-300">
+                    <motion.div
+                      className="mt-auto flex items-center space-x-1 text-primary cursor-pointer group"
+                      initial={{ opacity: 0, x: -10 }}
+                      whileInView={{ opacity: 1, x: 0 }}
+                      transition={{
+                        delay: i * 0.1 + 0.6,
+                        duration: 0.4,
+                      }}
+                      viewport={{ once: true }}
+                      whileHover={{ x: 5 }}
+                    >
+                      <h3 className="text-primary group-hover:text-primary/80 transition-colors duration-300 font-lumios">
                         Read More
-                      </span>
+                      </h3>
                       <div className="group-hover:translate-x-1 transition-transform duration-300">
-                        <HiArrowNarrowRight className="text-lg text-primary group-hover:text-primary/80" />
+                        <HiArrowNarrowRight className="text-2xl text-primary group-hover:text-primary/80" />
                       </div>
-                    </div>
+                    </motion.div>
                   </Link>
                 </div>
               </div>

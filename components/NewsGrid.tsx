@@ -74,7 +74,7 @@ const NewsGrid = () => {
 
             {/* Content */}
             <motion.div
-              className="p-5 flex flex-col flex-grow"
+              className="p-6 flex flex-col flex-grow"
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
               transition={{
@@ -84,7 +84,7 @@ const NewsGrid = () => {
               viewport={{ once: true }}
             >
               <motion.h3
-                className="line-clamp-2"
+                className="text-[24px] font-bold text-gray-800 mb-4 leading-tight line-clamp-2"
                 initial={{ opacity: 0, y: 10 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{
@@ -95,20 +95,8 @@ const NewsGrid = () => {
               >
                 {insight.title}
               </motion.h3>
-              <motion.p
-                className="line-clamp-3 mt-2"
-                initial={{ opacity: 0 }}
-                whileInView={{ opacity: 1 }}
-                transition={{
-                  duration: 0.4,
-                  delay: index * 0.1 + 0.5,
-                }}
-                viewport={{ once: true }}
-              >
-                {insight.description}
-              </motion.p>
               <motion.div
-                className="flex items-center space-x-1 text-primary cursor-pointer group mt-3"
+                className="mt-auto flex items-center space-x-1 text-primary cursor-pointer group"
                 initial={{ opacity: 0, x: -10 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 transition={{
@@ -122,11 +110,11 @@ const NewsGrid = () => {
                 }}
                 onClick={() => handleReadMore(insight.url)}
               >
-                <h3 className="text-primary group-hover:text-primary/80 transition-colors duration-300 font-lumios">
+                <h3 className="text-primary font-semibold group-hover:text-primary/80 transition-colors duration-300 font-lumios">
                   Read More
                 </h3>
                 <div className="group-hover:translate-x-1 transition-transform duration-300">
-                  <HiArrowNarrowRight className="text-xl text-primary group-hover:text-primary/80" />
+                  <HiArrowNarrowRight className="text-2xl text-primary group-hover:text-primary/80" />
                 </div>
               </motion.div>
             </motion.div>
