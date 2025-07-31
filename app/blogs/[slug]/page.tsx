@@ -1,5 +1,6 @@
 import BlogDetailsSidebar from "@/components/BlogDetailsSidebar";
 import GlobalHeroSection from "@/components/GlobalHeroSection";
+import TaketheFirstStep from "@/components/Homepage/TaketheFirstStep";
 import GetAllBlogPost from "@/lib/GetAllBlogPost";
 import { BlogPostData, PageProps } from "@/lib/types";
 import parse from "html-react-parser";
@@ -188,6 +189,7 @@ const page = async ({ params }: PageProps) => {
           </aside>
         </div>
       </div>
+      <TaketheFirstStep title="Take the First Step" />
     </div>
   );
 };
