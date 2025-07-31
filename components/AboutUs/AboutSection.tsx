@@ -119,7 +119,7 @@ const AboutSection = () => {
           </section>
 
           {/* Transformational Leadership Section */}
-          <section className="text-center space-y-8">
+          <section className="text-center space-y-8 mt-10 xl:mt-14">
             <motion.h2
               className=" text-center"
               initial={{ opacity: 0, y: 40 }}
@@ -167,7 +167,7 @@ const AboutSection = () => {
           </section>
 
           {/* Spiritual Journey Section */}
-          <section className="text-center space-y-8">
+          <section className="text-center space-y-8 mt-10 xl:mt-14">
             <motion.h2
               className=" text-center"
               initial={{ opacity: 0, y: 40 }}
@@ -234,7 +234,7 @@ const AboutSection = () => {
           </section>
 
           {/* Education Section */}
-          <section className="space-y-8">
+          <section className="space-y-8 mt-10 xl:mt-14">
             <motion.h2
               className=" text-center"
               initial={{ opacity: 0, y: 40 }}
