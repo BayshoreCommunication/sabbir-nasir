@@ -104,3 +104,50 @@ export const slideInFromTop = {
   animate: { opacity: 1, y: 0 },
   transition: { duration: 0.8, ease: "easeOut" },
 };
+
+// Insights Grid specific animations
+export const insightsCard = {
+  initial: { opacity: 0, y: 30 },
+  animate: { opacity: 1, y: 0 },
+  transition: { duration: 0.5, ease: "easeOut" },
+};
+
+export const insightsCardHover = {
+  initial: { y: 0 },
+  hover: { y: -5 },
+  transition: { duration: 0.2 },
+};
+
+export const insightsImage = {
+  initial: { scale: 1.1 },
+  animate: { scale: 1 },
+  transition: { duration: 0.6 },
+};
+
+export const insightsDateOverlay = {
+  initial: { opacity: 0, x: -20 },
+  animate: { opacity: 1, x: 0 },
+  transition: { duration: 0.4 },
+};
+
+export const insightsTitle = {
+  initial: { opacity: 0, y: 10 },
+  animate: { opacity: 1, y: 0 },
+  transition: { duration: 0.4 },
+};
+
+export const insightsDescription = {
+  initial: { opacity: 0 },
+  animate: { opacity: 1 },
+  transition: { duration: 0.4 },
+};
+
+export const insightsReadMore = {
+  initial: { opacity: 0, x: -10 },
+  animate: { opacity: 1, x: 0 },
+  transition: { duration: 0.4 },
+  hover: {
+    x: 5,
+    transition: { duration: 0.2 },
+  },
+};

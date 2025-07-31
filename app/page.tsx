@@ -2,8 +2,12 @@ import BusinessTransformationConsulting from "@/components/Homepage/BusinessTran
 import HeroSection from "@/components/Homepage/HeroSection";
 import Insights from "@/components/Homepage/insights";
 import TaketheFirstStep from "@/components/Homepage/TaketheFirstStep";
+import GetAllBlogPost from "@/lib/GetAllBlogPost";
+import { BlogPostData } from "@/lib/types";
 
-export default function Home() {
+export default async function Home() {
+  const blogPostData: BlogPostData = await GetAllBlogPost();
+
   return (
     <div className="overflow-hidden mt-[62px] md:mt-[100px]">
       {/* <h1 className="text-h1 font-baskervville">Heading 1</h1>
@@ -22,7 +26,7 @@ export default function Home() {
       </p> */}
       <HeroSection />
       <BusinessTransformationConsulting />
-      <Insights />
+      <Insights blogPostData={blogPostData} />
       <TaketheFirstStep title="Take the First Step" />
     </div>
   );
