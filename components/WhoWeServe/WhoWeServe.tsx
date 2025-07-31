@@ -53,7 +53,7 @@ const WhoWeServe = () => {
 
           {/* Right column - Card design (wider, being overlapped) */}
           <motion.div
-            className="md:col-span-2 bg-secondary rounded-xl shadow-lg p-8 pl-20 "
+            className="md:col-span-2 bg-secondary rounded-xl shadow-lg p-8 xl:pl-20 pl-8 "
             initial={{ opacity: 0, x: 30 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5 }}

@@ -95,16 +95,16 @@ const BusinessTransformationConsulting = () => {
           The business isn’t broken. But{" "}
           <span className="text-primary italic">
             you’re stuck and can’t figure out why.
-          </span>
+          </span>{" "}
         </p>
         <p className="mt-3">
           Let us guide you through the Sabbir Nasir Transformation Framework, a
           highly structured process designed to turn confusion into clarity,
-          data into insight, and potential into performance. That’s how you
+          data into insight, and potential into performance. That’s how you{" "}
           <span className="text-primary italic">
             break through that wall, realize your vision, and scale from $10
             million to $100 million and beyond.
-          </span>
+          </span>{" "}
         </p>
 
         <Link href={"/our-framework"} className="mt-2 xl:mt-6 inline-flex ">
