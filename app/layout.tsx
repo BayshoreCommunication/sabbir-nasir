@@ -32,7 +32,7 @@ const lumiosMarker = localFont({
 
 export const metadata: Metadata = {
   title: "Sabbir Nasir & Associates",
-  description: "Success Doesn't Happen Without Strategy",
+  description: "Transform. Scale. Soar.",
   metadataBase: new URL("https://www.teamsabbirnasir.com"),
   alternates: {
     canonical: "/",
