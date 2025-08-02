@@ -11,7 +11,7 @@ const page = () => {
         slug={"contact-us"}
         image="/images/about-us/contact-us.jpg"
         description="Ready to Transform?
-          Let’s talk about how we can help you grow, with clarity, structure, and purpose."
+        Let’s talk about how we can help you grow, with clarity, structure, and purpose."
       />
       <div className="container mx-auto mt-14">
         <div className="flex flex-col md:flex-row gap-10 md:gap-16 justify-between items-start">
