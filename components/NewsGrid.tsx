@@ -95,6 +95,18 @@ const NewsGrid = () => {
               >
                 {insight.title}
               </motion.h3>
+              <motion.p
+                className="line-clamp-4 mb-3"
+                initial={{ opacity: 0, y: 10 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{
+                  duration: 0.4,
+                  delay: index * 0.1 + 0.4,
+                }}
+                viewport={{ once: true }}
+              >
+                {insight.description}
+              </motion.p>
               <motion.div
                 className="mt-auto flex items-center space-x-1 text-primary cursor-pointer group"
                 initial={{ opacity: 0, x: -10 }}

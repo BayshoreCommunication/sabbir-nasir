@@ -41,7 +41,7 @@ const AboutSection = () => {
             <div className="grid md:grid-cols-3 gap-8 items-center max-w-6xl mx-auto relative">
               {/* Left column - Image only with rounded corners */}
               <motion.div
-                className="flex items-center justify-center min-h-[320px] -mt-8 mr-0 md:-mr-20 relative z-10 md:col-span-1"
+                className="flex items-center justify-center min-h-[320px] -mr-0 md:-mr-12 xl:-mr-20 relative z-10 md:col-span-1"
                 initial={{ opacity: 0, x: -30 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.5 }}

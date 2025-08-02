@@ -11,7 +11,7 @@ const page = async () => {
     <div className="overflow-hidden mt-[62px] md:mt-[100px]">
       <GlobalHeroSection
         titleH1={`Insights`}
-        titleH2={"Blog"}
+        titleH2={"Insights"}
         slug={"insights"}
         image="/images/about-us/blog.jpg"
       />
