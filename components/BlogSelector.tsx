@@ -7,12 +7,15 @@ import Link from "next/link";
 import { useState } from "react";
 import { HiChevronDown, HiChevronUp } from "react-icons/hi";
 
-interface BlogSelectorProps {
+interface InsightselectorProps {
   blogPostData: BlogPostData;
   currentSlug?: string;
 }
 
-const BlogSelector = ({ blogPostData, currentSlug }: BlogSelectorProps) => {
+const Insightselector = ({
+  blogPostData,
+  currentSlug,
+}: InsightselectorProps) => {
   const [isOpen, setIsOpen] = useState(false);
   const [selectedBlog, setSelectedBlog] = useState<BlogPost | null>(null);
 
@@ -102,7 +105,7 @@ const BlogSelector = ({ blogPostData, currentSlug }: BlogSelectorProps) => {
                 transition={{ delay: index * 0.1 }}
               >
                 <Link
-                  href={`/blogs/${blog.slug}`}
+                  href={`/Insights/${blog.slug}`}
                   className={`block p-3 rounded-lg transition-colors ${
                     blog.slug === currentSlug
                       ? "bg-primary text-white"
@@ -160,4 +163,4 @@ const BlogSelector = ({ blogPostData, currentSlug }: BlogSelectorProps) => {
   );
 };
 
-export default BlogSelector;
+export default Insightselector;

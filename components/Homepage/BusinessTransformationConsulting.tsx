@@ -143,9 +143,9 @@ const BusinessTransformationConsulting = () => {
               <span className="text-primary italic">
                 transformation to scale and thrive.
               </span>
-              While Sabbir Nassir has significant experience transforming
+              While Sabbir Nasir has significant experience transforming
               businesses in retail, manufacturing, and private equity, the
-              SabbirNasir Transformation Framework can be applied to
+              Sabbir Nasir Transformation Framework can be applied to
               organizations in virtually any industry, anywhere in the world to
               <span className="text-primary italic">
                 maximize performance and profitability.

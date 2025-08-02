@@ -43,7 +43,7 @@ export default function Insights({ blogPostData }: InsightsProps) {
     return (
       <section className="container my-8 md:my-20 mx-auto px-4">
         <div className="text-center mb-4 xl:mb-8">
-          <h2 className="">Blogs</h2>
+          <h2 className="">Insights</h2>
           <p className="mt-5 max-w-[700px] mx-auto">
             Insights You&apos;ve hit a wall. Your passion, talent, and energy
             drove your company&apos;s early success, but you&apos;re caught in
@@ -65,7 +65,7 @@ export default function Insights({ blogPostData }: InsightsProps) {
   return (
     <section className="container my-8 md:my-20 mx-auto px-4">
       <div className="text-center mb-4 xl:mb-8">
-        <h2 className="">Blogs</h2>
+        <h2 className="">Insights</h2>
         <p className="mt-5 max-w-[700px] mx-auto">
           Insights You&apos;ve hit a wall. Your passion, talent, and energy
           drove your company&apos;s early success, but you&apos;re caught in
@@ -129,7 +129,7 @@ export default function Insights({ blogPostData }: InsightsProps) {
                   </p>
 
                   {/* Read More Link */}
-                  <Link href={`/blogs/${insight.slug}`}>
+                  <Link href={`/Insights/${insight.slug}`}>
                     <motion.div
                       className="mt-auto flex items-center space-x-1 text-primary cursor-pointer group"
                       initial={{ opacity: 0, x: -10 }}

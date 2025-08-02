@@ -11,7 +11,7 @@ export async function generateMetadata({ params }: PageProps) {
   const blogPostData: BlogPostData = await GetAllBlogPost();
 
   const blogDetails = blogPostData?.data?.find(
-    (blogs) => blogs.slug === params.slug
+    (Insights) => Insights.slug === params.slug
   );
 
   if (!blogDetails) {
@@ -54,7 +54,7 @@ export async function generateMetadata({ params }: PageProps) {
       title: blogDetails?.title,
       description: descriptionText,
       images: blogDetails?.featuredImage?.image?.url,
-      url: `https://www.teamsabbirnasir.com/blogs/${blogDetails?.slug}`,
+      url: `https://www.teamsabbirnasir.com/Insights/${blogDetails?.slug}`,
       type: "article",
       site_name: "teamsabbirnasir.com",
     },
@@ -65,7 +65,7 @@ const page = async ({ params }: PageProps) => {
   const blogPostData: BlogPostData = await GetAllBlogPost();
 
   const blogDetails = blogPostData?.data?.filter(
-    (blogs) => blogs.slug === params.slug
+    (Insights) => Insights.slug === params.slug
   );
 
   const postDate = (date: string): string => {
@@ -86,10 +86,10 @@ const page = async ({ params }: PageProps) => {
             The blog post you&apos;re looking for doesn&apos;t exist.
           </p>
           <Link
-            href="/blogs"
+            href="/Insights"
             className="inline-block bg-primary text-white px-6 py-3 rounded-lg hover:bg-primary/90 transition-colors"
           >
-            Back to Blogs
+            Back to Insights
           </Link>
         </div>
       </div>
@@ -99,7 +99,7 @@ const page = async ({ params }: PageProps) => {
   return (
     <div className="overflow-hidden mt-[62px] md:mt-[100px]">
       <GlobalHeroSection
-        titleH1={`Blogs Details`}
+        titleH1={`Insights Details`}
         titleH2={"Blog"}
         slug={"blog"}
         image="/images/about-us/blog.jpg"
@@ -152,7 +152,7 @@ const page = async ({ params }: PageProps) => {
             </div>
             <div className="bg-white border border-gray-200 rounded-lg p-6 h-fit sticky top-8">
               <h2 className="text-2xl font-semibold text-[#1F1F1F] mb-6 pb-4 border-b-2 border-primary">
-                Latest Blogs
+                Latest Insights
               </h2>
 
               <div className="space-y-4 max-h-[600px] overflow-y-auto">
@@ -161,7 +161,7 @@ const page = async ({ params }: PageProps) => {
                   ?.map((blog, index) => (
                     <Link
                       key={blog.id}
-                      href={`/blogs/${blog.slug}`}
+                      href={`/Insights/${blog.slug}`}
                       className="flex items-start gap-4 p-3 rounded-lg hover:bg-foreground transition-colors group"
                     >
                       {blog.featuredImage?.image?.url && (

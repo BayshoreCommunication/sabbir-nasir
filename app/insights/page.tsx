@@ -10,9 +10,9 @@ const page = async () => {
   return (
     <div className="overflow-hidden mt-[62px] md:mt-[100px]">
       <GlobalHeroSection
-        titleH1={`Blogs`}
+        titleH1={`Insights`}
         titleH2={"Blog"}
-        slug={"blogs"}
+        slug={"insights"}
         image="/images/about-us/blog.jpg"
       />
       <InsightsGrid blogPostData={blogPostData} />

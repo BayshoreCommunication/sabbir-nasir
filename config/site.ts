@@ -38,7 +38,7 @@ export const SITECONFIG = {
       { title: "About Us", slug: "/about-us" },
       { title: "Our Framework", slug: "/our-framework" },
       { title: "Who We Serve", slug: "/who-we-serve" },
-      { title: "Blogs", slug: "/blogs" },
+      { title: "Insights", slug: "/Insights" },
       { title: "News", slug: "/news" },
     ],
   },

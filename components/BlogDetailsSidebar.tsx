@@ -59,11 +59,9 @@ const BlogDetailsSidebar = () => {
           transition={{ duration: 0.5, delay: 0.5 }}
           viewport={{ once: true }}
         >
-          {` Sabbir Hasan Nasir has transformed multiple businesses and now mentors
-      others to achieve the same success. As the Executive Director of ACI
-      Logistics and the visionary behind Shwapno's retail revolution, he
-      exemplifies how empathy, design thinking, and relentless pursuit of
-      excellence can reshape industries.`}
+          {` Sabbir Nasir launched his own consultancy because he observed that stagnating companies need more than templated advice, PowerPoint decks, and periodic check-ins with a traditional advisor. Sabbir is a true partner and transformational architect who walks the journey with you – physically, mentally, emotionally, and spiritually. And he'll stay with you until you can sustain your transformational strategies without him.
+
+Sabbir offers not only practical business experience and insights, but also his full presence and a genuine desire to see people and organizations thrive. He'll help you see clearly, think strategically, and act decisively, and act decisively. You'll learn what your business needs, what your soul wants, and how to honor both in a unified vision for business and individual growth.`}
         </motion.p>
 
         <motion.div
