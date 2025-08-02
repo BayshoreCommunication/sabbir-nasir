@@ -14,6 +14,7 @@ const page = async () => {
         titleH2={"Insights"}
         slug={"insights"}
         image="/images/about-us/blog.jpg"
+        description="Insights shaped by experience, not theory. For those ready to lead the next phase with clarity and intention."
       />
       <InsightsGrid blogPostData={blogPostData} />
       <TaketheFirstStep title="Take the First Step" />

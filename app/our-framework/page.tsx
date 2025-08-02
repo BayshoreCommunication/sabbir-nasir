@@ -15,6 +15,7 @@ export default function page() {
         titleH2={"Our Framework"}
         slug={"our-framework"}
         image="/images/about-us/framework.jpg"
+        description="You’re not just fixing a business; you’re building a legacy. This framework empowers leaders to scale with clarity, integrity, and inner alignment."
       />
 
       <OurFramworkSection />

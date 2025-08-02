@@ -4,7 +4,13 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 
-const GlobalHeroSection = ({ image, titleH1, titleH2, slug }: any) => {
+const GlobalHeroSection = ({
+  image,
+  titleH1,
+  titleH2,
+  slug,
+  description,
+}: any) => {
   return (
     <>
       <div className="relative w-full bg-black bg-opacity-85 min-h-[380px] md:min-h-[550px]">
@@ -31,8 +37,10 @@ const GlobalHeroSection = ({ image, titleH1, titleH2, slug }: any) => {
                   >
                     {titleH1}
                   </motion.h1>
+                  {/* Mobile description - Hidden on mobile, only show on desktop */}
+
                   <motion.div
-                    className="flex items-center space-x-2 justify-center mt-3"
+                    className="flex items-center space-x-2 justify-center"
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.6, ease: "easeOut", delay: 0.3 }}
@@ -93,6 +101,18 @@ const GlobalHeroSection = ({ image, titleH1, titleH2, slug }: any) => {
                 >
                   {titleH1}
                 </motion.h1>
+                {/* Desktop description */}
+                <div className="max-w-[750px] mx-auto">
+                  <motion.p
+                    initial={{ opacity: 0, y: 40 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.8, ease: "easeOut" }}
+                    viewport={{ once: true }}
+                    className="text-center hidden md:block"
+                  >
+                    {description}
+                  </motion.p>
+                </div>
                 <motion.div
                   className="flex items-center space-x-2 justify-center mt-3"
                   initial={{ opacity: 0, y: 20 }}

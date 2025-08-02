@@ -11,6 +11,7 @@ const page = () => {
         titleH2={"About Us"}
         slug={"aboutus"}
         image="/images/about-us/about-us.jpg"
+        description="We don’t just advise; we walk the journey with you, aligning strategy with soul for lasting transformation."
       />
       <AboutSection />
       <TaketheFirstStep title="Speak with Sabbir Nasir" />

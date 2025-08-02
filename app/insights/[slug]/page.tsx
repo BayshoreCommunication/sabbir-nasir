@@ -57,6 +57,7 @@ export async function generateMetadata({ params }: PageProps) {
       url: `https://www.teamsabbirnasir.com/Insights/${blogDetails?.slug}`,
       type: "article",
       site_name: "teamsabbirnasir.com",
+      description = "Insights shaped by experience, not theory. For those ready to lead the next phase with clarity and intention.",
     },
   };
 }

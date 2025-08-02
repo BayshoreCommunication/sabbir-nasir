@@ -11,6 +11,7 @@ const page = () => {
         titleH2={"News"}
         slug={"news"}
         image="/images/about-us/news.jpg"
+        description="We’re building more than businesses: we’re shaping narratives. Follow our journey as it unfolds in the public space."
       />
 
       {/* Two Column Layout */}

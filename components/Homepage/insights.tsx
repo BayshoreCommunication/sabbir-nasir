@@ -141,7 +141,7 @@ export default function Insights({ blogPostData }: InsightsProps) {
                       viewport={{ once: true }}
                       whileHover={{ x: 5 }}
                     >
-                      <h3 className="text-primary group-hover:text-primary/80 transition-colors duration-300 font-lumios">
+                      <h3 className="text-primary font-semibold group-hover:text-primary/80 transition-colors duration-300 font-lumios">
                         Read More
                       </h3>
                       <div className="group-hover:translate-x-1 transition-transform duration-300">
