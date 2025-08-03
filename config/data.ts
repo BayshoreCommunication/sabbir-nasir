@@ -53,25 +53,16 @@ export const newsData: News[] = [
     date: "Jan 15 2024",
     url: "https://www.tbsnews.net/economy/corporates/innovative-franchise-model-becomes-shwapnos-growth-engine-aci-logistics-md-sabbir",
   },
-  {
-    id: 2,
-    title:
-      "The Corporate Sufi of Bangladesh: An Interview with Sabbir Hasan Nasir",
-    description:
-      "The corporate Sufi of Bangladesh, Sabbir Hasan Nasir, blends engineering precision with spiritual depth, transforming his unconventional journey across music, physics, and business into a masterclass in visionary leadership. As the force behind Shwapno's turnaround, he exemplifies how empathy, design thinking, and relentless pursuit of excellence can reshape industries.",
-    image: "/news/Frame91.png",
-    date: "Oct 24 2017",
-    url: "https://futurestartup.com/2017/10/24/an-interview-sabbir-hasan-nasir-executive-directoraci-logistics/",
-  },
-  {
-    id: 3,
-    title: "Life Lessons from Sabbir Hasan Nasir: 10 Sharp Insights",
-    description:
-      "In this deeply personal feature, Sabbir Hasan Nasir, Executive Director of ACI Logistics and the man behind Shwapno's retail revolution, opens up about the philosophies that shaped his life. From studying under physicist Dr. Jamal Nazrul Islam to designing organizations with empathy and soul, he shares 10 sharp lessons on creativity, growth, and leading with meaning.",
-    image: "/news/Frame92.png",
-    date: "Nov 25 2019",
-    url: "https://futurestartup.com/2019/11/25/life-lessons-sabbir-hasan-nasir-aci-logistics/",
-  },
+  // {
+  //   id: 2,
+  //   title:
+  //     "The Corporate Sufi of Bangladesh: An Interview with Sabbir Hasan Nasir",
+  //   description:
+  //     "The corporate Sufi of Bangladesh, Sabbir Hasan Nasir, blends engineering precision with spiritual depth, transforming his unconventional journey across music, physics, and business into a masterclass in visionary leadership. As the force behind Shwapno's turnaround, he exemplifies how empathy, design thinking, and relentless pursuit of excellence can reshape industries.",
+  //   image: "/news/Frame91.png",
+  //   date: "Oct 24 2017",
+  //   url: "https://futurestartup.com/2017/10/24/an-interview-sabbir-hasan-nasir-executive-directoraci-logistics/",
+  // },
   {
     id: 4,
     title: "From Engineer to Retail Force: Sabbir's Otobi Transformation",
@@ -81,6 +72,7 @@ export const newsData: News[] = [
     date: "Mar 20 2023",
     url: "https://www.thedailystar.net/news-detail-73783",
   },
+
   {
     id: 5,
     title: "ACI Ltd Announces Sabbir H Nasir as New Managing Director",
@@ -99,5 +91,14 @@ export const newsData: News[] = [
     image: "/news/Frame95.png",
     date: "Sep 05 2023",
     url: "https://www.tbsnews.net/economy/corporates/how-shwapno-heads-towards-full-break-even-852371",
+  },
+  {
+    id: 3,
+    title: "Life Lessons from Sabbir Hasan Nasir: 10 Sharp Insights",
+    description:
+      "In this deeply personal feature, Sabbir Hasan Nasir, Executive Director of ACI Logistics and the man behind Shwapno's retail revolution, opens up about the philosophies that shaped his life. From studying under physicist Dr. Jamal Nazrul Islam to designing organizations with empathy and soul, he shares 10 sharp lessons on creativity, growth, and leading with meaning.",
+    image: "/news/Frame92.png",
+    date: "Nov 25 2019",
+    url: "https://futurestartup.com/2019/11/25/life-lessons-sabbir-hasan-nasir-aci-logistics/",
   },
 ];

@@ -107,7 +107,7 @@ const BusinessTransformationConsulting = () => {
           </span>{" "}
         </p>
 
-        <Link href={"/our-framework"} className="mt-2 xl:mt-6 inline-flex ">
+        <Link href={"/our-framework"} className=" inline-flex ">
           <motion.div
             whileHover={{ y: -8 }}
             whileTap={{ scale: 0.98 }}
@@ -128,7 +128,7 @@ const BusinessTransformationConsulting = () => {
           </motion.div>
         </Link>
 
-        <div className="flex flex-col-reverse lg:flex-row items-center justify-between gap-2 xl:gap-8 -mt-1 xl:-mt-8">
+        <div className="flex flex-col-reverse lg:flex-row items-center justify-between gap-2 xl:gap-8 -mt-1 xl:-mt-2">
           <motion.div
             className="w-full lg:w-1/1"
             initial={{ opacity: 0, x: -30 }}
@@ -139,15 +139,16 @@ const BusinessTransformationConsulting = () => {
             <h2 className=" text-left">From Stagnation to Scale</h2>
             <p className=" mt-4">
               We partner with founders, senior executives, and investors whose
-              successful companies have plateaued and require
+              successful companies have plateaued and require{" "}
               <span className="text-primary italic">
                 transformation to scale and thrive.
-              </span>
+              </span>{" "}
               While Sabbir Nasir has significant experience transforming
               businesses in retail, manufacturing, and private equity, the
               Sabbir Nasir Transformation Framework can be applied to
               organizations in virtually any industry, anywhere in the world to
               <span className="text-primary italic">
+                {" "}
                 maximize performance and profitability.
               </span>
             </p>
@@ -170,7 +171,7 @@ const BusinessTransformationConsulting = () => {
           </motion.div>
         </div>
 
-        <Link href={"/who-we-serve"} className="mt-2 xl:-mt-6 inline-flex ">
+        <Link href={"/who-we-serve"} className="inline-flex -mt-0 xl:-mt-36 ">
           <motion.div
             whileHover={{ y: -8 }}
             whileTap={{ scale: 0.98 }}
@@ -191,7 +192,7 @@ const BusinessTransformationConsulting = () => {
           </motion.div>
         </Link>
 
-        <div className="flex flex-col lg:flex-row items-center justify-between gap-4 xl:gap-8 mt-2 xl:mt-6">
+        <div className="flex flex-col lg:flex-row items-center justify-between gap-4 xl:gap-8 mt-8 xl:mt-16">
           <motion.div
             className="w-full lg:w-1/3 flex justify-center items-center"
             initial={{ opacity: 0, scale: 0.9 }}
@@ -230,7 +231,7 @@ const BusinessTransformationConsulting = () => {
               success. We partner with founders, senior executives, and
               investors whose successful companies have plateaued and require
             </p>
-            <div className="flex justify-end">
+            <div className="flex justify-end -mt-2 xl:-mt-0">
               <Link href={"/about-us"} className="mt-2 inline-flex ">
                 <motion.div
                   className="flex items-center space-x-1 text-primary cursor-pointer"

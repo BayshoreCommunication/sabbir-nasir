@@ -54,7 +54,7 @@ const NewsGrid = () => {
                 className="object-cover"
               />
               {/* Date Overlay */}
-              <motion.div
+              {/* <motion.div
                 className="absolute top-4 left-4 bg-opacity-90 rounded-md px-3 py-1 bg-white"
                 initial={{ opacity: 0, x: -20 }}
                 whileInView={{ opacity: 1, x: 0 }}
@@ -69,7 +69,7 @@ const NewsGrid = () => {
                     <div key={index}>{part}</div>
                   ))}
                 </div>
-              </motion.div>
+              </motion.div> */}
             </motion.div>
 
             {/* Content */}

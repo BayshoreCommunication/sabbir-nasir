@@ -78,9 +78,9 @@ const InsightsCard = ({ insight, index }: InsightsCardProps) => {
           }}
           viewport={{ once: true }}
         >
-          <div className="text-xs font-medium text-gray-800 leading-tight">
+          {/* <div className="text-xs font-medium text-gray-800 leading-tight">
             {postDate(insight?.createdAt)}
-          </div>
+          </div> */}
         </motion.div>
       </motion.div>
 

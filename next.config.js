@@ -40,6 +40,24 @@ const nextConfig = {
     ],
   },
   skipTrailingSlashRedirect: true,
+  // Add headers for PDF files
+  async headers() {
+    return [
+      {
+        source: '/Sabbir-Nasir-Transformation-Framework.pdf',
+        headers: [
+          {
+            key: 'Content-Type',
+            value: 'application/pdf',
+          },
+          {
+            key: 'Content-Disposition',
+            value: 'attachment; filename="Sabbir-Nasir-Transformation-Framework.pdf"',
+          },
+        ],
+      },
+    ];
+  },
 };
 
 module.exports = nextConfig;

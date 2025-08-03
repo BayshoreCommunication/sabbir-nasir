@@ -18,7 +18,8 @@ const HeroSection = () => {
             transition={{ duration: 0.6, delay: 0.2, ease: "easeOut" }}
           >
             <h1 className="uppercase">
-              Transform. Scale. <br />
+              Transform.
+              <br /> Scale. <br />
               Soar.
             </h1>
             <p className=" text-[22px]  mt-5 max-w-xl mx-auto lg:mx-0 ">

@@ -1,9 +1,28 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { useCallback } from "react";
 import { FiDownload } from "react-icons/fi";
 
 const OurFramworkSection = () => {
+  const handleDownload = useCallback(() => {
+    if (typeof window !== "undefined") {
+      try {
+        // Use the API route for more reliable download
+        const link = document.createElement("a");
+        link.href = "/api/download-pdf";
+        link.download = "Sabbir-Nasir-Transformation-Framework.pdf";
+        link.style.display = "none";
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+      } catch (error) {
+        console.error("Download failed:", error);
+        // Fallback to direct PDF access
+        window.open("/Sabbir-Nasir-Transformation-Framework.pdf", "_blank");
+      }
+    }
+  }, []);
   return (
     <div className="my-10 md:my-20  container mx-auto">
       {" "}
@@ -38,7 +57,7 @@ const OurFramworkSection = () => {
         </motion.p>
 
         {/* Download Button */}
-        <motion.div
+        <motion.button
           className=" flex items-center justify-center xl:justify-start mt-4 xl:mt-4 pb-4 xl:pb-4 space-x-2 text-primary cursor-pointer hover:text-secondary transition-colors w-[400px]"
           whileHover={{ y: -8 }}
           whileTap={{ scale: 0.98 }}
@@ -48,6 +67,7 @@ const OurFramworkSection = () => {
             damping: 20,
             mass: 0.5,
           }}
+          onClick={handleDownload}
         >
           <div>
             <FiDownload className="text-2xl xl:text-3xl font-lumios text-primary " />
@@ -55,7 +75,7 @@ const OurFramworkSection = () => {
           <span className="text-[30px] xl:text-[40px] font-lumios text-primary">
             Download The Framework
           </span>
-        </motion.div>
+        </motion.button>
       </section>
       {/* 7 Phases Section */}
       <section className="space-y-8">

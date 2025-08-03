@@ -30,8 +30,9 @@ const Footer = () => {
                   />
                 </Link>
                 <p className=" mt-8 leading-7 max-w-[380px]">
-                  Need expert guidance? Get in touch with our team today or call
-                  for personalized support and consulting services.
+                  We help founder-led companies overcome stagnation, find
+                  clarity, and execute strategies that spark change and fuel
+                  growth.
                 </p>
               </div>
 
