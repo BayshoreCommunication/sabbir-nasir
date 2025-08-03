@@ -78,182 +78,194 @@ const BusinessTransformationConsulting = () => {
           ))}
         </motion.div>
 
-        <motion.p
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 0.3 }}
-          className=" mt-12"
-        >
-          {`You’ve hit a wall. Your passion, talent, and energy drove your
+        {/* Framework Section */}
+        <div className="mt-16 md:mt-20 lg:mt-24">
+          <motion.p
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 0.3 }}
+            className=""
+          >
+            {`You’ve hit a wall. Your passion, talent, and energy drove your
           company’s early success, but you’re caught in what we call the Holy
           Trap – “holy” because of the positive traits that got you here, but
           “trapped” by a lack of clarity in vision, culture, structure, and
           data.`}
-        </motion.p>
+          </motion.p>
 
-        <p className=" mt-3">
-          The business isn’t broken. But{" "}
-          <span className="text-primary italic">
-            you’re stuck and can’t figure out why.
-          </span>{" "}
-        </p>
-        <p className="mt-3">
-          Let us guide you through the Sabbir Nasir Transformation Framework, a
-          highly structured process designed to turn confusion into clarity,
-          data into insight, and potential into performance. That’s how you{" "}
-          <span className="text-primary italic">
-            break through that wall, realize your vision, and scale from $10
-            million to $100 million and beyond.
-          </span>{" "}
-        </p>
+          <p className=" mt-3">
+            The business isn’t broken. But{" "}
+            <span className="text-primary italic">
+              you’re stuck and can’t figure out why.
+            </span>{" "}
+          </p>
+          <p className="mt-3">
+            Let us guide you through the Sabbir Nasir Transformation Framework,
+            a highly structured process designed to turn confusion into clarity,
+            data into insight, and potential into performance. That’s how you{" "}
+            <span className="text-primary italic">
+              break through that wall, realize your vision, and scale from $10
+              million to $100 million and beyond.
+            </span>{" "}
+          </p>
 
-        <Link href={"/our-framework"} className=" inline-flex ">
-          <motion.div
-            whileHover={{ y: -8 }}
-            whileTap={{ scale: 0.98 }}
-            transition={{
-              type: "spring",
-              stiffness: 200,
-              damping: 20,
-              mass: 0.5,
-            }}
-            className="flex items-center space-x-1 text-primary cursor-pointer"
-          >
-            <p className="text-[30px] xl:text-[45px] font-lumios text-primary">
-              Our Framework
-            </p>
-            <div>
-              <HiArrowNarrowRight className="text-2xl xl:text-3xl font-lumios mt-1 xl:mt-2 text-primary" />
-            </div>
-          </motion.div>
-        </Link>
-
-        <div className="flex flex-col-reverse lg:flex-row items-center justify-between gap-2 xl:gap-8 -mt-1 xl:-mt-2">
-          <motion.div
-            className="w-full lg:w-1/1"
-            initial={{ opacity: 0, x: -30 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.5 }}
-            viewport={{ once: true }}
-          >
-            <h2 className=" text-left">From Stagnation to Scale</h2>
-            <p className=" mt-4">
-              We partner with founders, senior executives, and investors whose
-              successful companies have plateaued and require{" "}
-              <span className="text-primary italic">
-                transformation to scale and thrive.
-              </span>{" "}
-              While Sabbir Nasir has significant experience transforming
-              businesses in retail, manufacturing, and private equity, the
-              Sabbir Nasir Transformation Framework can be applied to
-              organizations in virtually any industry, anywhere in the world to
-              <span className="text-primary italic">
-                {" "}
-                maximize performance and profitability.
-              </span>
-            </p>
-          </motion.div>
-          <motion.div
-            className="w-full lg:w-1/3 flex justify-center items-center"
-            initial={{ opacity: 0, scale: 0.9 }}
-            whileInView={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.5 }}
-            viewport={{ once: true }}
-          >
-            <Image
-              src="/images/homepage/firstone.png"
-              alt="Business Transformation"
-              className="object-cover max-w-[200px] h-auto"
-              width={500}
-              height={300}
-              priority
-            />
-          </motion.div>
+          <Link href={"/our-framework"} className="inline-flex">
+            <motion.div
+              whileHover={{ y: -8 }}
+              whileTap={{ scale: 0.98 }}
+              transition={{
+                type: "spring",
+                stiffness: 200,
+                damping: 20,
+                mass: 0.5,
+              }}
+              className="flex items-center space-x-1 text-primary cursor-pointer"
+            >
+              <p className="text-[30px] xl:text-[45px] font-lumios text-primary">
+                Our Framework
+              </p>
+              <div>
+                <HiArrowNarrowRight className="text-2xl xl:text-3xl font-lumios mt-1 xl:mt-2 text-primary" />
+              </div>
+            </motion.div>
+          </Link>
         </div>
 
-        <Link href={"/who-we-serve"} className="inline-flex -mt-0 xl:-mt-36 ">
-          <motion.div
-            whileHover={{ y: -8 }}
-            whileTap={{ scale: 0.98 }}
-            transition={{
-              type: "spring",
-              stiffness: 200,
-              damping: 20,
-              mass: 0.5,
-            }}
-            className="flex items-center space-x-1 text-primary cursor-pointer"
-          >
-            <p className="text-[30px] xl:text-[45px] font-lumios text-primary">
-              Who We Serve
-            </p>
-            <div>
-              <HiArrowNarrowRight className="text-2xl xl:text-3xl font-lumios mt-1 xl:mt-2 text-primary" />
-            </div>
-          </motion.div>
-        </Link>
+        {/* Who We Are Section */}
+        <div className="">
+          {" "}
+          <div className="flex flex-col-reverse lg:flex-row items-center justify-between gap-2 xl:gap-8 -mt-1 xl:-mt-2 mb-0 xl:-mb-10 ">
+            <motion.div
+              className="w-full lg:w-1/1"
+              initial={{ opacity: 0, x: -30 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.5 }}
+              viewport={{ once: true }}
+            >
+              <h2 className=" text-left">From Stagnation to Scale</h2>
+              <p className=" mt-4">
+                We partner with founders, senior executives, and investors whose
+                successful companies have plateaued and require{" "}
+                <span className="text-primary italic">
+                  transformation to scale and thrive.
+                </span>{" "}
+                While Sabbir Nasir has significant experience transforming
+                businesses in retail, manufacturing, and private equity, the
+                Sabbir Nasir Transformation Framework can be applied to
+                organizations in virtually any industry, anywhere in the world
+                to
+                <span className="text-primary italic">
+                  {" "}
+                  maximize performance and profitability.
+                </span>
+              </p>
+            </motion.div>
+            <motion.div
+              className="w-full lg:w-1/3 flex justify-center items-center"
+              initial={{ opacity: 0, scale: 0.9 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.5 }}
+              viewport={{ once: true }}
+            >
+              <Image
+                src="/images/homepage/firstone.png"
+                alt="Business Transformation"
+                className="object-cover max-w-[200px] h-auto"
+                width={500}
+                height={300}
+                priority
+              />
+            </motion.div>
+          </div>
+          <Link href={"/who-we-serve"} className="inline-flex ">
+            <motion.div
+              whileHover={{ y: -8 }}
+              whileTap={{ scale: 0.98 }}
+              transition={{
+                type: "spring",
+                stiffness: 200,
+                damping: 20,
+                mass: 0.5,
+              }}
+              className="flex items-center space-x-1 text-primary cursor-pointer"
+            >
+              <p className="text-[30px] xl:text-[45px] font-lumios text-primary">
+                Who We Serve
+              </p>
+              <div>
+                <HiArrowNarrowRight className="text-2xl xl:text-3xl font-lumios mt-1 xl:mt-2 text-primary" />
+              </div>
+            </motion.div>
+          </Link>
+        </div>
 
-        <div className="flex flex-col lg:flex-row items-center justify-between gap-4 xl:gap-8 mt-8 xl:mt-16">
-          <motion.div
-            className="w-full lg:w-1/3 flex justify-center items-center"
-            initial={{ opacity: 0, scale: 0.9 }}
-            whileInView={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.5 }}
-            viewport={{ once: true }}
-          >
-            <Image
-              src="/images/homepage/firsttwo.png"
-              alt="Business Transformation"
-              className="object-cover max-w-[200px] h-auto"
-              width={500}
-              height={300}
-              priority
-            />
-          </motion.div>
+        {/* Our Story Section */}
 
-          <motion.div
-            className="w-full lg:w-1/1"
-            initial={{ opacity: 0, x: 30 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.5 }}
-            viewport={{ once: true }}
-          >
-            <h2 className="text-right">Who We Are</h2>
-            <p className=" mt-4 text-right">
-              Sabbir Nasir has spent nearly three decades leading the
-              transformations of multinational and private companies{" "}
-              <span className="text-primary italic">
-                – not by simply advising, but by understanding and doing.
-              </span>{" "}
-              His approach is heavily influenced by his own spiritual journey
-              that taught him invaluable lessons about presence and
-              self-awareness. With Sabbir’s guidance, you’ll move forward with
-              clarity, scale with confidence, and achieve sustainable growth and
-              success. We partner with founders, senior executives, and
-              investors whose successful companies have plateaued and require
-            </p>
-            <div className="flex justify-end -mt-2 xl:-mt-0">
-              <Link href={"/about-us"} className="mt-2 inline-flex ">
-                <motion.div
-                  className="flex items-center space-x-1 text-primary cursor-pointer"
-                  whileHover={{ y: -8 }}
-                  whileTap={{ scale: 0.98 }}
-                  transition={{
-                    type: "spring",
-                    stiffness: 200,
-                    damping: 20,
-                    mass: 0.5,
-                  }}
-                >
-                  <div>
-                    <HiArrowNarrowRight className="text-2xl xl:text-3xl font-lumios mt-1 xl:mt-2 rotate-180" />
-                  </div>
-                  <p className="text-[30px] xl:text-[45px] font-lumios text-primary">
-                    Our Story
-                  </p>
-                </motion.div>
-              </Link>
-            </div>
-          </motion.div>
+        <div className="">
+          {" "}
+          <div className="flex flex-col lg:flex-row items-center justify-between gap-4 xl:gap-8 mt-8 xl:mt-16">
+            <motion.div
+              className="w-full lg:w-1/3 flex justify-center items-center"
+              initial={{ opacity: 0, scale: 0.9 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.5 }}
+              viewport={{ once: true }}
+            >
+              <Image
+                src="/images/homepage/firsttwo.png"
+                alt="Business Transformation"
+                className="object-cover max-w-[200px] h-auto"
+                width={500}
+                height={300}
+                priority
+              />
+            </motion.div>
+
+            <motion.div
+              className="w-full lg:w-1/1"
+              initial={{ opacity: 0, x: 30 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.5 }}
+              viewport={{ once: true }}
+            >
+              <h2 className="text-right">Who We Are</h2>
+              <p className=" mt-4 text-right">
+                Sabbir Nasir has spent nearly three decades leading the
+                transformations of multinational and private companies{" "}
+                <span className="text-primary italic">
+                  – not by simply advising, but by understanding and doing.
+                </span>{" "}
+                His approach is heavily influenced by his own spiritual journey
+                that taught him invaluable lessons about presence and
+                self-awareness. With Sabbir’s guidance, you’ll move forward with
+                clarity, scale with confidence, and achieve sustainable growth
+                and success. We partner with founders, senior executives, and
+                investors whose successful companies have plateaued and require
+              </p>
+              <div className="flex justify-end -mt-3 xl:mt-0">
+                <Link href={"/about-us"} className="mt-2 inline-flex ">
+                  <motion.div
+                    className="flex items-center space-x-1 text-primary cursor-pointer"
+                    whileHover={{ y: -8 }}
+                    whileTap={{ scale: 0.98 }}
+                    transition={{
+                      type: "spring",
+                      stiffness: 200,
+                      damping: 20,
+                      mass: 0.5,
+                    }}
+                  >
+                    <div>
+                      <HiArrowNarrowRight className="text-2xl xl:text-3xl font-lumios mt-1 xl:mt-2 rotate-180" />
+                    </div>
+                    <p className="text-[30px] xl:text-[45px] font-lumios text-primary">
+                      Our Story
+                    </p>
+                  </motion.div>
+                </Link>
+              </div>
+            </motion.div>
+          </div>
         </div>
       </div>
     </div>
