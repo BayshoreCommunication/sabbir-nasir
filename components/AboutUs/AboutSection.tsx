@@ -72,17 +72,17 @@ const AboutSection = () => {
                     transition={{ delay: 0.2 }}
                     viewport={{ once: true }}
                   >
-                    Sabbir Nasir launched his own consultancy because he
-                    observed that stagnating companies need more than templated
-                    advice, PowerPoint decks, and periodic check-ins with a
-                    traditional advisor. Sabbir is{" "}
+                    Sabbir Nasir and his team observed that stagnating companies
+                    need more than templated advice, PowerPoint decks, and
+                    periodic check-ins with a traditional advisor. Sabbir and
+                    his team is{" "}
                     <span className="font-semibold italic text-primary">
                       a true partner and transformational architect who walks
                       the journey with you
                     </span>{" "}
                     – physically, mentally, emotionally, and spiritually. And
-                    he&apos;ll stay with you until you can sustain your
-                    transformational strategies without him.
+                    they&apos;ll stay with you until you can sustain your
+                    transformational strategies without them.
                   </motion.p>
 
                   <motion.p
@@ -92,15 +92,15 @@ const AboutSection = () => {
                     transition={{ delay: 0.4 }}
                     viewport={{ once: true }}
                   >
-                    Sabbir offers not only practical business experience and
-                    insights, but also his full presence and a genuine desire to
-                    see people and organizations thrive. He&apos;ll help you{" "}
+                    They offer not only practical business experience and
+                    insights, but also their full presence and a genuine desire
+                    to see people and organizations thrive. They ll help you{" "}
                     <span className="font-semibold italic text-primary">
                       see clearly, think strategically, and act decisively
                     </span>
-                    , and act decisively. You&apos;ll learn what your business
-                    needs, what your soul wants, and how to honor both in a
-                    unified vision for business and individual growth.
+                    . You&apos;ll learn what your business needs, what your soul
+                    wants, and how to honor both in a unified vision for
+                    business and individual growth.
                   </motion.p>
 
                   <motion.div
@@ -111,7 +111,7 @@ const AboutSection = () => {
                     viewport={{ once: true }}
                   >
                     <h3 className="">Sabbir Nasir</h3>
-                    <p className="">Owner and Founder</p>
+                    <p className="">Founder</p>
                   </motion.div>
                 </div>
               </motion.div>

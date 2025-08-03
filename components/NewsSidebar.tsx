@@ -57,7 +57,7 @@ const NewsSidebar = () => {
             transition={{ duration: 0.4, delay: 0.4 }}
             viewport={{ once: true }}
           >
-            Owner and Founder
+            Founder
           </motion.p>
         </div>
 
@@ -68,9 +68,22 @@ const NewsSidebar = () => {
           transition={{ duration: 0.5, delay: 0.5 }}
           viewport={{ once: true }}
         >
-          {` Sabbir Nasir launched his own consultancy because he observed that stagnating companies need more than templated advice, PowerPoint decks, and periodic check-ins with a traditional advisor. Sabbir is a true partner and transformational architect who walks the journey with you – physically, mentally, emotionally, and spiritually. And he'll stay with you until you can sustain your transformational strategies without him.
-
-Sabbir offers not only practical business experience and insights, but also his full presence and a genuine desire to see people and organizations thrive. He'll help you see clearly, think strategically, and act decisively, and act decisively. You'll learn what your business needs, what your soul wants, and how to honor both in a unified vision for business and individual growth.`}
+          {` Sabbir Nasir and his team observed that stagnating
+companies need more than templated advice,
+PowerPoint decks, and periodic check-ins with a
+traditional advisor. Sabbir and his team is a true
+partner and transformational architect who walks the
+journey with you – physically, mentally, emotionally,
+and spiritually. And they will stay with you until you
+can sustain your transformational strategies without
+them. The team offers not only practical business
+experience and insights, but also their full presence
+and a genuine desire to see people and organisations
+thrive. They will help you see clearly, think
+strategically, and act decisively. You'll learn what your
+business needs, what your soul wants, and how to
+honor both in a unified vision for business and
+individual growth.`}
         </motion.p>
 
         <motion.div
@@ -82,7 +95,7 @@ Sabbir offers not only practical business experience and insights, but also his 
         >
           <Link href="/about-us" className="">
             <p className="text-primary hover:text-primary/80 hover:underline">
-              More About Me
+              More About Us
             </p>
           </Link>
         </motion.div>

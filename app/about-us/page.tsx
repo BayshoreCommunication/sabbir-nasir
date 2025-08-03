@@ -14,7 +14,7 @@ const page = () => {
         description="We don’t just advise; we walk the journey with you, aligning strategy with soul for lasting transformation."
       />
       <AboutSection />
-      <TaketheFirstStep title="Speak with Sabbir Nasir" />
+      <TaketheFirstStep title="Speak with Team Sabbir Nasir" />
     </div>
   );
 };
