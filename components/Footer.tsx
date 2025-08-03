@@ -43,7 +43,7 @@ const Footer = () => {
                     icon: <FaFacebook className="text-[20px]" />,
                   },
                   {
-                    href: "https://www.linkedin.com/teamsabbirnasir",
+                    href: "https://www.linkedin.com/company/teamsabbirnasir",
                     icon: <FaLinkedin className="text-[20px]" />,
                   },
                   {
@@ -51,7 +51,7 @@ const Footer = () => {
                     icon: <PiInstagramLogoFill className="text-[20px]" />,
                   },
                   {
-                    href: "https://www.youtube.com/teamsabbirnasir",
+                    href: "https://www.youtube.com/@TeamSabbir_Nasir",
                     icon: <FaYoutube className="text-[20px]" />,
                   },
                 ].map((item, i) => (
