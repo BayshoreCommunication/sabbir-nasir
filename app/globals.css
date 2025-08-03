@@ -37,13 +37,6 @@ h3 {
   background: #a8a8a8;
 }
 
-/* Responsive sidebar adjustments */
-@media (max-width: 1024px) {
-  .sidebar-responsive {
-    margin-top: 2rem;
-  }
-}
-
 /* Sticky sidebar improvements */
 @media (min-width: 1024px) {
   .sticky-sidebar {
@@ -58,5 +51,74 @@ h3 {
   .mobile-sidebar {
     margin-top: 2rem;
     position: static;
+  }
+}
+
+/* Ensure sticky behavior works properly */
+.sticky-top-sidebar {
+  position: sticky;
+  top: 2rem;
+  z-index: 10;
+  height: fit-content;
+  margin-bottom: 2rem;
+}
+
+/* Responsive sidebar adjustments */
+@media (max-width: 1024px) {
+  .sidebar-responsive {
+    margin-top: 2rem;
+  }
+}
+
+/* Fix for sticky positioning issues */
+.sticky-fix {
+  position: sticky;
+  top: 2rem;
+  z-index: 20;
+  height: fit-content;
+}
+
+/* Ensure parent container allows sticky positioning */
+.sticky-container {
+  overflow: visible;
+  position: relative;
+}
+
+/* New sticky sidebar wrapper - FIXED VERSION */
+.sticky-sidebar-wrapper {
+  position: sticky;
+  top: 2rem;
+  z-index: 50;
+  height: fit-content;
+  max-height: calc(100vh - 4rem);
+  overflow-y: auto;
+  /* Debug: Add a subtle border to see the sticky area */
+  border: 1px solid transparent;
+}
+
+/* Override parent overflow for sticky to work */
+.allow-sticky {
+  overflow: visible !important;
+}
+
+/* Ensure proper spacing and behavior */
+@media (min-width: 1024px) {
+  .sticky-sidebar-wrapper {
+    position: sticky;
+    top: 2rem;
+    z-index: 50;
+    height: fit-content;
+    max-height: calc(100vh - 4rem);
+    overflow-y: auto;
+    /* Debug: Add background color to see sticky area */
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+  }
+}
+
+@media (max-width: 1023px) {
+  .sticky-sidebar-wrapper {
+    position: static;
+    margin-top: 2rem;
   }
 }

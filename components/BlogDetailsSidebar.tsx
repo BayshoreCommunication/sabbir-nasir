@@ -10,7 +10,7 @@ const BlogDetailsSidebar = () => {
   return (
     <div>
       <motion.div
-        className="bg-white rounded-lg shadow-sm border border-gray-200 p-4 md:p-6"
+        className="bg-white rounded-lg shadow-sm border border-gray-200 p-4 md:p-6 "
         initial={{ opacity: 0, x: 30 }}
         whileInView={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.6 }}

@@ -97,15 +97,16 @@ const page = async ({ params }: PageProps) => {
   }
 
   return (
-    <div className="overflow-hidden mt-[62px] md:mt-[100px]">
+    <div className="">
       <GlobalHeroSection
-        titleH1={`Insights Details`}
-        titleH2={"Blog"}
-        slug={"blog"}
+        titleH1={`Insights`}
+        titleH2={"Insights"}
+        slug={"insights"}
         image="/images/about-us/blog.jpg"
+        description="Insights shaped by experience, not theory. For those ready to lead the next phase with clarity and intention."
       />
       <div className="container mx-auto px-4 py-8">
-        <div className="grid gap-8 lg:gap-12 grid-cols-1 lg:grid-cols-3">
+        <div className="grid gap-8 lg:gap-12 grid-cols-1 lg:grid-cols-3 sticky-container">
           {/* Main Content */}
           <div className="lg:col-span-2">
             {blogDetails?.map((blog, index) => (
@@ -146,47 +147,52 @@ const page = async ({ params }: PageProps) => {
           </div>
 
           {/* Sidebar */}
-          <aside className="lg:col-span-1">
-            <div className="mb-10">
-              <BlogDetailsSidebar />
-            </div>
-            <div className="bg-white border border-gray-200 rounded-lg p-6 h-fit sticky top-8">
-              <h2 className="text-2xl font-semibold text-[#1F1F1F] mb-6 pb-4 border-b-2 border-primary">
-                Latest Insights
-              </h2>
+          <div className="lg:col-span-1">
+            <div className="space-y-6">
+              {/* Author Profile Section */}
+              <div className="mb-6">
+                <BlogDetailsSidebar />
+              </div>
 
-              <div className="space-y-4 max-h-[600px] overflow-y-auto">
-                {blogPostData?.data
-                  ?.filter((blog) => blog.published === true)
-                  ?.map((blog, index) => (
-                    <Link
-                      key={blog.id}
-                      href={`/Insights/${blog.slug}`}
-                      className="flex items-start gap-4 p-3 rounded-lg hover:bg-foreground transition-colors group"
-                    >
-                      {blog.featuredImage?.image?.url && (
-                        <div className="relative w-20 h-20 flex-shrink-0">
-                          <Image
-                            src={blog.featuredImage.image.url}
-                            alt={blog.featuredImage.altText || blog.title}
-                            fill
-                            className="object-cover rounded-md"
-                          />
+              {/* Latest Insights Section */}
+              <div className="bg-white border border-gray-200 rounded-lg p-6">
+                <h2 className="text-2xl font-semibold text-[#1F1F1F] mb-6 pb-4 border-b-2 border-primary">
+                  Latest Insights
+                </h2>
+
+                <div className="space-y-4 max-h-[600px] overflow-y-auto custom-scrollbar">
+                  {blogPostData?.data
+                    ?.filter((blog) => blog.published === true)
+                    ?.map((blog, index) => (
+                      <Link
+                        key={blog.id}
+                        href={`/Insights/${blog.slug}`}
+                        className="flex items-start gap-4 p-3 rounded-lg hover:bg-foreground transition-colors group"
+                      >
+                        {blog.featuredImage?.image?.url && (
+                          <div className="relative w-20 h-20 flex-shrink-0">
+                            <Image
+                              src={blog.featuredImage.image.url}
+                              alt={blog.featuredImage.altText || blog.title}
+                              fill
+                              className="object-cover rounded-md"
+                            />
+                          </div>
+                        )}
+                        <div className="flex-1 min-w-0">
+                          <p className="line-clamp-2 transition-colors">
+                            {blog.title}
+                          </p>
+                          <time className="text-xs text-gray-500 mt-1 block">
+                            {postDate(blog.createdAt)}
+                          </time>
                         </div>
-                      )}
-                      <div className="flex-1 min-w-0">
-                        <h3 className="text-sm font-semibold text-[#1F1F1F] line-clamp-2 transition-colors">
-                          {blog.title}
-                        </h3>
-                        <time className="text-xs text-gray-500 mt-1 block">
-                          {postDate(blog.createdAt)}
-                        </time>
-                      </div>
-                    </Link>
-                  ))}
+                      </Link>
+                    ))}
+                </div>
               </div>
             </div>
-          </aside>
+          </div>
         </div>
       </div>
       <TaketheFirstStep title="Take the First Step" />
