@@ -53,23 +53,6 @@ const NewsGrid = () => {
                 fill
                 className="object-cover"
               />
-              {/* Date Overlay */}
-              {/* <motion.div
-                className="absolute top-4 left-4 bg-opacity-90 rounded-md px-3 py-1 bg-white"
-                initial={{ opacity: 0, x: -20 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                transition={{
-                  duration: 0.4,
-                  delay: index * 0.1 + 0.4,
-                }}
-                viewport={{ once: true }}
-              >
-                <div className="text-xs font-medium text-gray-800 leading-tight">
-                  {insight.date.split(" ").map((part, index) => (
-                    <div key={index}>{part}</div>
-                  ))}
-                </div>
-              </motion.div> */}
             </motion.div>
 
             {/* Content */}

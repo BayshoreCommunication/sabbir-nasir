@@ -17,3 +17,46 @@ h2 {
 h3 {
   @apply text-[20px] md:text-[24px] text-[#1F1F1F] font-medium font-baskervville;
 }
+
+/* Custom Scrollbar Styles */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 6px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 3px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border-radius: 3px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #a8a8a8;
+}
+
+/* Responsive sidebar adjustments */
+@media (max-width: 1024px) {
+  .sidebar-responsive {
+    margin-top: 2rem;
+  }
+}
+
+/* Sticky sidebar improvements */
+@media (min-width: 1024px) {
+  .sticky-sidebar {
+    position: sticky;
+    top: 2rem;
+    height: fit-content;
+  }
+}
+
+/* Mobile sidebar adjustments */
+@media (max-width: 1023px) {
+  .mobile-sidebar {
+    margin-top: 2rem;
+    position: static;
+  }
+}

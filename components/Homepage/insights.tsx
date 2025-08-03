@@ -67,9 +67,9 @@ export default function Insights({ blogPostData }: InsightsProps) {
       <div className="text-center mb-4 xl:mb-8">
         <h2 className="">Insights</h2>
         <p className="mt-5 max-w-[700px] mx-auto">
-          Insights You&apos;ve hit a wall. Your passion, talent, and energy
-          drove your company&apos;s early success, but you&apos;re caught in
-          what we call the Holy Trap
+          You&apos;ve hit a wall. Your passion, talent, and energy drove your
+          company&apos;s early success, but you&apos;re caught in what we call
+          the Holy Trap
         </p>
       </div>
 

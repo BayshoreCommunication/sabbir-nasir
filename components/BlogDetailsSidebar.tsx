@@ -9,9 +9,8 @@ import { PiInstagramLogoFill } from "react-icons/pi";
 const BlogDetailsSidebar = () => {
   return (
     <div>
-      {" "}
       <motion.div
-        className="bg-white rounded-lg shadow-sm border border-gray-200 p-6"
+        className="bg-white rounded-lg shadow-sm border border-gray-200 p-4 md:p-6"
         initial={{ opacity: 0, x: 30 }}
         whileInView={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.6 }}
@@ -53,28 +52,13 @@ const BlogDetailsSidebar = () => {
         </div>
 
         <motion.p
-          className="mb-4"
+          className="mb-4  leading-relaxed"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ duration: 0.5, delay: 0.5 }}
           viewport={{ once: true }}
         >
-          {` Sabbir Nasir and his team observed that stagnating
-companies need more than templated advice,
-PowerPoint decks, and periodic check-ins with a
-traditional advisor. Sabbir and his team is a true
-partner and transformational architect who walks the
-journey with you – physically, mentally, emotionally,
-and spiritually. And they will stay with you until you
-can sustain your transformational strategies without
-them. The team offers not only practical business
-experience and insights, but also their full presence
-and a genuine desire to see people and organisations
-thrive. They will help you see clearly, think
-strategically, and act decisively. You'll learn what your
-business needs, what your soul wants, and how to
-honor both in a unified vision for business and
-individual growth.`}
+          {`Sabbir Nasir and his team observed that stagnating companies need more than templated advice, PowerPoint decks, and periodic check-ins with a traditional advisor. Sabbir and his team is a true partner and transformational architect who walks the journey with you – physically, mentally, emotionally, and spiritually.`}
         </motion.p>
 
         <motion.div
@@ -92,13 +76,13 @@ individual growth.`}
         </motion.div>
 
         <motion.div
-          className="flex justify-center space-x-4"
+          className="flex justify-center"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ duration: 0.5, delay: 0.7 }}
           viewport={{ once: true }}
         >
-          <div className=" flex gap-4 mt-4 justify-center md:justify-start">
+          <div className="flex gap-3 mt-4 justify-center">
             {[
               {
                 href: "https://www.facebook.com/teamsabbirnasir",
@@ -121,9 +105,9 @@ individual growth.`}
                 key={i}
                 href={item.href}
                 target="_blank"
-                className="group inline-block p-3 bg-[#F4F6F6] border border-primary rounded-full duration-300 hover:bg-primary"
+                className="group inline-block p-2 bg-[#F4F6F6] border border-primary rounded-full duration-300 hover:bg-primary"
               >
-                <div className="text-primary group-hover:text-white size-5">
+                <div className="text-primary group-hover:text-white text-sm">
                   {item.icon}
                 </div>
               </Link>
