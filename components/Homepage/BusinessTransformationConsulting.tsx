@@ -79,7 +79,7 @@ const BusinessTransformationConsulting = () => {
         </motion.div>
 
         {/* Framework Section */}
-        <div className="mt-16 md:mt-20 lg:mt-24">
+        <div className="mt-16 md:mt-20 lg:mt-20">
           <motion.p
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
