@@ -134,7 +134,7 @@ const BusinessTransformationConsulting = () => {
         {/* Who We Are Section */}
         <div className="">
           {" "}
-          <div className="flex flex-col-reverse lg:flex-row items-center justify-between gap-2 xl:gap-8 -mt-1 xl:-mt-2 mb-0 xl:-mb-10 ">
+          <div className="flex flex-col-reverse lg:flex-row items-center justify-between gap-2 xl:gap-8 -mt-1 xl:-mt-2 mb-0 xl:-mb-[50px] ">
             <motion.div
               className="w-full lg:w-1/1"
               initial={{ opacity: 0, x: -30 }}
@@ -242,7 +242,7 @@ const BusinessTransformationConsulting = () => {
                 and success. We partner with founders, senior executives, and
                 investors whose successful companies have plateaued and require
               </p>
-              <div className="flex justify-end -mt-3 xl:mt-0">
+              <div className="flex justify-end -mt-3 xl:-mt-2">
                 <Link href={"/about-us"} className="mt-2 inline-flex ">
                   <motion.div
                     className="flex items-center space-x-1 text-primary cursor-pointer"
