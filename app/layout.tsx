@@ -58,7 +58,7 @@ export default function RootLayout({
       <body className="font-acumin">
         <Providers>
           <Navbar />
-          <main className="overflow-x-hidden">{children}</main>
+          <main className="">{children}</main>
           <Footer />
         </Providers>
       </body>

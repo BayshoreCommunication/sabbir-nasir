@@ -10,7 +10,7 @@ const page = () => {
         titleH1="About Us"
         titleH2={"About Us"}
         slug={"aboutus"}
-        image="/images/about-us/about-us.jpg"
+        image="/images/about-us/about-us.png"
         description="We don’t just advise; we walk the journey with you, aligning strategy with soul for lasting transformation."
       />
       <AboutSection />

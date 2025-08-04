@@ -97,7 +97,7 @@ const page = async ({ params }: PageProps) => {
   }
 
   return (
-    <div className="">
+    <div className="overflow-hidden mt-[62px] md:mt-[100px]">
       <GlobalHeroSection
         titleH1={`Insights`}
         titleH2={"Insights"}
@@ -148,7 +148,7 @@ const page = async ({ params }: PageProps) => {
 
           {/* Sidebar */}
           <div className="lg:col-span-1">
-            <div className="space-y-6">
+            <div className="sticky top-[100px] space-y-6">
               {/* Author Profile Section */}
               <div className="mb-6">
                 <BlogDetailsSidebar />
