@@ -97,7 +97,7 @@ const page = async ({ params }: PageProps) => {
   }
 
   return (
-    <div className=" mt-[62px] md:mt-[100px]">
+    <div className="">
       <GlobalHeroSection
         titleH1={`Insights`}
         titleH2={"Insights"}
@@ -106,14 +106,11 @@ const page = async ({ params }: PageProps) => {
         description="Insights shaped by experience, not theory. For those ready to lead the next phase with clarity and intention."
       />
       <div className="container mx-auto px-4 py-8">
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+        <div className="grid gap-8 lg:gap-12 grid-cols-1 lg:grid-cols-3 sticky-container">
           {/* Main Content */}
           <div className="lg:col-span-2">
             {blogDetails?.map((blog, index) => (
-              <article
-                key={blog.id}
-                className="space-y-6 prose prose-lg max-w-none "
-              >
+              <article key={blog.id} className="space-y-6">
                 {/* Header */}
                 <header className="space-y-4">
                   <div className="flex items-center justify-between text-sm text-gray-600">
@@ -150,9 +147,8 @@ const page = async ({ params }: PageProps) => {
           </div>
 
           {/* Sidebar */}
-
           <div className="lg:col-span-1">
-            <div className="sticky top-28 space-y-6">
+            <div className="space-y-6">
               {/* Author Profile Section */}
               <div className="mb-6">
                 <BlogDetailsSidebar />

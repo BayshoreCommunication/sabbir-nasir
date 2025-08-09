@@ -18,6 +18,11 @@ const GlobalHeroSection = ({
           src={image}
           alt={titleH1}
           fill
+          priority
+          loading="eager"
+          fetchPriority="high"
+          quality={70}
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 100vw, 100vw"
           className="z-0 object-cover object-right md:object-center xl:object-top"
         />
 

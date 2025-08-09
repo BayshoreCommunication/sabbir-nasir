@@ -129,7 +129,7 @@ export default function Insights({ blogPostData }: InsightsProps) {
                   </p>
 
                   {/* Read More Link */}
-                  <Link href={`/Insights/${insight.slug}`}>
+                  <Link href={`/insights/${insight.slug}`}>
                     <motion.div
                       className="mt-auto flex items-center space-x-1 text-primary cursor-pointer group"
                       initial={{ opacity: 0, x: -10 }}
