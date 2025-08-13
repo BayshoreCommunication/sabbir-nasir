@@ -12,6 +12,8 @@ const page = () => {
         slug={"aboutus"}
         image="/images/about-us/about-us.png"
         description="We don’t just advise; we walk the journey with you, aligning strategy with soul for lasting transformation."
+        buttonFlag={false}
+        buttonText="Meet Sabbir"
       />
       <AboutSection />
       <TaketheFirstStep title="Speak with Team Sabbir Nasir" />

@@ -103,7 +103,9 @@ const page = async ({ params }: PageProps) => {
         titleH2={"Insights"}
         slug={"insights"}
         image="/images/about-us/blog.jpg"
-        description="Insights shaped by experience, not theory. For those ready to lead the next phase with clarity and intention."
+        description="Sign up to receive in-depth analysis of business transformation with real-world stories that show how our framework has been successfully applied."
+        buttonFlag={true}
+        buttonText="Contact Us"
       />
       <div className="container mx-auto px-4 py-8">
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">

@@ -10,8 +10,11 @@ const page = () => {
         titleH2={"Who We Serve"}
         slug={"who-we-serve"}
         image="/images/about-us/serve.jpg"
-        description="Your passion got you here, but now you need more than passion to grow. We help leaders break through stagnation and build companies that scale and create lasting impact."
+        description="If your business has hit a plateau and lacks a clear vision of success and how to move forward, we would love to hear your story."
+        buttonFlag={true}
+        buttonText="Start Your Journey"
       />
+
       <WhoWeServe />
       <TaketheFirstStep title="Take the First Step" />
     </div>
