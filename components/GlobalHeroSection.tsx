@@ -3,14 +3,17 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
+import { ReactNode } from "react";
 
 interface GlobalHeroSectionProps {
   image: string;
-  titleH1: string;
+  titleH1: string | ReactNode;
   titleH2: string;
   slug?: string;
   description?: string;
   buttonFlag?: boolean;
+  buttonText?: string;
+  altText?: string;
 }
 
 const GlobalHeroSection = ({
@@ -19,8 +22,9 @@ const GlobalHeroSection = ({
   titleH2,
   slug,
   description,
-  buttonFlag,
-  buttonText,
+  buttonFlag = false,
+  buttonText = "Schedule A Call",
+  altText,
 }: GlobalHeroSectionProps) => {
   return (
     <>
@@ -28,7 +32,9 @@ const GlobalHeroSection = ({
         {/* Hero Image */}
         <Image
           src={image}
-          alt={titleH1}
+          alt={
+            altText || (typeof titleH1 === "string" ? titleH1 : "Hero Image")
+          }
           fill
           priority
           loading="eager"
@@ -36,9 +42,6 @@ const GlobalHeroSection = ({
           quality={70}
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 100vw, 100vw"
           className="z-0 object-cover object-right md:object-center xl:object-top"
-          priority
-          quality={80}
-          sizes="100vw"
         />
 
         <div className="absolute inset-0 z-20  xl:bg-transparent">
@@ -128,9 +131,9 @@ const GlobalHeroSection = ({
                         <Link
                           href="/contact-us"
                           prefetch={true}
-                          className="bg-primary text-white px-6 py-3 rounded-[10px] text-sm hover:bg-primary/80 transition duration-300 shadow-sm hover:shadow-md font-open-sans uppercase cursor-pointer inline-block"
+                          className="bg-primary text-white px-6 py-3 rounded-[10px] text-sm hover:bg-primary/80 transition duration-300 shadow-sm hover:shadow-md font-open-sans capitalize cursor-pointer inline-block"
                         >
-                          Schedule A Call
+                          {buttonText}
                         </Link>
                       </motion.div>
                     </motion.div>

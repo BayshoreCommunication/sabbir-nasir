@@ -18,6 +18,7 @@ export default function page() {
         description=""
         buttonFlag={false}
         buttonText="Meet Sabbir"
+        altText="Sabbir Nasir Transformation Framework"
       />
 
       <OurFramworkSection />
