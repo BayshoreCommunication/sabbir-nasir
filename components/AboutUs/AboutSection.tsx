@@ -28,7 +28,7 @@ const AboutSection = () => {
               animate={{ opacity: 1 }}
               transition={{ delay: 0.3 }}
             >
-              Sabbir Nasir & Associates is a global business transformation
+              Sabbir Nassir & Associates is a global business transformation
               consultancy created to help people and organizations scale to
               their full potential with clarity and purpose. We partner with
               founders, senior executives, and investors, working together to

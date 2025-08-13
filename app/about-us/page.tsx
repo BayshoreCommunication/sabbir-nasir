@@ -7,12 +7,12 @@ const page = () => {
   return (
     <div className="overflow-hidden mt-[62px] md:mt-[100px]">
       <GlobalHeroSection
-        titleH1="About Us"
-        titleH2={"About Us"}
-        slug={"aboutus"}
+        titleH1="Who We Are"
+        titleH2={"Who We Are"}
+        slug={"about-us"}
         image="/images/about-us/about-us.png"
-        description="We don’t just advise; we walk the journey with you, aligning strategy with soul for lasting transformation."
-        buttonFlag={false}
+        description="Sabbir Nabir and his team are prepared to walk with you on your journey, applying a business transformation model that is like no other in the world."
+        buttonFlag={true}
         buttonText="Meet Sabbir"
       />
       <AboutSection />
