@@ -153,7 +153,7 @@ const GlobalHeroSection = ({
                   {titleH1}
                 </motion.h1>
                 {/* Desktop description */}
-                <div className="max-w-[750px] mx-auto mt-4">
+                <div className="max-w-[450px] xl:max-w-[750px] mx-auto mt-4">
                   <motion.p
                     initial={{ opacity: 0, y: 40 }}
                     whileInView={{ opacity: 1, y: 0 }}
