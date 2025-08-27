@@ -16,7 +16,7 @@ interface GlobalHeroSectionProps {
   altText?: string;
 }
 
-const GlobalHeroSection = ({
+const BlogDetails = ({
   image,
   titleH1,
   titleH2,
@@ -51,15 +51,15 @@ const GlobalHeroSection = ({
               <div className="md:hidden relative">
                 <div className="absolute inset-0 bg-white/60 backdrop-blur-md rounded-lg -m-4"></div>
                 <div className="relative z-10 p-6">
-                  <motion.h1
+                  <motion.h2
                     initial={{ opacity: 0, y: 40 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8, ease: "easeOut" }}
                     viewport={{ once: true }}
-                    className="text-[28px] md:text-h1 text-deep-indigo font-bold font-baskervville uppercase text-center"
+                    className="md:text-h1 text-deep-indigo font-bold font-baskervville uppercase text-center text-[32px] md:text-[40px] xl:text-[45px] 2xl:text-[55px]   leading-tight text-[#1F1F1F]"
                   >
                     {titleH1}
-                  </motion.h1>
+                  </motion.h2>
                   {/* Mobile description - Hidden on mobile, only show on desktop */}
 
                   <motion.div
@@ -249,4 +249,4 @@ const GlobalHeroSection = ({
   );
 };
 
-export default GlobalHeroSection;
+export default BlogDetails;
