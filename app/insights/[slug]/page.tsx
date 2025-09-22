@@ -1,3 +1,4 @@
+import BlogDetails from "@/components/BlogDetails";
 import BlogDetailsSidebar from "@/components/BlogDetailsSidebar";
 import GlobalHeroSection from "@/components/GlobalHeroSection";
 import TaketheFirstStep from "@/components/Homepage/TaketheFirstStep";
@@ -97,8 +98,8 @@ const page = async ({ params }: PageProps) => {
   }
 
   return (
-    <div className="">
-      <GlobalHeroSection
+    <div className="mt-[62px] md:mt-[100px]">
+      <BlogDetails
         titleH1={`Insights`}
         titleH2={"Insights"}
         slug={"insights"}
