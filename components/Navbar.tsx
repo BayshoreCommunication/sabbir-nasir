@@ -22,7 +22,7 @@ const menuItems: MenuItem[] = [
   { title: "News", slug: "/news" },
 ];
 
-// Optimized debounce with better performance
+// Optimized debounce with better performan ce
 const useDebounce = (callback: () => void, delay: number) => {
   const [debouncedValue, setDebouncedValue] = useState(false);
 
