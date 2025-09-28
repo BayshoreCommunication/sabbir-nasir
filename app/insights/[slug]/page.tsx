@@ -1,6 +1,5 @@
 import BlogDetails from "@/components/BlogDetails";
 import BlogDetailsSidebar from "@/components/BlogDetailsSidebar";
-import GlobalHeroSection from "@/components/GlobalHeroSection";
 import TaketheFirstStep from "@/components/Homepage/TaketheFirstStep";
 import GetAllBlogPost from "@/lib/GetAllBlogPost";
 import { BlogPostData, PageProps } from "@/lib/types";
@@ -128,7 +127,7 @@ const page = async ({ params }: PageProps) => {
 
                 {/* Featured Image */}
                 {blog?.featuredImage?.image?.url && (
-                  <div className="relative w-full h-[300px] md:h-[400px] lg:h-[500px] rounded-lg overflow-hidden mb-6 mt-4">
+                  <div className="relative w-full h-[250px] sm:h-[300px] md:h-[400px] lg:h-[500px] rounded-lg overflow-hidden mb-6 mt-4">
                     <Image
                       src={blog.featuredImage.image.url}
                       alt={blog.featuredImage.altText || blog.title}
@@ -173,7 +172,7 @@ const page = async ({ params }: PageProps) => {
                         className="flex items-start gap-4 p-3 rounded-lg hover:bg-foreground transition-colors group"
                       >
                         {blog.featuredImage?.image?.url && (
-                          <div className="relative w-20 h-20 flex-shrink-0">
+                          <div className="relative w-16 h-16 sm:w-20 sm:h-20 flex-shrink-0">
                             <Image
                               src={blog.featuredImage.image.url}
                               alt={blog.featuredImage.altText || blog.title}
