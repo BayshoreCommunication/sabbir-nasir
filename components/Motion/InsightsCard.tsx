@@ -21,6 +21,12 @@ const InsightsCard = ({ insight, index }: InsightsCardProps) => {
     return formattedDate;
   };
 
+  // Function to strip HTML tags and convert to plain text
+  const stripHtml = (html: string): string => {
+    if (!html) return "";
+    return html.replace(/<[^>]*>/g, "").trim();
+  };
+
   const hasValidImage = insight?.featuredImage?.image?.url;
 
   return (
@@ -33,9 +39,9 @@ const InsightsCard = ({ insight, index }: InsightsCardProps) => {
         viewport={{ once: true }}
         whileHover={{ y: -5 }}
       >
-        {/* Image (fixed height) */}
+        {/* Image (responsive height) */}
         <motion.div
-          className="relative h-56 md:h-64 overflow-hidden"
+          className="relative h-48 sm:h-56 md:h-60 lg:h-64 overflow-hidden"
           initial={{ scale: 1.1 }}
           whileInView={{ scale: 1 }}
           transition={{ delay: index * 0.1 + 0.2, duration: 0.6 }}
@@ -86,7 +92,9 @@ const InsightsCard = ({ insight, index }: InsightsCardProps) => {
             transition={{ delay: index * 0.1 + 0.5, duration: 0.4 }}
             viewport={{ once: true }}
           >
-            {insight.description}
+            {stripHtml(insight.description) ||
+              stripHtml(insight.body)?.substring(0, 150) + "..." ||
+              "No description available"}
           </motion.p>
 
           <div className="mt-auto">
