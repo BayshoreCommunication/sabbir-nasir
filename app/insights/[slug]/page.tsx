@@ -127,12 +127,12 @@ const page = async ({ params }: PageProps) => {
 
                 {/* Featured Image */}
                 {blog?.featuredImage?.image?.url && (
-                  <div className="relative w-full h-[250px] sm:h-[300px] md:h-[400px] lg:h-[500px] rounded-lg overflow-hidden mb-6 mt-4">
+                  <div className="relative w-full h-[250px] sm:h-[300px] md:h-[400px] lg:h-[500px] rounded-lg overflow-hidden">
                     <Image
                       src={blog.featuredImage.image.url}
                       alt={blog.featuredImage.altText || blog.title}
                       fill
-                      className="object-cover"
+                      className="object-contain object-center"
                       priority
                     />
                   </div>
