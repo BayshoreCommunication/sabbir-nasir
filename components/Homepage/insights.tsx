@@ -96,7 +96,7 @@ export default function Insights({ blogPostData }: InsightsProps) {
                       alt={insight.featuredImage.altText || insight.title}
                       width={400}
                       height={192}
-                      className="w-full h-64 object-cover"
+                      className="w-full h-64 object-contain"
                       onError={(e) => {
                         const target = e.target as HTMLImageElement;
                         target.style.display = "none";

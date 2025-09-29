@@ -52,7 +52,7 @@ const InsightsCard = ({ insight, index }: InsightsCardProps) => {
               src={insight.featuredImage.image.url}
               alt={insight.featuredImage.altText || insight.title}
               fill
-              className="object-cover"
+              className="object-contain"
               onError={(e) => {
                 (e.target as HTMLImageElement).style.display = "none";
               }}
