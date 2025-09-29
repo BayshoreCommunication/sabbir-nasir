@@ -39,9 +39,9 @@ const InsightsCard = ({ insight, index }: InsightsCardProps) => {
         viewport={{ once: true }}
         whileHover={{ y: -5 }}
       >
-        {/* Image (responsive height) */}
+        {/* Image (actual size) */}
         <motion.div
-          className="relative h-48 sm:h-56 md:h-60 lg:h-64 overflow-hidden"
+          className="relative w-full overflow-hidden"
           initial={{ scale: 1.1 }}
           whileInView={{ scale: 1 }}
           transition={{ delay: index * 0.1 + 0.2, duration: 0.6 }}
@@ -51,14 +51,16 @@ const InsightsCard = ({ insight, index }: InsightsCardProps) => {
             <Image
               src={insight.featuredImage.image.url}
               alt={insight.featuredImage.altText || insight.title}
-              fill
-              className="object-contain"
+              width={1000}
+              height={1000}
+              sizes="100vw"
+              className="w-full h-auto"
               onError={(e) => {
                 (e.target as HTMLImageElement).style.display = "none";
               }}
             />
           ) : (
-            <div className="w-full h-full bg-gray-200 grid place-items-center">
+            <div className="w-full h-48 bg-gray-200 grid place-items-center">
               <div className="text-gray-400 text-center">
                 <div className="text-4xl mb-2">📄</div>
                 <div className="text-sm">No Image</div>

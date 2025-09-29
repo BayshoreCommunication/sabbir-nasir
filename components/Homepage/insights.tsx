@@ -33,6 +33,12 @@ export default function Insights({ blogPostData }: InsightsProps) {
     return formattedDate;
   };
 
+  // Function to strip HTML tags and convert to plain text
+  const stripHtml = (html: string): string => {
+    if (!html) return "";
+    return html.replace(/<[^>]*>/g, "").trim();
+  };
+
   // Filter published posts and limit to 3
   const publishedPosts =
     blogPostData?.data
@@ -89,21 +95,22 @@ export default function Insights({ blogPostData }: InsightsProps) {
             >
               <div>
                 {/* Image Container */}
-                <div className="relative h-64 overflow-hidden">
+                <div className="relative w-full overflow-hidden">
                   {hasValidImage ? (
                     <Image
                       src={insight.featuredImage.image.url}
                       alt={insight.featuredImage.altText || insight.title}
-                      width={400}
-                      height={192}
-                      className="w-full h-64 object-contain"
+                      width={0}
+                      height={0}
+                      sizes="100vw"
+                      className="w-full h-auto"
                       onError={(e) => {
                         const target = e.target as HTMLImageElement;
                         target.style.display = "none";
                       }}
                     />
                   ) : (
-                    <div className="w-full h-64 bg-gray-200 flex items-center justify-center">
+                    <div className="w-full h-48 bg-gray-200 flex items-center justify-center">
                       <div className="text-gray-400 text-center">
                         <div className="text-4xl mb-2">📄</div>
                         <div className="text-sm">No Image</div>
@@ -125,7 +132,9 @@ export default function Insights({ blogPostData }: InsightsProps) {
                     {insight.title}
                   </h3>
                   <p className="line-clamp-3 text-gray-600 mb-4">
-                    {insight.description}
+                    {stripHtml(insight.description) ||
+                      stripHtml(insight.body)?.substring(0, 150) + "..." ||
+                      "No description available"}
                   </p>
 
                   {/* Read More Link */}
