@@ -18,7 +18,7 @@ const AboutSection = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
             >
-              About Novastra Global Partners
+              About Sabbir Nasir & Associates
             </motion.h2>
 
             {/* Full-width introductory paragraph */}
@@ -28,7 +28,7 @@ const AboutSection = () => {
               animate={{ opacity: 1 }}
               transition={{ delay: 0.3 }}
             >
-              Novastra Global Partners is a global business transformation
+              Sabbir Nassir & Associates is a global business transformation
               consultancy created to help people and organizations scale to
               their full potential with clarity and purpose. We partner with
               founders, senior executives, and investors, working together to
@@ -72,7 +72,7 @@ const AboutSection = () => {
                     transition={{ delay: 0.2 }}
                     viewport={{ once: true }}
                   >
-                    Novastra Global Partners observed that stagnating companies
+                    Sabbir Nasir and his team observed that stagnating companies
                     need more than templated advice, PowerPoint decks, and
                     periodic check-ins with a traditional advisor. Sabbir and
                     his team is{" "}
