@@ -68,7 +68,7 @@ const NewsSidebar = () => {
           transition={{ duration: 0.5, delay: 0.5 }}
           viewport={{ once: true }}
         >
-          {` Sabbir Nasir and his team observed that stagnating
+          {` Novastra Global Partners observed that stagnating
 companies need more than templated advice,
 PowerPoint decks, and periodic check-ins with a
 traditional advisor. Sabbir and his team is a true

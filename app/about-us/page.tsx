@@ -11,12 +11,12 @@ const page = () => {
         titleH2={"Who We Are"}
         slug={"about-us"}
         image="/images/about-us/about-us.png"
-        description="Sabbir Nabir and his team are prepared to walk with you on your journey, applying a business transformation model that is like no other in the world."
-        buttonFlag={true}
+        description="Novastra Global Partners are prepared to walk with you on your journey, applying a business transformation model that is like no other in the world."
+        buttonFlag={false}
         buttonText="Meet Sabbir"
       />
       <AboutSection />
-      <TaketheFirstStep title="Speak with Team Sabbir Nasir" />
+      <TaketheFirstStep title="Speak with Team Novastra Global Partners" />
     </div>
   );
 };
