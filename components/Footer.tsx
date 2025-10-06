@@ -1,11 +1,11 @@
 import { SITECONFIG } from "@/config/site";
 import Image from "next/image";
 import Link from "next/link";
+import { BsTwitterX } from "react-icons/bs";
 import { FaLinkedin } from "react-icons/fa";
 import { FaFacebook } from "react-icons/fa6";
 import { PiInstagramLogoFill } from "react-icons/pi";
 
-import { FaYoutube } from "react-icons/fa6";
 import Newsletter from "./Newsletter";
 
 const Footer = () => {
@@ -39,20 +39,20 @@ const Footer = () => {
               <div className="hidden lg:flex gap-4 mt-4 justify-center md:justify-start">
                 {[
                   {
-                    href: "https://www.facebook.com/teamsabbirnasir",
+                    href: "https://www.facebook.com/NovastraGlobalPartners",
                     icon: <FaFacebook className="text-[20px]" />,
                   },
                   {
-                    href: "https://www.linkedin.com/company/teamsabbirnasir",
+                    href: "https://www.linkedin.com/company/novastraglobalpartners",
                     icon: <FaLinkedin className="text-[20px]" />,
                   },
                   {
-                    href: "https://www.instagram.com/teamsabbirnasir",
+                    href: "https://www.instagram.com/novastraglobalpartners",
                     icon: <PiInstagramLogoFill className="text-[20px]" />,
                   },
                   {
-                    href: "https://www.youtube.com/@TeamSabbir_Nasir",
-                    icon: <FaYoutube className="text-[20px]" />,
+                    href: "https://x.com/novastragp",
+                    icon: <BsTwitterX className="text-[20px]" />,
                   },
                 ].map((item, i) => (
                   <Link
@@ -102,7 +102,7 @@ const Footer = () => {
                 },
                 {
                   href: "https://www.youtube.com/@TeamSabbir_Nasir",
-                  icon: <FaYoutube className="text-[20px]" />,
+                  icon: <BsTwitterX className="text-[20px]" />,
                 },
               ].map((item, i) => (
                 <Link
@@ -128,10 +128,10 @@ const Footer = () => {
             <div>
               © 2025{" "}
               <Link
-                href="https://www.teamsabbirnasir.com"
+                href="https://www.novastraglobalpartners.com"
                 className="hover:underline"
               >
-                Sabbir Nasir
+                Novastra Global Partners
               </Link>
               . All Rights Reserved.
             </div>

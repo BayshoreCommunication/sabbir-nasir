@@ -202,8 +202,8 @@ const WhoWeServe = () => {
                 transition={{ delay: 1.0 }}
                 viewport={{ once: true }}
               >
-                These are the types of organizations that Sabbir Nasir and his
-                associates can help{" "}
+                These are the types of organizations that Novastra Global
+                Partners can help{" "}
                 <span className="font-semibold italic text-primary">
                   transform and scale to $100 million and beyond.
                 </span>
@@ -238,11 +238,11 @@ const WhoWeServe = () => {
             viewport={{ once: true }}
           >
             We understand the work because we&apos;ve already done the work.
-            Sabbir Nasir has led the transformation of a grocery chain (Shwapno)
-            and a furniture manufacturer and retailer (Otobi) from the brink of
-            failure and stagnancy respectively to become the largest and most
-            successful organizations in Bangladesh in their respective business
-            categories.
+            Team Novastra has led the transformation of a grocery chain
+            (Shwapno) and a furniture manufacturer and retailer (Otobi) from the
+            brink of failure and stagnancy respectively to become the largest
+            and most successful organizations in Bangladesh in their respective
+            business categories.
           </motion.p>
 
           <motion.p
@@ -251,7 +251,7 @@ const WhoWeServe = () => {
             transition={{ delay: 0.4 }}
             viewport={{ once: true }}
           >
-            The Sabbir Nasir Transformation Framework has produced remarkable
+            The Team Novastra Transformation Framework has produced remarkable
             growth in the retail and manufacturing sectors and is ideal for
             private equity firms seeking to buy, transform and sell companies
             for profit. However,{" "}
@@ -305,7 +305,7 @@ const WhoWeServe = () => {
             transition={{ delay: 0.4 }}
             viewport={{ once: true }}
           >
-            Sabbir and his associates will examine every area of your business
+            Novastra and his associates will examine every area of your business
             to identify and address issues that are holding you back. Vision,
             values, and culture. Processes, financials, and data. Value
             proposition, brand positioning, and strategic planning. Then the

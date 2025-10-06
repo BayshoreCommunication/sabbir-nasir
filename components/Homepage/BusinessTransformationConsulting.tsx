@@ -100,7 +100,7 @@ const BusinessTransformationConsulting = () => {
             </span>{" "}
           </p>
           <p className="mt-3">
-            Let us guide you through the Sabbir Nasir Transformation Framework,
+            Let us guide you through the Team Novastra Transformation Framework,
             a highly structured process designed to turn confusion into clarity,
             data into insight, and potential into performance. That’s how you{" "}
             <span className="text-primary italic">
@@ -149,9 +149,9 @@ const BusinessTransformationConsulting = () => {
                 <span className="text-primary italic">
                   transformation to scale and thrive.
                 </span>{" "}
-                While Sabbir Nasir has significant experience transforming
+                While Team Novastra has significant experience transforming
                 businesses in retail, manufacturing, and private equity, the
-                Sabbir Nasir Transformation Framework can be applied to
+                Team Novastra Transformation Framework can be applied to
                 organizations in virtually any industry, anywhere in the world
                 to
                 <span className="text-primary italic">
@@ -230,17 +230,18 @@ const BusinessTransformationConsulting = () => {
             >
               <h2 className="text-right">Who We Are</h2>
               <p className=" mt-4 text-right">
-                Sabbir Nasir has spent nearly three decades leading the
+                Team Novastra has spent nearly three decades leading the
                 transformations of multinational and private companies{" "}
                 <span className="text-primary italic">
                   – not by simply advising, but by understanding and doing.
                 </span>{" "}
                 His approach is heavily influenced by his own spiritual journey
                 that taught him invaluable lessons about presence and
-                self-awareness. With Sabbir’s guidance, you’ll move forward with
-                clarity, scale with confidence, and achieve sustainable growth
-                and success. We partner with founders, senior executives, and
-                investors whose successful companies have plateaued and require
+                self-awareness. With Novastra&apos;s guidance, you’ll move
+                forward with clarity, scale with confidence, and achieve
+                sustainable growth and success. We partner with founders, senior
+                executives, and investors whose successful companies have
+                plateaued and require
               </p>
               <div className="flex justify-end -mt-3 xl:-mt-2">
                 <Link href={"/about-us"} className="mt-2 inline-flex ">

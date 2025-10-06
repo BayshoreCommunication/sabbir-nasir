@@ -27,8 +27,8 @@ const TaketheFirstStep = ({ title }: { title: string }) => {
         </h2>
 
         <p className="text-base md:text-[20px]  mb-4 leading-relaxed">
-          Schedule a 30-minute discovery call with Team Sabbir Nasir. You’ll
-          begin to
+          Schedule a 30-minute discovery call with Novastra Global Partners.
+          You’ll begin to
           <span className="text-primary italic font-semibold">
             {" "}
             see what is holding you back, and what is possible through

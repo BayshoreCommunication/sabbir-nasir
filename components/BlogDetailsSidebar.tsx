@@ -26,7 +26,7 @@ const BlogDetailsSidebar = () => {
           >
             <Image
               src="/images/about-us/s.nasir.png"
-              alt="Sabbir Hasan Nasir"
+              alt="Novastra Global Partners"
               fill
               className="object-cover rounded-full image-right"
             />
@@ -58,7 +58,7 @@ const BlogDetailsSidebar = () => {
           transition={{ duration: 0.5, delay: 0.5 }}
           viewport={{ once: true }}
         >
-          {`Sabbir Nasir and his team observed that stagnating companies need more than templated advice, PowerPoint decks, and periodic check-ins with a traditional advisor. Sabbir and his team is a true partner and transformational architect who walks the journey with you – physically, mentally, emotionally, and spiritually.`}
+          {`Team Novastra and his team observed that stagnating companies need more than templated advice, PowerPoint decks, and periodic check-ins with a traditional advisor. Novastra and his team is a true partner and transformational architect who walks the journey with you – physically, mentally, emotionally, and spiritually.`}
         </motion.p>
 
         <motion.div

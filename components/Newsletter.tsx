@@ -95,7 +95,7 @@ const Newsletter = () => {
         </h3>
         <p className="text-gray-600 leading-relaxed">
           Stay informed with the latest insights, strategies, updates and
-          receive expert tips from Team Sabbir Nasir to your inbox.
+          receive expert tips from Novastra Global Partners to your inbox.
         </p>
 
         <form onSubmit={handleSubmit} className="space-y-4">

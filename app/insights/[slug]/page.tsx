@@ -54,9 +54,9 @@ export async function generateMetadata({ params }: PageProps) {
       title: blogDetails?.title,
       description: descriptionText,
       images: blogDetails?.featuredImage?.image?.url,
-      url: `https://www.teamsabbirnasir.com/Insights/${blogDetails?.slug}`,
+      url: `https://www.novastragp.com/Insights/${blogDetails?.slug}`,
       type: "article",
-      site_name: "teamsabbirnasir.com",
+      site_name: "novastragp.com",
     },
   };
 }

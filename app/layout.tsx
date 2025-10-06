@@ -31,9 +31,9 @@ const lumiosMarker = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Sabbir Nasir & Associates",
+  title: "Novastra Global Partners",
   description: "Transform. Scale. Soar.",
-  metadataBase: new URL("https://www.teamsabbirnasir.com"),
+  metadataBase: new URL("https://www.novastragp.com"),
   alternates: {
     canonical: "/",
     languages: {

@@ -8,7 +8,7 @@ export default function page() {
       <GlobalHeroSection
         titleH1={
           <div className="">
-            SABBIR NASIR
+            Team Novastra
             <br /> transformation <br /> FRAMEWORK
           </div>
         }
@@ -17,8 +17,8 @@ export default function page() {
         image="/images/about-us/framework.jpg"
         description=""
         buttonFlag={false}
-        buttonText="Meet Sabbir"
-        altText="Sabbir Nasir Transformation Framework"
+        buttonText="Meet Team Novastra"
+        altText="Team Novastra Transformation Framework"
       />
 
       <OurFramworkSection />

@@ -57,7 +57,7 @@ const NewsSidebar = () => {
             transition={{ duration: 0.4, delay: 0.4 }}
             viewport={{ once: true }}
           >
-            Founder
+            Transformation Architect
           </motion.p>
         </div>
 
@@ -68,10 +68,10 @@ const NewsSidebar = () => {
           transition={{ duration: 0.5, delay: 0.5 }}
           viewport={{ once: true }}
         >
-          {` Sabbir Nasir and his team observed that stagnating
+          {` Novastra Global Partners observed that stagnating
 companies need more than templated advice,
 PowerPoint decks, and periodic check-ins with a
-traditional advisor. Sabbir and his team is a true
+traditional advisor. Novastra and his team is a true
 partner and transformational architect who walks the
 journey with you – physically, mentally, emotionally,
 and spiritually. And they will stay with you until you

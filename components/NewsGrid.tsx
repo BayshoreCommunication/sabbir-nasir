@@ -19,7 +19,7 @@ const NewsGrid = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
         >
-          News and Media Coverage Featuring Sabbir Nasir
+          News and Media Coverage Featuring Team Novastra
         </motion.h2>
 
         {/* Full-width introductory paragraph */}
@@ -29,7 +29,7 @@ const NewsGrid = () => {
           animate={{ opacity: 1 }}
           transition={{ delay: 0.3 }}
         >
-          These stories are just a small representation of how Sabbir Nasir has
+          These stories are just a small representation of how Team Novastra has
           spent his career enriching organizations, their people, and the
           communities they serve. The impact of business transformation extends
           far beyond the bottom line. It can be truly life-changing.

@@ -18,7 +18,7 @@ const AboutSection = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
             >
-              About Sabbir Nasir & Associates
+              About Novastra Global Partners
             </motion.h2>
 
             {/* Full-width introductory paragraph */}
@@ -28,11 +28,11 @@ const AboutSection = () => {
               animate={{ opacity: 1 }}
               transition={{ delay: 0.3 }}
             >
-              Sabbir Nassir & Associates is a global business transformation
+              Novastra Global Partners is a global business transformation
               consultancy created to help people and organizations scale to
               their full potential with clarity and purpose. We partner with
               founders, senior executives, and investors, working together to
-              apply the Sabbir Nasir Transformation Framework, which combines
+              apply the Team Novastra Transformation Framework, which combines
               proven business transformation principles with human presence,
               responsibility, and soul.
             </motion.p>
@@ -72,9 +72,9 @@ const AboutSection = () => {
                     transition={{ delay: 0.2 }}
                     viewport={{ once: true }}
                   >
-                    Sabbir Nasir and his team observed that stagnating companies
+                    Novastra Global Partners observed that stagnating companies
                     need more than templated advice, PowerPoint decks, and
-                    periodic check-ins with a traditional advisor. Sabbir and
+                    periodic check-ins with a traditional advisor. Novastra and
                     his team is{" "}
                     <span className="font-semibold italic text-primary">
                       a true partner and transformational architect who walks
@@ -111,7 +111,7 @@ const AboutSection = () => {
                     viewport={{ once: true }}
                   >
                     <h3 className="">Sabbir Nasir</h3>
-                    <p className="">Founder</p>
+                    <p className="">Transformation Architect</p>
                   </motion.div>
                 </div>
               </motion.div>

@@ -48,7 +48,7 @@ const OurFramworkSection = () => {
           viewport={{ once: true }}
         >
           More than transforming the business to drive efficiency and fuel
-          revenue growth, the Sabbir Nasir Transformation Framework creates an
+          revenue growth, the Team Novastra Transformation Framework creates an
           environment where leaders and teams can find harmony and fulfillment.
           We believe transformation isn&apos;t just something you observe in a
           financial report. It&apos;s something you feel. That&apos;s how you
@@ -94,7 +94,7 @@ const OurFramworkSection = () => {
             transition={{ delay: 0.2 }}
             viewport={{ once: true }}
           >
-            During each phase of the Sabbir Nasir Transformation Framework, we
+            During each phase of the Team Novastra Transformation Framework, we
             work together to overcome challenges, identify opportunities, and
             achieve your goals as a company and a leader.
           </motion.p>
