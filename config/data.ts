@@ -46,6 +46,15 @@ export interface News {
 export const newsData: News[] = [
   {
     id: 1,
+    title: "The man who transformed Shwapno",
+    description:
+      "After transforming Shwapno into the country's most recognized retail brand, Sabbir H Nasir takes on the role of Managing Director. With decades of local and global leadership experience, his next move signals a strategic shift for ACI's retail ambitions.",
+    image: "/news/Frame94.png",
+    date: "Jun 10 2023",
+    url: "https://www.dhakatribune.com/business/345984/aci-ltd-announces-sabbir-h-nasir-as-newmd-of",
+  },
+  {
+    id: 2,
     title: "Innovative Franchise Model Becomes Shwapno's Growth Engine",
     description:
       "Sabbir Hasan Nasir's franchise innovation at Shwapno turned a debt-burdened retail chain into a national growth engine. By flipping the traditional franchise model and retaining operational control, he pioneered a system that delivers consistent profit while empowering SME investors across Bangladesh.",
@@ -74,15 +83,6 @@ export const newsData: News[] = [
   },
 
   {
-    id: 5,
-    title: "ACI Ltd Announces Sabbir H Nasir as New Managing Director",
-    description:
-      "After transforming Shwapno into the country's most recognized retail brand, Sabbir H Nasir takes on the role of Managing Director. With decades of local and global leadership experience, his next move signals a strategic shift for ACI's retail ambitions.",
-    image: "/news/Frame94.png",
-    date: "Jun 10 2023",
-    url: "https://www.dhakatribune.com/business/345984/aci-ltd-announces-sabbir-h-nasir-as-newmd-of",
-  },
-  {
     id: 6,
     title:
       "How Shwapno Heads Towards Full Break-Even: A Masterpiece in Progress",
@@ -101,13 +101,13 @@ export const newsData: News[] = [
     date: "Nov 25 2019",
     url: "https://futurestartup.com/2019/11/25/life-lessons-sabbir-hasan-nasir-aci-logistics/",
   },
-  {
-    id: 6,
-    title: "The man who transformed Shwapno",
-    description:
-      "Shwapno, Bangladesh's leading retail chain, launched its franchise model in 2017-2018 with just six outlets. Today, under the visionary leadership of Sabbir Hasan Nasir, the franchise model has become the primary growth engine for ACI Logistics Limited, with over 400 of Shwapno's 500+ outlets operating as franchises. This unique model generates 2-3% net profit on sales, positioning Shwapno as a pioneer in global retail innovation.",
-    image: "/news/Frame94.png",
-    date: "Sept 25, 2024",
-    url: "https://today.thefinancialexpress.com.bd/trade-market/the-man-who-transformed-shwapno-1727200099",
-  },
+  // {
+  //   id: 6,
+  //   title: "The man who transformed Shwapno",
+  //   description:
+  //     "Shwapno, Bangladesh's leading retail chain, launched its franchise model in 2017-2018 with just six outlets. Today, under the visionary leadership of Sabbir Hasan Nasir, the franchise model has become the primary growth engine for ACI Logistics Limited, with over 400 of Shwapno's 500+ outlets operating as franchises. This unique model generates 2-3% net profit on sales, positioning Shwapno as a pioneer in global retail innovation.",
+  //   image: "/news/Frame94.png",
+  //   date: "Sept 25, 2024",
+  //   url: "https://today.thefinancialexpress.com.bd/trade-market/the-man-who-transformed-shwapno-1727200099",
+  // },
 ];
