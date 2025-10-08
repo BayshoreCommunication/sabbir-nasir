@@ -48,7 +48,7 @@ const AboutSection = () => {
                 viewport={{ once: true }}
               >
                 <Image
-                  src="/images/about-us/sabbir-nasir.png"
+                  src="/images/about-us/we-serve.jpg"
                   alt="Sabbir Nasir"
                   width={520}
                   height={520}
