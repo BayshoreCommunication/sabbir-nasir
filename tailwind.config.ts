@@ -50,10 +50,12 @@ const config: Config = {
       themes: {
         light: {
           colors: {
-            primary: "#FA8072", // primary-one
+            // primary: "#FA8072", // primary-one
+            primary: "#1eb5e4", // primary-one
             secondary: "#BBD8DB", // primary-two
             background: "#FFFFFF", // secondary-one
-            foreground: "#FFF4ED", // secondary-two
+            foreground: "#E6F5FF", // secondary-two
+            // foreground: "#FFF4ED", // secondary-two
           },
         },
       },
