@@ -72,10 +72,10 @@ const AboutSection = () => {
                     transition={{ delay: 0.2 }}
                     viewport={{ once: true }}
                   >
-                    Accounting to Sabbir Nasir Transformation Framework
-                    stagnating companies need more than templated advice,
-                    PowerPoint decks, and periodic check-ins with a traditional
-                    advisor. NGP ( Novastra Global Partners ) is{" "}
+                    Acording to Sabbir Nasir Transformation Framework stagnating
+                    companies need more than templated advice, PowerPoint decks,
+                    and periodic check-ins with a traditional advisor. NGP (
+                    Novastra Global Partners ) is{" "}
                     <span className="font-semibold italic text-primary">
                       a true partner and transformational architect who walks
                       the journey with you
