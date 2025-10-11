@@ -57,7 +57,7 @@ const NewsSidebar = () => {
             transition={{ duration: 0.4, delay: 0.4 }}
             viewport={{ once: true }}
           >
-            Transformation Architect
+            Ideator / Transformation Architect
           </motion.p>
         </div>
 

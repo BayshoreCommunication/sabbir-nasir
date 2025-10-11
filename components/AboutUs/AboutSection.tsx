@@ -72,10 +72,10 @@ const AboutSection = () => {
                     transition={{ delay: 0.2 }}
                     viewport={{ once: true }}
                   >
-                    Novastra Global Partners observed that stagnating companies
-                    need more than templated advice, PowerPoint decks, and
-                    periodic check-ins with a traditional advisor. Novastra and
-                    his team is{" "}
+                    Accounting to Sabbir Nasir Transformation Framework
+                    stagnating companies need more than templated advice,
+                    PowerPoint decks, and periodic check-ins with a traditional
+                    advisor. NGP ( Novastra Global Partners ) is{" "}
                     <span className="font-semibold italic text-primary">
                       a true partner and transformational architect who walks
                       the journey with you
@@ -111,7 +111,7 @@ const AboutSection = () => {
                     viewport={{ once: true }}
                   >
                     <h3 className="">Sabbir Nasir</h3>
-                    <p className="">Transformation Architect</p>
+                    <p className="">Ideator / Transformation Architect</p>
                   </motion.div>
                 </div>
               </motion.div>
@@ -126,7 +126,7 @@ const AboutSection = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
             >
-              Transformational Leadership
+              Who&rsquo;s Sabbir Nasir?
             </motion.h2>
 
             <div className="space-y-6">
