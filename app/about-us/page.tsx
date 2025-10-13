@@ -10,7 +10,7 @@ const page = () => {
         titleH1="Who We Are"
         titleH2={"Who We Are"}
         slug={"about-us"}
-        image="/images/about-us/about-us.png"
+        image="/images/about-us/about-us.jpg"
         description="Novastra Global Partners is prepared to walk with you on your journey, applying a business transformation model that is like no other in the world."
         buttonFlag={false}
         buttonText="Meet Team Novastra"
