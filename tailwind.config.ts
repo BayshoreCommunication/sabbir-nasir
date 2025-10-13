@@ -55,8 +55,6 @@ const config: Config = {
             secondary: "#E7F5FF", // primary-two
             background: "#FFFFFF", // secondary-one
             foreground: "#E6F5FF", // secondary-two
-            // herobg: "#F5F5F5", // tertiary-one
-            titleColor: "#1FA5AC", // tertiary-one
           },
         },
       },
