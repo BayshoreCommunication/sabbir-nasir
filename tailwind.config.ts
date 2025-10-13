@@ -51,11 +51,12 @@ const config: Config = {
         light: {
           colors: {
             // primary: "#FA8072", // primary-one
-            primary: "#1eb5e4", // primary-one
-            secondary: "#BBD8DB", // primary-two
+            primary: "#054666", // primary-one
+            secondary: "#E7F5FF", // primary-two
             background: "#FFFFFF", // secondary-one
             foreground: "#E6F5FF", // secondary-two
-            // foreground: "#FFF4ED", // secondary-two
+            // herobg: "#F5F5F5", // tertiary-one
+            titleColor: "#1FA5AC", // tertiary-one
           },
         },
       },

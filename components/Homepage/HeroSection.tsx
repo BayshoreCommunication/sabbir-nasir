@@ -41,7 +41,7 @@ const HeroSection = () => {
                   mass: 0.5,
                 }}
               >
-                <p className="text-3xl md:text-[54px] font-lumios text-primary transition-colors duration-300 ">
+                <p className="text-3xl md:text-[54px] font-lumios text-[#1FA5AC] transition-colors duration-300 ">
                   Start Breaking Through
                 </p>
                 <motion.div
@@ -49,7 +49,7 @@ const HeroSection = () => {
                   whileHover={{ x: 3 }}
                   transition={{ duration: 0.2 }}
                 >
-                  <HiArrowNarrowRight className="text-4xl mt-2" />
+                  <HiArrowNarrowRight className="text-4xl mt-2 text-[#1FA5AC]" />
                 </motion.div>
               </motion.div>
             </Link>

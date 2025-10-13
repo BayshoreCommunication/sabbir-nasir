@@ -70,9 +70,9 @@ const OurFramworkSection = () => {
           onClick={handleDownload}
         >
           <div>
-            <FiDownload className="text-2xl xl:text-3xl font-lumios text-primary " />
+            <FiDownload className="text-2xl xl:text-3xl font-lumios text-[#1FA5AC] " />
           </div>
-          <span className="text-[30px] xl:text-[40px] font-lumios text-primary">
+          <span className="text-[30px] xl:text-[40px] font-lumios text-[#1FA5AC]">
             Download The Framework
           </span>
         </motion.button>

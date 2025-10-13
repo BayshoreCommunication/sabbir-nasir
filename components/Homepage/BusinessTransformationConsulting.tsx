@@ -121,11 +121,11 @@ const BusinessTransformationConsulting = () => {
               }}
               className="flex items-center space-x-1 text-primary cursor-pointer"
             >
-              <p className="text-[30px] xl:text-[45px] font-lumios text-primary">
+              <p className="text-[30px] xl:text-[45px] font-lumios text-[#1FA5AC]">
                 Our Framework
               </p>
               <div>
-                <HiArrowNarrowRight className="text-2xl xl:text-3xl font-lumios mt-1 xl:mt-2 text-primary" />
+                <HiArrowNarrowRight className="text-2xl xl:text-3xl font-lumios mt-1 xl:mt-2 text-[#1FA5AC]" />
               </div>
             </motion.div>
           </Link>
@@ -187,13 +187,13 @@ const BusinessTransformationConsulting = () => {
                 damping: 20,
                 mass: 0.5,
               }}
-              className="flex items-center space-x-1 text-primary cursor-pointer"
+              className="flex items-center space-x-1 text-[#1FA5AC] cursor-pointer"
             >
-              <p className="text-[30px] xl:text-[45px] font-lumios text-primary">
+              <p className="text-[30px] xl:text-[45px] font-lumios text-[#1FA5AC]">
                 Who We Serve
               </p>
               <div>
-                <HiArrowNarrowRight className="text-2xl xl:text-3xl font-lumios mt-1 xl:mt-2 text-primary" />
+                <HiArrowNarrowRight className="text-2xl xl:text-3xl font-lumios mt-1 xl:mt-2 text-[#1FA5AC]" />
               </div>
             </motion.div>
           </Link>
@@ -246,7 +246,7 @@ const BusinessTransformationConsulting = () => {
               <div className="flex justify-end -mt-3 xl:-mt-2">
                 <Link href={"/about-us"} className="mt-2 inline-flex ">
                   <motion.div
-                    className="flex items-center space-x-1 text-primary cursor-pointer"
+                    className="flex items-center space-x-1 text-[#1FA5AC] cursor-pointer"
                     whileHover={{ y: -8 }}
                     whileTap={{ scale: 0.98 }}
                     transition={{
@@ -259,7 +259,7 @@ const BusinessTransformationConsulting = () => {
                     <div>
                       <HiArrowNarrowRight className="text-2xl xl:text-3xl font-lumios mt-1 xl:mt-2 rotate-180" />
                     </div>
-                    <p className="text-[30px] xl:text-[45px] font-lumios text-primary">
+                    <p className="text-[30px] xl:text-[45px] font-lumios text-[#1FA5AC]">
                       Our Story
                     </p>
                   </motion.div>
