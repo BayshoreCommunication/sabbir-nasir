@@ -32,7 +32,7 @@ const AboutSection = () => {
               consultancy created to help people and organizations scale to
               their full potential with clarity and purpose. We partner with
               founders, senior executives, and investors, working together to
-              apply the Team Novastra Transformation Framework, which combines
+              apply the Sabbir Nasir Transformation Framework, which combines
               proven business transformation principles with human presence,
               responsibility, and soul.
             </motion.p>
@@ -72,10 +72,10 @@ const AboutSection = () => {
                     transition={{ delay: 0.2 }}
                     viewport={{ once: true }}
                   >
-                    According to Sabbir Nasir Transformation Framework stagnating
-                    companies need more than templated advice, PowerPoint decks,
-                    and periodic check-ins with a traditional advisor. NGP (
-                    Novastra Global Partners ) is{" "}
+                    According to Sabbir Nasir Transformation Framework
+                    stagnating companies need more than templated advice,
+                    PowerPoint decks, and periodic check-ins with a traditional
+                    advisor. NGP ( Novastra Global Partners ) is{" "}
                     <span className="font-semibold italic text-primary">
                       a true partner and transformational architect who walks
                       the journey with you

@@ -8,7 +8,7 @@ export default function page() {
       <GlobalHeroSection
         titleH1={
           <div className="">
-            Team Novastra
+            Sabbir Nasir
             <br /> transformation <br /> FRAMEWORK
           </div>
         }

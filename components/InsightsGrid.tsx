@@ -63,7 +63,7 @@ const InsightsGrid = ({ blogPostData }: InsightsGridProps) => {
           animate={{ opacity: 1 }}
           transition={{ delay: 0.3 }}
         >
-          Team Novastra has a lifetime of experience to share. Read these
+          Sabbir Nasir has a lifetime of experience to share. Read these
           articles to gain a deeper understanding of Novastra approach and the
           keys to sustainable transformation. Please complete the form to have
           unique insights, observations, commentary, and real-world success

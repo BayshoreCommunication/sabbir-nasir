@@ -19,7 +19,7 @@ const NewsGrid = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
         >
-          News and Media Coverage Featuring Team Novastra
+          News and Media Coverage Featuring Sabbir Nasir
         </motion.h2>
 
         {/* Full-width introductory paragraph */}
