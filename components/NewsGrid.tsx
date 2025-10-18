@@ -12,15 +12,25 @@ const NewsGrid = () => {
 
   return (
     <div>
-      <div className="mb-4  xl:mb-14 ">
-        <motion.h2
-          className="text-center"
-          initial={{ opacity: 0, y: 40 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-        >
-          News and Media Coverage Featuring Sabbir Nasir
-        </motion.h2>
+      <div className="mb-4 xl:mb-14">
+        <div>
+          <motion.h2
+            className="text-center"
+            initial={{ opacity: 0, y: 40 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+          >
+            News and Media Coverage Featuring
+          </motion.h2>
+          <motion.h2
+            className="text-center"
+            initial={{ opacity: 0, y: 40 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+          >
+            Sabbir Nasir
+          </motion.h2>
+        </div>
 
         {/* Full-width introductory paragraph */}
         <motion.p
@@ -29,7 +39,7 @@ const NewsGrid = () => {
           animate={{ opacity: 1 }}
           transition={{ delay: 0.3 }}
         >
-          These stories are just a small representation of how Team Novastra has
+          These stories are just a small representation of how Sabbir Nasir has
           spent his career enriching organizations, their people, and the
           communities they serve. The impact of business transformation extends
           far beyond the bottom line. It can be truly life-changing.

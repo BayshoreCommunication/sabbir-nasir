@@ -150,10 +150,9 @@ const BusinessTransformationConsulting = () => {
                   transformation to scale and thrive.
                 </span>{" "}
                 While Novastra has significant experience transforming
-                businesses in retail, manufacturing, and private equity, the
-                Sabbir Nasir Transformation Framework can be applied to
-                organizations in virtually any industry, anywhere in the world
-                to
+                businesses in retail, manufacturing, and private equity, Sabbir
+                Nasir Transformation Framework can be applied to organizations
+                in virtually any industry, anywhere in the world to
                 <span className="text-primary italic">
                   {" "}
                   maximize performance and profitability.
