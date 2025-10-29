@@ -58,7 +58,7 @@ const BlogDetailsSidebar = () => {
           transition={{ duration: 0.5, delay: 0.5 }}
           viewport={{ once: true }}
         >
-          {`Team Novastra and his team observed that stagnating companies need more than templated advice, PowerPoint decks, and periodic check-ins with a traditional advisor. Novastra and his team is a true partner and transformational architect who walks the journey with you – physically, mentally, emotionally, and spiritually.`}
+          {`Team Novastra and his team observed that stagnating companies need more than templated advice, PowerPoint decks, and periodic check-ins with a traditional advisor.Novastra and its team are true partners and transformational architects who walk the journey with you – physically, mentally, emotionally, and spiritually.`}
         </motion.p>
 
         <motion.div

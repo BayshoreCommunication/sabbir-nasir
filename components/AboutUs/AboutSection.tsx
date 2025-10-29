@@ -94,11 +94,11 @@ const AboutSection = () => {
                   >
                     They offer not only practical business experience and
                     insights, but also their full presence and a genuine desire
-                    to see people and organizations thrive. They ll help you{" "}
+                    to see people and organizations thrive. They&apos;ll help you{" "}
                     <span className="font-semibold italic text-primary">
                       see clearly, think strategically, and act decisively
                     </span>
-                    . You'll learn what your business needs, what your soul
+                    . You&apos;ll learn what your business needs, what your soul
                     wants, and how to honor both in a unified vision for
                     business and individual growth.
                   </motion.p>
