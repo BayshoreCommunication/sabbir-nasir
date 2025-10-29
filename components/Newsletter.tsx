@@ -94,8 +94,8 @@ const Newsletter = () => {
           Our <span className="text-primary">Newsletter</span>
         </h3>
         <p className="text-gray-600 leading-relaxed">
-          Stay informed with the latest insights, strategies, updates and
-          receive expert tips from Novastra Global Partners to your inbox.
+          Stay informed with the latest insights, strategies, and updates from
+          Novastra Global Partners, and receive expert tips in your inbox.
         </p>
 
         <form onSubmit={handleSubmit} className="space-y-4">

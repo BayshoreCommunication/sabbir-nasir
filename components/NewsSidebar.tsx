@@ -71,7 +71,7 @@ const NewsSidebar = () => {
           {` Novastra Global Partners observed that stagnating
 companies need more than templated advice,
 PowerPoint decks, and periodic check-ins with a
-traditional advisor. Novastra and his team is a true
+traditional advisor. Novastra and its team are a true
 partner and transformational architect who walks the
 journey with you – physically, mentally, emotionally,
 and spiritually. And they will stay with you until you

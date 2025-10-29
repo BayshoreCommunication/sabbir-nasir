@@ -31,7 +31,7 @@ const TaketheFirstStep = ({ title }: { title: string }) => {
           You’ll begin to
           <span className="text-primary italic font-semibold">
             {" "}
-            see what is holding you back, and what is possible through
+            see what is holding you back and what is possible through
             transformation.
           </span>{" "}
           Let’s start this journey together.

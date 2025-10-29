@@ -305,7 +305,7 @@ const WhoWeServe = () => {
             transition={{ delay: 0.4 }}
             viewport={{ once: true }}
           >
-            Novastra and his associates will examine every area of your business
+            Novastra and its associates will examine every area of your business
             to identify and address issues that are holding you back. Vision,
             values, and culture. Processes, financials, and data. Value
             proposition, brand positioning, and strategic planning. Then the
