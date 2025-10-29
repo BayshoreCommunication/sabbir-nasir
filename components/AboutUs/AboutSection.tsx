@@ -72,15 +72,15 @@ const AboutSection = () => {
                     transition={{ delay: 0.2 }}
                     viewport={{ once: true }}
                   >
-                    According to Sabbir Nasir Transformation Framework
+                    According to the Sabbir Nasir Transformation Framework,
                     stagnating companies need more than templated advice,
                     PowerPoint decks, and periodic check-ins with a traditional
-                    advisor. NGP ( Novastra Global Partners ) is{" "}
+                    advisor. NGP (Novastra Global Partners) is{" "}
                     <span className="font-semibold italic text-primary">
                       a true partner and transformational architect who walks
-                      the journey with you
+                      the journey with you,
                     </span>{" "}
-                    – physically, mentally, emotionally, and spiritually. And
+                    physically, mentally, emotionally, and spiritually. And
                     they&apos;ll stay with you until you can sustain your
                     transformational strategies without them.
                   </motion.p>
@@ -98,7 +98,7 @@ const AboutSection = () => {
                     <span className="font-semibold italic text-primary">
                       see clearly, think strategically, and act decisively
                     </span>
-                    . You&apos;ll learn what your business needs, what your soul
+                    . You'll learn what your business needs, what your soul
                     wants, and how to honor both in a unified vision for
                     business and individual growth.
                   </motion.p>
@@ -184,7 +184,7 @@ const AboutSection = () => {
                 transition={{ delay: 0.2 }}
                 viewport={{ once: true }}
               >
-                Soon after taking the reigns as CEO of Otobi, Sabbir felt the
+                Soon after taking the reins as CEO of Otobi, Sabbir felt the
                 full weight of his new role. He was entrusted with the
                 livelihoods and dreams of more than 1,000 employees and their
                 families. When a friend gave Sabbir a book on Sufism, something

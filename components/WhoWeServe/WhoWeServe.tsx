@@ -240,7 +240,7 @@ const WhoWeServe = () => {
             We understand the work because we&apos;ve already done the work.
             Sabbir Nasir has led the transformation of a grocery chain (Shwapno)
             and a furniture manufacturer and retailer (Otobi) from the brink of
-            failure and stagnancy respectively to become the largest and most
+            failure and stagnancy, respectively, to become the largest and most
             successful organizations in Bangladesh in their respective business
             categories.
           </motion.p>
@@ -251,10 +251,10 @@ const WhoWeServe = () => {
             transition={{ delay: 0.4 }}
             viewport={{ once: true }}
           >
-            Sabbir Nasir Transformation Framework has produced remarkable growth
-            in the retail and manufacturing sectors and is ideal for private
-            equity firms seeking to buy, transform and sell companies for
-            profit. However,{" "}
+            The Sabbir Nasir Transformation Framework has produced remarkable
+            growth in the retail and manufacturing sectors and is ideal for
+            private equity firms seeking to buy, transform and sell companies
+            for profit. However,{" "}
             <span className="font-semibold italic text-primary">
               {" "}
               this approach to transformation is industry-agnostic and can be
@@ -292,7 +292,7 @@ const WhoWeServe = () => {
             <span className="font-semibold italic text-primary">
               We want to hear from you if your company is stuck and needs a
               turnaround
-            </span>{" "}
+            </span>
             . An overhaul. A fresh perspective. A clear path forward. A
             sustainable strategy. Not just a change in function, but a change in
             thinking and culture. And a transformational architect to guide you
