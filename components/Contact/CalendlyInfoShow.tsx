@@ -6,7 +6,7 @@ const CalendlyInfoShow = () => {
     <div className="">
       <div className=" md:hidden">
         <InlineWidget
-          url="https://calendly.com/teamsabbirnasir/30min"
+          url="https://calendly.com/novastragp/60min"
           styles={{
             height: "800px",
           }}
@@ -21,7 +21,7 @@ const CalendlyInfoShow = () => {
       </div>
       <div className="hidden md:block">
         <InlineWidget
-          url="https://calendly.com/teamsabbirnasir/30min"
+          url="https://calendly.com/novastragp/60min"
           styles={{
             height: "930px",
           }}

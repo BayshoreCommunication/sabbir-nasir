@@ -100,7 +100,7 @@ const BusinessTransformationConsulting = () => {
             </span>{" "}
           </p>
           <p className="mt-3">
-            Let us guide you through the Team Novastra Transformation Framework,
+            Let us guide you through the Sabbir Nasir Transformation Framework,
             a highly structured process designed to turn confusion into clarity,
             data into insight, and potential into performance. That’s how you{" "}
             <span className="text-primary italic">
@@ -149,11 +149,10 @@ const BusinessTransformationConsulting = () => {
                 <span className="text-primary italic">
                   transformation to scale and thrive.
                 </span>{" "}
-                While Team Novastra has significant experience transforming
-                businesses in retail, manufacturing, and private equity, the
-                Team Novastra Transformation Framework can be applied to
-                organizations in virtually any industry, anywhere in the world
-                to
+                While Novastra has significant experience transforming
+                businesses in retail, manufacturing, and private equity, Sabbir
+                Nasir Transformation Framework can be applied to organizations
+                in virtually any industry, anywhere in the world to
                 <span className="text-primary italic">
                   {" "}
                   maximize performance and profitability.
@@ -230,7 +229,7 @@ const BusinessTransformationConsulting = () => {
             >
               <h2 className="text-right">Who We Are</h2>
               <p className=" mt-4 text-right">
-                Team Novastra has spent nearly three decades leading the
+                Sabbir Nasir has spent nearly three decades leading the
                 transformations of multinational and private companies{" "}
                 <span className="text-primary italic">
                   – not by simply advising, but by understanding and doing.

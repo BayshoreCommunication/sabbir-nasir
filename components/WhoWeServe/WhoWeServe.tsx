@@ -238,11 +238,11 @@ const WhoWeServe = () => {
             viewport={{ once: true }}
           >
             We understand the work because we&apos;ve already done the work.
-            Team Novastra has led the transformation of a grocery chain
-            (Shwapno) and a furniture manufacturer and retailer (Otobi) from the
-            brink of failure and stagnancy respectively to become the largest
-            and most successful organizations in Bangladesh in their respective
-            business categories.
+            Sabbir Nasir has led the transformation of a grocery chain (Shwapno)
+            and a furniture manufacturer and retailer (Otobi) from the brink of
+            failure and stagnancy respectively to become the largest and most
+            successful organizations in Bangladesh in their respective business
+            categories.
           </motion.p>
 
           <motion.p
@@ -251,10 +251,10 @@ const WhoWeServe = () => {
             transition={{ delay: 0.4 }}
             viewport={{ once: true }}
           >
-            The Team Novastra Transformation Framework has produced remarkable
-            growth in the retail and manufacturing sectors and is ideal for
-            private equity firms seeking to buy, transform and sell companies
-            for profit. However,{" "}
+            Sabbir Nasir Transformation Framework has produced remarkable growth
+            in the retail and manufacturing sectors and is ideal for private
+            equity firms seeking to buy, transform and sell companies for
+            profit. However,{" "}
             <span className="font-semibold italic text-primary">
               {" "}
               this approach to transformation is industry-agnostic and can be
